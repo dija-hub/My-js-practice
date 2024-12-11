@@ -70,3 +70,8 @@ function showNames(list) {
 }
 
 showNames(["Ali", "Sara", "Zara"]);
+
+
+
+let car = { brand: "Honda", color: "red" };
+console.log(car.brand);
