@@ -88,7 +88,13 @@ console.log(" Grade= F")
 }
 
 
+let numbers = Math.random();
 
+if (numbers > 0.5) {
+  console.log("Heads");
+} else {
+  console.log("Tails");
+}
 
 
 
