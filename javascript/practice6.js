@@ -606,3 +606,15 @@ function msg(Rmsg){
 msg(text);
 
 
+function checktemp(temp){
+  if(temp>30){
+    console.log("Hot");
+  }
+  else{
+    console.log("Cold");
+  }
+}
+function sendtemp(temp){
+  temp(25)
+}
+sendtemp(checktemp);
