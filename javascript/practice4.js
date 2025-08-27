@@ -1,23 +1,23 @@
 
-function printList(list){
-  console.log(list);
-}
+// function printList(list){
+//   console.log(list);
+// }
 
-function sendList(cb){
-  cb([1, 2, 3]);
-}
+// function sendList(cb){
+//   cb([1, 2, 3]);
+// }
 
-sendList(printList);
+// sendList(printList);
 
-function square(num){
-  console.log(num * num);
-}
+// function square(num){
+//   console.log(num * num);
+// }
 
-function run(cb){
-  cb(5);
-}
+// function run(cb){
+//   cb(5);
+// }
 
-run(square);
+// run(square);
 
 
 // function checkTemp(temp){
