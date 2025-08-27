@@ -5,6 +5,11 @@ console.log(str.length);
 console.log(str[1]);
 console.log(str2[2]);
 
+function countChars(str){
+  console.log("Length:", str.length);
+}
+
+countChars("JavaScript");
 
 let sentence=`this is a template literal`;
 console.log(sentence);
