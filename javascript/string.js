@@ -1,55 +1,55 @@
 // let str="appna";
 // let str2= 'khadija';
- //str.length on console
- //string indices n console
+//  str.length on console
+// console.log(str.length);
 // console.log(str[1]);
 // console.log(str2[2]);
 
-//template literrals 
-// let sentence=`this is a template literal`;
-// console.log(sentence);
-// let obj={
-//       item:pen,
-//       price:30,
-// };
-// console.log("the cost of ",obj .items,"is", obj.price);
-//best way of doing this
-// let i=`the cost of ${obj.item}is ${obj.price} rupee`;
-// console.log(i);
 
-// let u=`this is a template literal ${1+2+3}`;
-// console.log(u)
-// //escape chara
-// console.log("apna \ncollege");
-// console.log("apna\tcollege");
+let sentence=`this is a template literal`;
+console.log(sentence);
+let obj={
+      item:pen,
+      price:30,
+};
+console.log("the cost of ",obj .items,"is", obj.price);
 
-// //string meathod 
-// let str="appna";
-// console.log(str.toUpperCase());
+let i=`the cost of ${obj.item}is ${obj.price} rupee`;
+console.log(i);
 
-// let a="college"
-// console.log(a.toLowerCase());
+let u=`this is a template literal ${1+2+3}`;
+console.log(u)
+//escape chara
+console.log("apna \ncollege");
+console.log("apna\tcollege");
 
-// let b="   appna    log      ";
-// console.log(b.trim());
+//string meathod 
+let str="appna";
+console.log(str.toUpperCase());
 
-// let c="abcdefg"
-// console.log(c.slice(2,6));
+let a="college"
+console.log(a.toLowerCase());
 
-// console.log(str.concat(a));
+let b="   appna    log      ";
+console.log(b.trim());
 
-// let d="kia hui?";
-// console.log(d.replace("ui","ua"));
+let c="abcdefg"
+console.log(c.slice(2,6));
 
-// let e="i love js";
-// console.log(e.charAt(3));
+console.log(str.concat(a));
 
-//practice
+let d="kia hui?";
+console.log(d.replace("ui","ua"));
 
-// username=prompt("enter your full name");
-// console.log("username=",username);
-// console.log("Username = " ,"@",username,username.length);
+let e="i love js";
+console.log(e.charAt(3));
 
-//  username=prompt("enter your full name");
-//  userid="@"+username+username.length;
-//  console.log(userid);
+practice
+
+username=prompt("enter your full name");
+console.log("username=",username);
+console.log("Username = " ,"@",username,username.length);
+
+ username=prompt("enter your full name");
+ userid="@"+username+username.length;
+ console.log(userid);
