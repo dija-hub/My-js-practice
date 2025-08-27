@@ -1,9 +1,9 @@
-// let str="appna";
-// let str2= 'khadija';
-//  str.length on console
-// console.log(str.length);
-// console.log(str[1]);
-// console.log(str2[2]);
+let str="appna";
+let str2= 'khadija';
+ str.length on console
+console.log(str.length);
+console.log(str[1]);
+console.log(str2[2]);
 
 
 let sentence=`this is a template literal`;
