@@ -28,11 +28,11 @@ function checkTemp(temp){
   }
 }
 
-function giveTemp(cb){
-  cb(29);
-}
+// function giveTemp(cb){
+//   cb(29);
+// }
 
-giveTemp(checkTemp);
+// giveTemp(checkTemp);
 
 // function greet(){
 //       let name="khadija"
