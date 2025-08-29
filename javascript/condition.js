@@ -44,6 +44,15 @@ if(marks >= 90){
   console.log("Below A");
 }
 
+let fruit = "banana";
+
+if(fruit === "apple"){
+  console.log("Apple");
+} else {
+  console.log("Not apple");
+}
+
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
