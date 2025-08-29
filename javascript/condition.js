@@ -8,50 +8,57 @@
 // if (vot_age < 18){
 //       console.log("canot vote");
 // }
-let age = 18;
+// let age = 18;
 
-if(age >= 18){
-  console.log("You are adult");
-}
+// if(age >= 18){
+//   console.log("You are adult");
+// }
 
-let num = 10;
+// let num = 10;
 
-if(num > 5){
-  console.log("Bigger than 5");
-}
-
-
-let name = "Khadija";
-
-if(name === "Khadija"){
-  console.log("Hello Khadija!");
-}
+// if(num > 5){
+//   console.log("Bigger than 5");
+// }
 
 
-let marks = 40;
+// let name = "Khadija";
 
-if(marks < 50){
-  console.log("Fail");
-}
+// if(name === "Khadija"){
+//   console.log("Hello Khadija!");
+// }
 
-let marks = 85;
 
-if(marks >= 90){
-  console.log("A+");
-} else if(marks >= 80){
-  console.log("A");
+// let marks = 40;
+
+// if(marks < 50){
+//   console.log("Fail");
+// }
+
+// let marks = 85;
+
+// if(marks >= 90){
+//   console.log("A+");
+// } else if(marks >= 80){
+//   console.log("A");
+// } else {
+//   console.log("Below A");
+// }
+
+// let fruit = "banana";
+
+// if(fruit === "apple"){
+//   console.log("Apple");
+// } else {
+//   console.log("Not apple");
+// }
+
+let num = 7;
+
+if(num % 2 === 0){
+  console.log("Even");
 } else {
-  console.log("Below A");
+  console.log("Odd");
 }
-
-let fruit = "banana";
-
-if(fruit === "apple"){
-  console.log("Apple");
-} else {
-  console.log("Not apple");
-}
-
 
 // let mode ="dark";
 // let color;
