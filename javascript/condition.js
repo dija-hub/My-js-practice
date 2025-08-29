@@ -34,6 +34,16 @@ if(marks < 50){
   console.log("Fail");
 }
 
+let marks = 85;
+
+if(marks >= 90){
+  console.log("A+");
+} else if(marks >= 80){
+  console.log("A");
+} else {
+  console.log("Below A");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
