@@ -20,6 +20,13 @@ if(num > 5){
   console.log("Bigger than 5");
 }
 
+
+let name = "Khadija";
+
+if(name === "Khadija"){
+  console.log("Hello Khadija!");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
