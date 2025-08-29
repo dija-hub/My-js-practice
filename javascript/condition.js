@@ -60,6 +60,14 @@ if(num % 2 === 0){
   console.log("Odd");
 }
 
+let word = "javascript";
+
+if(word.length > 5){
+  console.log("Long word");
+} else {
+  console.log("Short word");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
