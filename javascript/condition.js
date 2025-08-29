@@ -68,6 +68,15 @@ if(word.length > 5){
   console.log("Short word");
 }
 
+let age = 20;
+let hasID = true;
+
+if(age >= 18 && hasID){
+  console.log("Allowed");
+} else {
+  console.log("Not allowed");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
