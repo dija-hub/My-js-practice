@@ -8,6 +8,11 @@
 // if (vot_age < 18){
 //       console.log("canot vote");
 // }
+let age = 18;
+
+if(age >= 18){
+  console.log("You are adult");
+}
 
 // let mode ="dark";
 // let color;
