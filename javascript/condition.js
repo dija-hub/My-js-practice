@@ -27,6 +27,13 @@ if(name === "Khadija"){
   console.log("Hello Khadija!");
 }
 
+
+let marks = 40;
+
+if(marks < 50){
+  console.log("Fail");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
