@@ -14,6 +14,12 @@ if(age >= 18){
   console.log("You are adult");
 }
 
+let num = 10;
+
+if(num > 5){
+  console.log("Bigger than 5");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
