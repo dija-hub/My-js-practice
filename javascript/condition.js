@@ -85,6 +85,12 @@ if(score > 50){
   }
 }
 
+let name = "Khadija";
+
+if(name[0] === "K"){
+  console.log("Starts with K");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
