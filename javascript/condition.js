@@ -91,6 +91,16 @@ if(name[0] === "K"){
   console.log("Starts with K");
 }
 
+let num = 15;
+
+if(num > 0){
+  console.log("Positive");
+} else if(num < 0){
+  console.log("Negative");
+} else {
+  console.log("Zero");
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
