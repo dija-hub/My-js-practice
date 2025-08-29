@@ -77,6 +77,14 @@ if(age >= 18 && hasID){
   console.log("Not allowed");
 }
 
+let score = 75;
+
+if(score > 50){
+  if(score > 70){
+    console.log("Great!");
+  }
+}
+
 // let mode ="dark";
 // let color;
 // if (mode==="dark"){
