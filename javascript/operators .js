@@ -155,3 +155,6 @@ console.log(c);
 
 let d = 20 / 5;
 console.log(d);
+
+let e = 17 % 5;
+console.log(e);
