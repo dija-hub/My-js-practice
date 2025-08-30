@@ -165,3 +165,8 @@ console.log(f);
 let g = 7;
 g++;
 console.log(g);
+
+
+let g = 7;
+g++;
+console.log(g);
