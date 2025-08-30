@@ -158,3 +158,6 @@ console.log(d);
 
 let e = 17 % 5;
 console.log(e);
+
+let f = 3 ** 3;
+console.log(f);
