@@ -149,3 +149,6 @@
 
 let b = 10 - 4;
 console.log(b);
+
+let c = 6 * 2;
+console.log(c);
