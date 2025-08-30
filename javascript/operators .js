@@ -152,3 +152,6 @@ console.log(b);
 
 let c = 6 * 2;
 console.log(c);
+
+let d = 20 / 5;
+console.log(d);
