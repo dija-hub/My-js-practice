@@ -144,3 +144,5 @@ console.log("ui!=ux|| ui!=ux",ui!=ux  || ui!=ux);
 console.log ("!(ui!=ux)",!(ui != ux));
 console.log ("!(ui==ux)",!(ui == ux));
 
+let a = 5 + 3;
+console.log(a);
