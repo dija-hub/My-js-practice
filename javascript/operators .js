@@ -161,3 +161,7 @@ console.log(e);
 
 let f = 3 ** 3;
 console.log(f);
+
+let g = 7;
+g++;
+console.log(g);
