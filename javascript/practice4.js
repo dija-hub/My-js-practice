@@ -20,6 +20,20 @@ function run(cb){
 run(square);
 
 
+function checkTemp(temp){
+  if(temp > 30){
+    console.log("Hot");
+  } else {
+    console.log("Cool");
+  }
+}
+
+function giveTemp(cb){
+  cb(29);
+}
+
+giveTemp(checkTemp);
+
 // function greet(){
 //       let name="khadija"
 //       function sayhi(){
