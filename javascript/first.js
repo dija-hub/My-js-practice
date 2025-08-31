@@ -1,7 +1,4 @@
-// fullname="tony ";
-// age=24
-// price=22.4
-// console.log(fullname)
+
 
 //  x=null;// pta hai kia hai lakin value nahi hai
 //  r=undefined;// pata hi nahi kai is kai ander kia hai
