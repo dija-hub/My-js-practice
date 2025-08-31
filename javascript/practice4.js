@@ -1,4 +1,13 @@
 
+function printList(list){
+  console.log(list);
+}
+
+function sendList(cb){
+  cb([1, 2, 3]);
+}
+
+sendList(printList);
 
 
 // function greet(){
