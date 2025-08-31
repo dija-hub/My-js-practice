@@ -1,9 +1,5 @@
 
 
-// let x=50;
-// function sum(){
-//       console.log(y+x);
-// }
 
 // function greet(){
 //       let name="khadija"
