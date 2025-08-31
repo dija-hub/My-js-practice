@@ -9,6 +9,16 @@ function sendList(cb){
 
 sendList(printList);
 
+function square(num){
+  console.log(num * num);
+}
+
+function run(cb){
+  cb(5);
+}
+
+run(square);
+
 
 // function greet(){
 //       let name="khadija"
