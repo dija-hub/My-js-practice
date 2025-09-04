@@ -112,7 +112,16 @@ else{
   console.log("do hw");
 }
 
-
+let ph=3;
+if(ph<7){
+    console.log("acidic");
+}
+else if(ph>7){
+    console.log("BASIC");
+}
+else{
+    console.log("neutral");
+}
 
 
 
