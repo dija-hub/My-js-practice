@@ -143,5 +143,24 @@ console.log('Question: ' + question);
 console.log('Magic 8 Ball: ' + responses[randomIndex]);
 
 
+let aqi=371;
+if(aqi>=0 && aqi<=50){
+  console.log("good");
+}
+else if(aqi>=51 && aqi<=100){
+console.log("moderate");
+}
+else if(aqi>=101 && aqi<=150){
+console.log("unhealthy ");
+}
+else if(aqi>=151 && aqi<=200){
+console.log("unhealthy Sensitive Groups");
+}
+else if(aqi>=201 && aqi<=300){
+console.log("very unhealthy");
+}
+else{
+  console.log("Hazardous");
+}
 
 
