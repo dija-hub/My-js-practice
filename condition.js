@@ -123,6 +123,24 @@ else{
     console.log("neutral");
 }
 
+let responses = [
+    "Yes - definitely.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+];
+
+let question = "Is Codédex better than Udemy yet?";
+
+let randomIndex = Math.floor(Math.random() * responses.length);
+
+console.log('Question: ' + question);
+console.log('Magic 8 Ball: ' + responses[randomIndex]);
 
 
 
