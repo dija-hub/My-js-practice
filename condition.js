@@ -163,4 +163,26 @@ else{
   console.log("Hazardous");
 }
 
-
+let rock=0;
+let paper=1;
+let scissors=2;
+let player= Math.random();
+let computer=Math.random();
+if (0<1){
+  console.log("paper win");
+}
+else if (0>2){
+      console.log("rock win")
+}
+else if (1>0){
+      console.log("paper win")
+}
+else if (1>2){
+      console.log("scissors win")
+}
+else if (2<0){
+      console.log("rock win");
+}
+else if (2>1){
+      console.log("scissors win")
+}
