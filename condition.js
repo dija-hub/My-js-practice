@@ -106,7 +106,10 @@ console.log("take a bath");
 console.log("go to school")
 }
 else{
-  console.log("nothing");
+    console.log("afternoon ");
+  console.log("lunch");
+  console.log("take bath");
+  console.log("do hw");
 }
 
 
