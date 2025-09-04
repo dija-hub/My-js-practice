@@ -95,7 +95,19 @@ if (numbers > 0.5) {
 } else {
   console.log("Tails");
 }
+// Write code below 💖
 
+ let hour =16;
+if(hour<12){
+console.log("good morning");
+console.log("wake up");
+console.log("brush teeth");
+console.log("take a bath");
+console.log("go to school")
+}
+else{
+  console.log("nothing");
+}
 
 
 
