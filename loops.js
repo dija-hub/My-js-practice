@@ -96,12 +96,14 @@
 //  console.log("key:",key,"value:",student[key]);
 // }
 
-for(let i=1 ; i<=100;i++){
-    if (i %2===0){
-      console.log(i,"is even");
-    }
-}
+// for(let i=1 ; i<=100;i++){
+//     if (i %2===0){
+//       console.log(i,"is even");
+//     }
+// }
 
+ let gamenum=77;
+ let guess=prompt("guess the number:");
 
 
 
