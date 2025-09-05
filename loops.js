@@ -20,3 +20,11 @@ do{
       console.log("appna");
       i++;
 } while(i<=10);
+
+
+for (let i =1;i <=5 ; i++){
+      console.log("count is"+i);
+}
+for (let countdown = 10; countdown >0; countdown--) {
+    console.log(countdown +"...");
+}
