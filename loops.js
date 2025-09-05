@@ -74,3 +74,4 @@ if (flavor3) console.log("3. " + flavor3);
 if (flavor4) console.log("4. " + flavor4);
 let total = icecream * 3;
 console.log("Total: $" + total);
+//next
