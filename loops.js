@@ -86,17 +86,21 @@
 // console.log(size);
 
 // for in aare used for obj and asrrys
-let student={
-      name:"khadija",
-      age:20,
-      cgpa:7.4,
-      ispass:true,
-};
-for(let key in student ){ //return key
- console.log("key:",key,"value:",student[key]);
+// let student={
+//       name:"khadija",
+//       age:20,
+//       cgpa:7.4,
+//       ispass:true,
+// };
+// for(let key in student ){ //return key
+//  console.log("key:",key,"value:",student[key]);
+// }
+
+for(let i=1 ; i<=100;i++){
+    if (i %2===0){
+      console.log(i,"is even");
+    }
 }
-
-
 
 
 
