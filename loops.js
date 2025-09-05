@@ -104,7 +104,10 @@
 
  let gamenum=77;
  let guess=prompt("guess the number:");
-
+while(guess!=gamenum){
+     guess= prompt(" you enter wrong num,guess the number:");
+}
+console.log("correct guess")
 
 
 
