@@ -28,3 +28,9 @@ for (let i =1;i <=5 ; i++){
 for (let countdown = 10; countdown >0; countdown--) {
     console.log(countdown +"...");
 }
+
+for (let i =1 ;i <= 9;i++ ){
+ if (i %2 ===1){
+      console.log(i);
+ }
+}
