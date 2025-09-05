@@ -75,16 +75,26 @@
 // let total = icecream * 3;
 // console.log("Total: $" + total);
 
-//for of
- let size=0;
-let str="khadija";
-for(let i of str){ //itorator
-      console.log(i);
-      size++
+//for of is used foe strings and asrrys no tfor obj
+
+//  let size=0;
+// let str="khadija";
+// for(let i of str){ //itorator
+//       console.log(i);
+//       size++
+// }
+// console.log(size);
+
+// for in aare used for obj and asrrys
+let student={
+      name:"khadija",
+      age:20,
+      cgpa:7.4,
+      ispass:true,
+};
+for(let key in student ){ //return key
+ console.log("key:",key,"value:",student[key]);
 }
-console.log(size);
-
-
 
 
 
