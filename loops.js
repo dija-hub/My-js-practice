@@ -67,4 +67,10 @@ console.log("Enter flavor for ice cream 3:",flavor3);
 flavor4=prompt("Enter flavor for ice cream 4:");
 console.log("Enter flavor for ice cream 4:",flavor4);
 }
-console.log("your order:",flavour1,flavor2,flavor3,flavor4);
+console.log("Your order:");
+if (flavor1) console.log("1. " + flavor1);
+if (flavor2) console.log("2. " + flavor2);
+if (flavor3) console.log("3. " + flavor3);
+if (flavor4) console.log("4. " + flavor4);
+let total = icecream * 3;
+console.log("Total: $" + total);
