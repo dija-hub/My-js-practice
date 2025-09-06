@@ -3,3 +3,4 @@ let str2= 'khadija';
  //str.length on console
  //string indices n console
 console.log(str[1]);
+console.log(str2[2]);
