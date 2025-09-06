@@ -22,3 +22,13 @@ console.log(u)
 //escape chara
 console.log("apna \ncollege");
 console.log("apna\tcollege");
+
+//string meathod 
+let str="appna";
+console.log(str.toUpperCase());
+
+let a="appna";
+console.log(a.toLowerCase());
+
+let b="   appna    log      ";
+console.log(b.trim());
