@@ -19,3 +19,6 @@
 
 let u=`this is a template literal ${1+2+3}`;
 console.log(u)
+//escape chara
+console.log("apna \ncollege");
+console.log("apna\tcollege");
