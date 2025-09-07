@@ -50,6 +50,6 @@
 // console.log("username=",username);
 // console.log("Username = " ,"@",username,username.length);
 
- username=prompt("enter your full name");
- userid="@"+username+username.length;
- console.log(userid);
+//  username=prompt("enter your full name");
+//  userid="@"+username+username.length;
+//  console.log(userid);
