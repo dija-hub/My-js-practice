@@ -32,3 +32,6 @@ console.log(a.toLowerCase());
 
 let b="   appna    log      ";
 console.log(b.trim());
+
+let c="abcdefg"
+console.log(c.slice(2,6));
