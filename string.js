@@ -37,3 +37,7 @@ let c="abcdefg"
 console.log(c.slice(2,6));
 
 console.log(str.concat(a));
+
+let d="kia hui?";
+console.log(d.replace("ui","ua"));
+
