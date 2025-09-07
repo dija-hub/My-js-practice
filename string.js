@@ -27,7 +27,7 @@ console.log("apna\tcollege");
 let str="appna";
 console.log(str.toUpperCase());
 
-let a="appna";
+let a="college"
 console.log(a.toLowerCase());
 
 let b="   appna    log      ";
@@ -35,3 +35,5 @@ console.log(b.trim());
 
 let c="abcdefg"
 console.log(c.slice(2,6));
+
+console.log(str.concat(a));
