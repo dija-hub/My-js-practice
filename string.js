@@ -41,3 +41,6 @@ console.log(str.concat(a));
 let d="kia hui?";
 console.log(d.replace("ui","ua"));
 
+let e="i love js";
+console.log(e.charAt(3));
+
