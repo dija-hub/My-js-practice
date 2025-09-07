@@ -14,4 +14,6 @@
 let cities =["lahore", "karachi", "pindi","gugao"];
 for(let city of cities){
       console.log(city.toUpperCase());
-}
+} 
+let marks=[85,97,44,37,76,60];
+ 
