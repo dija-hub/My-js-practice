@@ -45,7 +45,11 @@
 // console.log(e.charAt(3));
 
 //practice
-username=prompt("enter your full name");
-console.log("username=",username);
-console.log("Username =", "@",username,username.length);
 
+// username=prompt("enter your full name");
+// console.log("username=",username);
+// console.log("Username = " ,"@",username,username.length);
+
+ username=prompt("enter your full name");
+ userid="@"+username+username.length;
+ console.log(userid);
