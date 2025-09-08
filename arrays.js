@@ -48,9 +48,11 @@
 
  // array methods 
 
- let vegies=["potato","ladyfinger", "apple","leache"];
-//  vegies.push("chips");
- vegies.pop()
- console.log(vegies);
+//  let vegies=["potato","ladyfinger", "apple","leache"];
+// //  vegies.push("chips");
+//  let deleteditem=vegies.pop()
+// console.log(deleteditem);
+//  console.log(vegies);
 
-
+let vegies=["potato","ladyfinger", "apple","leache"];
+console.log(vegies.toString());// return new string
