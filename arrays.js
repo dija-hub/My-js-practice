@@ -30,11 +30,11 @@
 
 
  //practice
- price=[250,645,300,900,50];
- let index=0;
- for (let val of price){
-     console.log(val/10); 
-     
+//  price=[250,645,300,900,50];
 
- }       
+//  for (let val of price){
+//      discount=val/10; 
+
+// console.log(discount);
+//  }       
                          
