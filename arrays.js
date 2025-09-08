@@ -39,9 +39,18 @@
 //  }       
                          
 
- let price=[250,645,300,900,50];
- for ( let i=0; i < price.length ; i++){
-         let offer =price[i]/10; 
-         price[i]-=offer;
- };
- console.log(price);
+//  let price=[250,645,300,900,50];
+//  for ( let i=0; i < price.length ; i++){
+//          let offer =price[i]/10; 
+//          price[i]-=offer;
+//  };
+//  console.log(price);
+
+ // array methods 
+
+ let vegies=["potato","ladyfinger", "apple","leache"];
+//  vegies.push("chips");
+ vegies.pop()
+ console.log(vegies);
+
+
