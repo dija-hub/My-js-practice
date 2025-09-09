@@ -71,8 +71,3 @@
 // companies.splice(1,1,"ola");
 // companies.push("amazon");
 
-let companies=["bloomberg","microsoft","uber","google","ibm", "netflix"];
-companies.shift();
-console.log(companies);
-companies.splice(1,1,"ola");
-companies.push("amazon");
