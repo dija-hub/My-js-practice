@@ -6,10 +6,37 @@
 //function funnctionname (){
 // work
 // }
-function myfunction(){
-      console.log("welcome");
-      console.log("we are learning .js")
-}
+
+
+//parameter =input
+//peice of code repeating can converted into function 
 //fiunction call
 //functionname()
-myfunction();
+
+
+// function myfunction(msg){
+//       console.log(msg);
+// }
+
+// myfunction(" i love js");
+
+// function myfunction(msg){
+//       console.log(msg);
+// }
+// function myfunction(msg,n){
+//       console.log(msg*n); //not valid
+// }
+
+// myfunction(" i love js");
+
+// function sum(a,b){
+//       console.log(a+b);
+// }
+//  sum("1+3");
+
+function sum(a,b){
+      s=a+b;
+      return s;
+}
+ let val =sum (3,4);
+ console.log(val);
