@@ -57,9 +57,22 @@
 // let vegies=["potato","ladyfinger", "apple","leache"];
 // console.log(vegies.toString());// return new string
 
-let marvel_heros=["thir", "ironman", "gir  " ];
-// let  dc=["superman","batman"];
-//  let heros =marvel_heros.concat(dc);
-//   console.log(heros);
-marvel_heros.unshift("bakwas"); // at start
+// let marvel_heros=["thir", "ironman", "gir  " ];
+// // let  dc=["superman","batman"];
+// //  let heros =marvel_heros.concat(dc);
+// //   console.log(heros);
+// marvel_heros.unshift("bakwas"); // at start
 // marrvel_heros.shift(); //pop
+
+//practice
+// let companies=["bloomberg","microsoft","uber","google","ibm", "netflix"];
+// companies.shift();
+// console.log(companies);
+// companies.splice(1,1,"ola");
+// companies.push("amazon");
+
+let companies=["bloomberg","microsoft","uber","google","ibm", "netflix"];
+companies.shift();
+console.log(companies);
+companies.splice(1,1,"ola");
+companies.push("amazon");
