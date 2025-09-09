@@ -6,3 +6,10 @@
 //function funnctionname (){
 // work
 // }
+function myfunction(){
+      console.log("welcome");
+      console.log("we are learning .js")
+}
+//fiunction call
+//functionname()
+myfunction();
