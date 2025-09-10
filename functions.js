@@ -34,9 +34,27 @@
 // }
 //  sum("1+3");
 
-function sum(a,b){
-      s=a+b;
-      return s;
-}
- let val =sum (3,4);
- console.log(val);
+// function sum(a,b){
+//       s=a+b;
+//       return s;
+//       console.log("after return");//not executed
+
+// }
+//  let val =sum (3,4);
+//  console.log(val);
+ //function params are like local variable  of function -> block scope
+
+
+ //ARROW FUNCTIONS
+ function sum(a,b){
+      return a+b;
+ }
+//recreate
+const arrowSum = (a,b)=>{
+      console.log(a+b);
+      
+};
+
+const arrowMul =(a,b) => {
+      return a*b;
+};
