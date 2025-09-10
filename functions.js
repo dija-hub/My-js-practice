@@ -55,6 +55,14 @@ const arrowSum = (a,b)=>{
       
 };
 
-const arrowMul =(a,b) => {
-      return a*b;
-};
+// const arrowMul =(a,b) => {
+//       return a*b;
+// };
+// console.log(arrowMul(4,6));
+
+//practice
+function vowels (str){
+      let  count =0;
+     for(const char of str){
+      if (char ==="a" || char ==="e" || char === "i" || 
+
