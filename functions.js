@@ -104,8 +104,15 @@
 // })
 
 
+// let nums=[2,3,4,5,6];
+//  let newarr=nums.map((val)=>{
+// return  val*val;
+// })
+// console.log(newarr);
+
+
 let nums=[2,3,4,5,6];
- let newarr=nums.map((val)=>{
-return  val*val;
-})
-console.log(newarr);
+let newnums=nums.filter((val)=>{
+      return val %2===0;
+});
+console.log(newnums)
