@@ -117,8 +117,14 @@
 // });
 // console.log(newnums)
 
+//  const nums=[2,3,4,5];
+//  const output =nums.reduce((res,curr)=>{
+//     return res+curr;
+// })
+// console.log(output);
+
  const nums=[2,3,4,5];
  const output =nums.reduce((res,curr)=>{
-    return res+curr;
+    return res>curr?prev:curr;
 })
 console.log(output);
