@@ -93,3 +93,7 @@
 //       console.log(val,idx);
 // });
 
+ let arr=["pani","nani","sani","chani"];
+arr.forEach(function printval(val ,idx,arr){
+      console.log(val,idx,arr);
+});
