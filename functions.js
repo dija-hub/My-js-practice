@@ -93,7 +93,12 @@
 //       console.log(val,idx);
 // });
 
- let arr=["pani","nani","sani","chani"];
-arr.forEach(function printval(val ,idx,arr){
-      console.log(val,idx,arr);
-});
+//  let arr=["pani","nani","sani","chani"];
+// arr.forEach(function printval(val ,idx,arr){
+//       console.log(val,idx,arr);
+// });
+
+num=[1,2,3,4,5,6];
+num.forEach(function square(num){
+      console.log(num*num);
+})
