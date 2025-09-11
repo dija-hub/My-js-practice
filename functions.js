@@ -2,16 +2,16 @@
 // "abc".toUpperCase()
 // [1,2,3].push(4);
 
-//function defination 
-//function funnctionname (){
+// function defination 
+// function funnctionname (){
 // work
 // }
 
 
-//parameter =input
-//peice of code repeating can converted into function 
-//fiunction call
-//functionname()
+// parameter =input
+// peice of code repeating can converted into function 
+// fiunction call
+// functionname()
 
 
 // function myfunction(msg){
@@ -42,33 +42,36 @@
 // }
 //  let val =sum (3,4);
 //  console.log(val);
- //function params are like local variable  of function -> block scope
+//  function params are like local variable  of function -> block scope
 
 
- //ARROW FUNCTIONS
- function sum(a,b){
-      return a+b;
- }
-//recreate
-const arrowSum = (a,b)=>{
-      console.log(a+b);
+//  //ARROW FUNCTIONS
+//  function sum(a,b){
+//       return a+b;
+//  }
+// //recreate
+// const arrowSum = (a,b)=>{
+//       console.log(a+b);
       
-};
+// };
 
 // const arrowMul =(a,b) => {
 //       return a*b;
 // };
 // console.log(arrowMul(4,6));
 
-//practice
-function vowels (str){
-      let  count =0;
-     for(const char of str){
-      if (char ==="a" || char ==="e" || char === "i" || 
-            char==="o" || char ==="u"){
-      count++;
-      }
-}
-      console.log(count);
-     }
+// //practice
+// function vowels (str){
+//       let  count =0;
+//      for(const char of str){
+//       if (char ==="a" || char ==="e" || char === "i" || 
+//             char==="o" || char ==="u"){
+//       count++;
+//       }
+// }
+//       console.log(count);
+//      }
 
+const countvow =(str)=>{
+      
+}
