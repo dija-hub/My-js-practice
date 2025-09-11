@@ -98,7 +98,14 @@
 //       console.log(val,idx,arr);
 // });
 
-num=[1,2,3,4,5,6];
-num.forEach(function square(num){
-      console.log(num*num);
+// num=[1,2,3,4,5,6];
+// num.forEach(function square(num){
+//       console.log(num*num);
+// })
+
+
+let nums=[2,3,4,5,6];
+ let newarr=nums.map((val)=>{
+return  val*val;
 })
+console.log(newarr);
