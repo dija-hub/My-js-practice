@@ -83,7 +83,13 @@
 //       console.log(count);
 //      }
 
- let arr=[1,2,3,4];
-arr.forEach(function printval(val){
-      console.log(val);
-});
+//  let arr=[1,2,3,4];
+// arr.forEach(function printval(val){
+//       console.log(val);
+// });
+
+//  let arr=["pani","nani","sani","chani"];
+// arr.forEach(function printval(val ,idx){
+//       console.log(val,idx);
+// });
+
