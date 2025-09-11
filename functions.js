@@ -111,8 +111,14 @@
 // console.log(newarr);
 
 
-let nums=[2,3,4,5,6];
-let newnums=nums.filter((val)=>{
-      return val %2===0;
-});
-console.log(newnums)
+// let nums=[2,3,4,5,6];
+// let newnums=nums.filter((val)=>{
+//       return val %2===0;
+// });
+// console.log(newnums)
+
+ const nums=[2,3,4,5];
+ const output =nums.reduce((res,curr)=>{
+    return res+curr;
+})
+console.log(output);
