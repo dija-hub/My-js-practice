@@ -123,8 +123,19 @@
 // })
 // console.log(output);
 
- const nums=[2,3,4,5];
- const output =nums.reduce((res,curr)=>{
-    return res>curr?prev:curr;
-})
-console.log(output);
+//  const nums=[2,3,4,5];
+//  const output =nums.reduce((res,curr)=>{
+//     return res>curr?prev:curr;
+// })
+// console.log(output);
+
+// const marks=[30,90,92,55,69,99];
+// const output= marks.filter((val)=>{
+//      return val>=90;
+// })
+// console.log(output);
+
+let n= prompt ("enter a number :");
+let arr =[];
+
+             
