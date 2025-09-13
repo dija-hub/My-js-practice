@@ -1,4 +1,14 @@
 h1{
-      color:black;
+      color:rgb(201, 41, 41);
+      
 }
+
+body{
+      background-color: pink;
+}
+button{
+      background-color: blue;
+
+}
+
 
