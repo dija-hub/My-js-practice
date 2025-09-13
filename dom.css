@@ -4,11 +4,12 @@ h1{
 }
 
 body{
-      background-color: pink;
+      background-color: rgb(220, 63, 89);
 }
 button{
       background-color: blue;
-
 }
-
+.heading{
+      color:turquoise;
+}
 
