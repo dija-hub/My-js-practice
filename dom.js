@@ -15,8 +15,15 @@
 //PRPERTIES
 // element_1 .tagName 
 
-let div = document.querySelector("div");
-console.dir(div);
- let heading=document.querySelector("h3");
- console.dir(h3);
+// let div = document.querySelector("div");
+// console.dir(div);
+//  let heading=document.querySelector("h3");
+//  console.dir(h3);
 
+
+//practice
+
+let h2=document.querySelector("h2");
+console.dir(h2);
+//  let newh2=h2.innerText="from appna college student";
+ h2.innerText = h2.innerText + " from appna college students";
