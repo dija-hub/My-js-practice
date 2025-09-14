@@ -23,7 +23,14 @@
 
 //practice
 
-let h2=document.querySelector("h2");
-console.dir(h2);
-//  let newh2=h2.innerText="from appna college student";
- h2.innerText = h2.innerText + " from appna college students";
+// let h2=document.querySelector("h2");
+// console.dir(h2);
+// //  let newh2=h2.innerText="from appna college student";
+//  h2.innerText = h2.innerText + " from appna college students";
+
+
+  let nameElements = document.getElementsByClassName("name");
+ console.log(nameElements);
+// let newtext= (nameElement.innerText);
+// console.dir(newtext);
+
