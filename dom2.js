@@ -20,5 +20,8 @@ let newbtn= document.createElement("button");
 newbtn.innerText="hello";
 console.log(newbtn);
 
-let div = document.createElement("div");
-div.append(newbtn);
+let div = document.querySelector("div");
+// div.append(newbtn);
+// div.prepend(newbtn);
+// div.before(newbtn);
+// div.after(newbtn);
