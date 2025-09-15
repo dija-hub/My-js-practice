@@ -9,3 +9,7 @@
 // console.log(para.setAttribute("para","new class"));
 
 
+let div = document.querySelector("div");
+console.log(div);
+console.log(div.style);
+
