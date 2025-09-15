@@ -30,6 +30,10 @@
 
 //practice
 
-let nwebtn=document.createElement("button");
-newbtn.innerText="helo";
-consle.log(newbtn);
+// let newbtn=document.createElement("button");
+// newbtn.innerText="clickme!";
+// newbtn.style.backgroundColor="red";
+// newbtn.style.color="white";
+// console.log(newbtn);
+// let div =document.querySelector("div");
+// div.prepend(newbtn);
