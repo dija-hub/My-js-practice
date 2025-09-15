@@ -16,12 +16,20 @@
 // div.style.backgroundColor="green";
 // div.style.fontSize="40px";
 
-let newbtn= document.createElement("button");
-newbtn.innerText="hello";
-console.log(newbtn);
+// let newbtn= document.createElement("button");
+// newbtn.innerText="hello";
+// console.log(newbtn);
 
-let div = document.querySelector("div");
+// let div = document.querySelector("div");
 // div.append(newbtn);
-// div.prepend(newbtn);
-// div.before(newbtn);
-// div.after(newbtn);
+// // div.prepend(newbtn);
+// // div.before(newbtn);
+// // div.after(newbtn);
+
+// newbtn.remove();
+
+//practice
+
+let nwebtn=document.createElement("button");
+newbtn.innerText="helo";
+consle.log(newbtn);
