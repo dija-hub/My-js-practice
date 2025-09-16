@@ -41,3 +41,4 @@
 let para=document.querySelector("p");
 console.log(p);
 console.log(para.setAttribute("para","newclass"));
+
