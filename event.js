@@ -27,4 +27,4 @@ btn1.addEventListerner('clicked',handler1)
 //to remove
 
 btn1.removeEventListener("click","handler1"
-)
+);
