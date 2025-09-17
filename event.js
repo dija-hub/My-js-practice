@@ -16,5 +16,7 @@ box.onclick=()=>{
 btn1.onclick=(evt)=>{
       console.log(evt);
       console.log(evt.types);  
+      console.log(evt.clientX, evt.clientY);
 }
+
 
