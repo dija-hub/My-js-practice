@@ -27,4 +27,12 @@
 // //to remove
 
 // btn1.removeEventListener("click",handler1
-// );
+//
+
+ let modebtn = document.querySelector("#mode");
+ let currmode="light";
+ modebtn.addEventListener("click",()=>{
+if ( currmode==="light"){
+      currmode="dark"
+
+      
