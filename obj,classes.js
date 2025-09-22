@@ -30,10 +30,10 @@
 //             console.log("tax rate is 10%");
 //       },
 // }
-const karanArjun={
-      salary:50000,
-        calcTax(){
-      console.log("tax rate is 20%");
-        }
-};
- karanArjun.__proto__=employee;
+// const karanArjun={
+//       salary:50000,
+//         calcTax(){
+//       console.log("tax rate is 20%");
+//         }
+// };
+//  karanArjun.__proto__=employee;
