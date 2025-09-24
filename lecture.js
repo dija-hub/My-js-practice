@@ -55,11 +55,28 @@
 // let fortuner =new car();
 // // fortuner.setbrand("fortuner");
 
-class parent{
-      hello(){
-            console.log("hello");
+// class parent{
+//       hello(){
+//             console.log("hello");
+//       }
+// }
+// class child extends parent{   
+// }
+// let obj =child();
+
+class person{
+      eat(){
+            console.log("eat")
+      }
+      sleep(){
+            console.log("sleep")
       }
 }
-class child extends parent{   
+class engineer extends person{
+      work(){
+            console.log("solve prob ")
+      }
+
 }
-let obj =child();
+
+let khsdijaobj=new enginner();
