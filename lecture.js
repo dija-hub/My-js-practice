@@ -93,3 +93,19 @@
 
 // // let khadijaobj=new enginner();
 // let engobj=new engineer("khadija")
+
+//practice
+let data ="tatti"
+class user{
+      constructor(){
+            this.name=name;
+            this.email=email;
+      }
+      viewdata(){
+            console.log("data",data);
+
+      }
+}
+let stu1=new user("khadija","jjj@email.com");
+let stu2=new user("fajal","fff@email.com");
+
