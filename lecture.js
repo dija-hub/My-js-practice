@@ -106,6 +106,17 @@ class user{
 
       }
 }
+class admin extends user{
+      constructor(name , email){
+            super(name , email)
+      }
+      editdata(){
+            data ="gu"
+      }
+}
+
 let stu1=new user("khadija","jjj@email.com");
 let stu2=new user("fajal","fff@email.com");
 
+let teacher=new user("pagal","ppp@email.com");
+let admin=new admin("admin","ggg@email.com");
