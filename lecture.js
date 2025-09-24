@@ -38,20 +38,28 @@
 // };
 //  karanArjun.__proto__=employee;
 
-class car{
-      constructor(){
-            console.log("creating new obj");
-      }
-      start(){
-            console.log("start");
-      }
-      stop(){
-            console.log("stop");
-      }
-      setbrand(brand){
-            this.brand=brand;
+// class car{
+//       constructor(){
+//             console.log("creating new obj");
+//       }
+//       start(){
+//             console.log("start");
+//       }
+//       stop(){
+//             console.log("stop");
+//       }
+//       setbrand(brand){
+//             this.brand=brand;
+//       }
+// }
+// let fortuner =new car();
+// // fortuner.setbrand("fortuner");
+
+class parent{
+      hello(){
+            console.log("hello");
       }
 }
-let fortuner =new car();
-fortuner.setbrand("fortuner");
-
+class child extends parent{   
+}
+let obj =child();
