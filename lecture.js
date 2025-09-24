@@ -65,18 +65,26 @@
 // let obj =child();
 
 class person{
+     constructor(){
+this.species="homo sapien"
+     }
       eat(){
             console.log("eat")
       }
-      sleep(){
-            console.log("sleep")
-      }
+      // sleep(){
+      //       console.log("sleep")
+      // }
 }
 class engineer extends person{
+       constructor(branch){
+            super();
+         this.branch=branch;
+     }
       work(){
             console.log("solve prob ")
       }
 
 }
 
-let khsdijaobj=new enginner();
+// let khadijaobj=new enginner();
+let engobj=new engineer("chemical eng")
