@@ -64,31 +64,32 @@
 // }
 // let obj =child();
 
-class person{
-     constructor(name){
-      //   console.log("enter parent const")
-this.species="homo sapien"
-this.name =name
-     }
-      eat(){
-            console.log("eat")
-      }
-      // sleep(){
-      //       console.log("sleep")
-      // }
-}
-class engineer extends person{
-       constructor(name){//branch 
-            // console.log("enter child const")
-            super(name);
-         this.branch=branch;
-      //      console.log(" exit enter child const")
-     }
-      work(){
-            console.log("solve prob ")
-      }
+// class person{
+//      constructor(name){
+//       //   console.log("enter parent const")
+// this.species="homo sapien"
+// this.name =name
+//      }
+//       eat(){
+//             console.log("eat")
+//       }
+//       // sleep(){
+//       //       console.log("sleep")
+//       // }
+// }
+// class engineer extends person{
+//        constructor(name){//branch 
+//             // console.log("enter child const")
+//             super(name);
+//          this.branch=branch;
+//       //      console.log(" exit enter child const")
+//      }
+//       work(){
+//             super.eat()
+//             console.log("solve prob ")
+//       }
 
-}
+// }
 
-// let khadijaobj=new enginner();
-let engobj=new engineer("khadija")
+// // let khadijaobj=new enginner();
+// let engobj=new engineer("khadija")
