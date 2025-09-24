@@ -65,8 +65,10 @@
 // let obj =child();
 
 class person{
-     constructor(){
+     constructor(name){
+      //   console.log("enter parent const")
 this.species="homo sapien"
+this.name =name
      }
       eat(){
             console.log("eat")
@@ -76,9 +78,11 @@ this.species="homo sapien"
       // }
 }
 class engineer extends person{
-       constructor(branch){
-            super();
+       constructor(name){//branch 
+            // console.log("enter child const")
+            super(name);
          this.branch=branch;
+      //      console.log(" exit enter child const")
      }
       work(){
             console.log("solve prob ")
@@ -87,4 +91,4 @@ class engineer extends person{
 }
 
 // let khadijaobj=new enginner();
-let engobj=new engineer("chemical eng")
+let engobj=new engineer("khadija")
