@@ -95,28 +95,28 @@
 // let engobj=new engineer("khadija")
 
 //practice
-let data ="tatti"
-class user{
-      constructor(){
-            this.name=name;
-            this.email=email;
-      }
-      viewdata(){
-            console.log("data",data);
+// let data ="tatti"
+// class user{
+//       constructor(){
+//             this.name=name;
+//             this.email=email;
+//       }
+//       viewdata(){
+//             console.log("data",data);
 
-      }
-}
-class admin extends user{
-      constructor(name , email){
-            super(name , email)
-      }
-      editdata(){
-            data ="gu"
-      }
-}
+//       }
+// }
+// class admin extends user{
+//       constructor(name , email){
+//             super(name , email)
+//       }
+//       editdata(){
+//             data ="gu"
+//       }
+// }
 
-let stu1=new user("khadija","jjj@email.com");
-let stu2=new user("fajal","fff@email.com");
+// let stu1=new user("khadija","jjj@email.com");
+// let stu2=new user("fajal","fff@email.com");
 
-let teacher=new user("pagal","ppp@email.com");
-let admin=new admin("admin","ggg@email.com");
+// let teacher=new user("pagal","ppp@email.com");
+// let admin=new admin("admin","ggg@email.com");
