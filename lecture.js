@@ -39,6 +39,9 @@
 //  karanArjun.__proto__=employee;
 
 class car{
+      constructor(){
+            console.log("creating new obj");
+      }
       start(){
             console.log("start");
       }
