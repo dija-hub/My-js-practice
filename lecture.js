@@ -50,5 +50,5 @@ class car{
       }
 }
 let fortuner =new car();
-fortuner.brand("fortuner");
+fortuner.setbrand("fortuner");
 
