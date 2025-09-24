@@ -37,3 +37,18 @@
 //         }
 // };
 //  karanArjun.__proto__=employee;
+
+class car{
+      start(){
+            console.log("start");
+      }
+      stop(){
+            console.log("stop");
+      }
+      setbrand(brand){
+            this.brand=brand;
+      }
+}
+let fortuner =new car();
+fortuner.brand("fortuner");
+
