@@ -20,9 +20,13 @@
 // }
 // calculator(1,2, sum);
 
-function getData(dataId){
+function getData(dataId , getNextData){
       setTimeout(()=>{
  console.log("data",dataId);
+ getNextData();
       },2000)
-     
 }
+getData(1,()=>{
+      getData(2);
+});
+
