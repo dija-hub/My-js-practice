@@ -20,3 +20,9 @@
 // }
 // calculator(1,2, sum);
 
+function getData(dataId){
+      setTIMEout(()=>{
+ console.log("data",dataId);
+      },2000)
+     
+}
