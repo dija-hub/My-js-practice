@@ -21,7 +21,7 @@
 // calculator(1,2, sum);
 
 function getData(dataId){
-      setTIMEout(()=>{
+      setTimeout(()=>{
  console.log("data",dataId);
       },2000)
      
