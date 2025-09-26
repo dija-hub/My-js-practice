@@ -1,3 +1,43 @@
+const getPromise = ()=>{
+      return new Promise((resolve,reject)=>{
+            console.log("i am a promise");
+            // resolve("sucess");
+            reject("error");
+      })
+}
+
+let promise = getPromise();
+promise.then(()  =>{
+console.log("promise fullfill")
+});
+      
+promise catch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // console.log("one");
 // console.log("two");
 // console.log("three");
@@ -27,17 +67,18 @@
 //     reject("error");
 // });
 
-function getData(dataId, getNextData){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
+// function getData(dataId, getNextData){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
            
-            reject("error"); 
-            if(getNextData){
-                getNextData();
-            }
-        }, 4000);
-    });
-}
+//             reject("error"); 
+//             if(getNextData){
+//                 getNextData();
+//             }
+//         }, 4000);
+//     });
+// }
+
 // function getData(dataId , getNextData){
 //       setTimeout(()=>{
 //  console.log("data",dataId);
