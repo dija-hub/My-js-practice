@@ -23,6 +23,7 @@
 
 let promise=new Promise ((resolve , reject)=>{
       console.log("hello");
+      resolve();
 })
 // function getData(dataId , getNextData){
 //       setTimeout(()=>{
