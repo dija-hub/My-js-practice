@@ -27,8 +27,17 @@ let promise=new Promise ((resolve , reject)=>{
       reject("error")
 });
 function getData(dataId,getNextData){
-      return new Promise ((reslve.reject))
+      return new Promise ((reslove,reject)=>{
+   setTimeout(()=>{
+  console.log("data",dataId);
+  resolve("success")
+  if(getNextData){
+    getNextData();
+ }
+      },5000)
 }
+      )}
+
 // function getData(dataId , getNextData){
 //       setTimeout(()=>{
 //  console.log("data",dataId);
