@@ -1,17 +1,19 @@
 const getPromise = ()=>{
       return new Promise((resolve,reject)=>{
             console.log("i am a promise");
-            // resolve("sucess");
-            reject("error");
+            resolve("sucess");
+            // reject("error");
       })
 }
 
 let promise = getPromise();
-promise.then(()  =>{
+promise.then((res)  =>{
 console.log("promise fullfill")
 });
       
-promise catch
+promise.catch(()=>{
+      console.log("rejected");
+})
 
 
 
