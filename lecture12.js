@@ -21,23 +21,23 @@
 // calculator(1,2, sum);
 
 
-let promise=new Promise ((resolve , reject)=>{
-      console.log("hello");
-      // resolve("hello");
-      reject("error")
-});
-function getData(dataId,getNextData){
-      return new Promise ((reslove,reject)=>{
-   setTimeout(()=>{
-  console.log("data",dataId);
-  resolve("success")
-  if(getNextData){
-    getNextData();
- }
-      },5000)
-}
-      )}
+// let promise = new Promise((resolve , reject) => {
+//     console.log("hello");
+//     // resolve("hello");
+//     reject("error");
+// });
 
+function getData(dataId, getNextData){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataId);
+            resolve("success"); 
+            if(getNextData){
+                getNextData();
+            }
+        }, 5000);
+    });
+}
 // function getData(dataId , getNextData){
 //       setTimeout(()=>{
 //  console.log("data",dataId);
