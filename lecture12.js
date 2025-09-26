@@ -35,7 +35,7 @@ function getData(dataId, getNextData){
             if(getNextData){
                 getNextData();
             }
-        }, 5000);
+        }, 4000);
     });
 }
 // function getData(dataId , getNextData){
