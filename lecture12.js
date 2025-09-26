@@ -1,19 +1,19 @@
-const getPromise = ()=>{
-      return new Promise((resolve,reject)=>{
-            console.log("i am a promise");
-            resolve("sucess");
-            // reject("error");
-      })
-}
+// const getPromise = ()=>{
+//       return new Promise((resolve,reject)=>{
+//             console.log("i am a promise");
+//             resolve("sucess");
+//             // reject("error");
+//       })
+// }
 
-let promise = getPromise();
-promise.then((res)  =>{
-console.log("promise fullfill")
-});
+// let promise = getPromise();
+// promise.then((res)  =>{
+// console.log("promise fullfill")
+// });
       
-promise.catch(()=>{
-      console.log("rejected",err);
-})
+// promise.catch(()=>{
+//       console.log("rejected",err);
+// })
 
 
 
