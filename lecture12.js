@@ -12,7 +12,7 @@ console.log("promise fullfill")
 });
       
 promise.catch(()=>{
-      console.log("rejected");
+      console.log("rejected",err);
 })
 
 
