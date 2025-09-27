@@ -1,3 +1,27 @@
+function asyncfunc () {
+      return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                  console.log("some data1");
+            },4000)
+      })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const getPromise = ()=>{
 //       return new Promise((resolve,reject)=>{
 //             console.log("i am a promise");
@@ -14,31 +38,6 @@
 // promise.catch(()=>{
 //       console.log("rejected",err);
 // })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // console.log("one");
 // console.log("two");
