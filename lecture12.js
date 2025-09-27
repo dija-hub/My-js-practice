@@ -6,6 +6,10 @@ function asyncfunc () {
       })
 }
 
+let p1 =asyncfunc()
+      p1.then((res)=>{
+            console.log(res)
+      })
 
 
 
