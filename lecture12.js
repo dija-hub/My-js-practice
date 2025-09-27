@@ -75,27 +75,27 @@
 // });
 
 
-function getData(dataId , getNextData){
-      return new Promise((resolve,reject)=>{
-                  setTimeout(()=>{
- console.log("data",dataId);
- resolve("sucess")
- if(getNextData){
-      getNextData();
- }
-      },5000)
-      })
+// function getData(dataId , getNextData){
+//       return new Promise((resolve,reject)=>{
+//                   setTimeout(()=>{
+//  console.log("data",dataId);
+//  resolve("sucess")
+//  if(getNextData){
+//       getNextData();
+//  }
+//       },5000)
+//       })
 
-}
+// }
 
-let p1 = getData(1)
-p1 .then ((res)=>{
-      console.log(res)
-      let p2=getData(2);
-      p2.then((res)=>{
-            console.log(res);
-      })
-})
+// let p1 = getData(1)
+// p1 .then ((res)=>{
+//       console.log(res)
+//       let p2=getData(2);
+//       p2.then((res)=>{
+//             console.log(res);
+//       })
+// })
 // //callback hell
 // getData(1,()=>{
 //       getData(2,()=>{
@@ -105,3 +105,6 @@ p1 .then ((res)=>{
 //       });
 // });
 
+// async function hello(){
+//     console.log("hello");
+// }
