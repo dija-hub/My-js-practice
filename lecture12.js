@@ -91,6 +91,10 @@ function getData(dataId , getNextData){
 let p1 = getData(1)
 p1 .then ((res)=>{
       console.log(res)
+      let p2=getData(2);
+      p2.then((res)=>{
+            console.log(res);
+      })
 })
 // //callback hell
 // getData(1,()=>{
