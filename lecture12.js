@@ -108,3 +108,17 @@
 // async function hello(){
 //     console.log("hello");
 // }
+
+
+function api(){
+      return new Promise((resolve,reject)=>{
+            saeTimeout(()=>{
+                  console.log("weather data");
+            resolve("200")
+            })
+      })
+}
+async function getWeather({
+            await api();
+            await api();
+})
