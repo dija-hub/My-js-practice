@@ -1,46 +1,31 @@
-function asyncfunc1 () {
-      return new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                  console.log("some data1");
-                  resolve ("sucess")
-            },4000)
-      })
-}
+// function asyncfunc1 () {
+//       return new Promise((resolve,reject)=>{
+//             setTimeout(()=>{
+//                   console.log("some data1");
+//                   resolve ("sucess")
+//             },4000)
+//       })
+// }
 
-function asyncfunc2 () {
-      return new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                  console.log("some data2");
-                  resolve ("sucess")
-            },4000)
-      })
-}
+// function asyncfunc2 () {
+//       return new Promise((resolve,reject)=>{
+//             setTimeout(()=>{
+//                   console.log("some data2");
+//                   resolve ("sucess")
+//             },4000)
+//       })
+// }
 
-console.log("fetching data 1")
-let p1 =asyncfunc1()
-      p1.then((res)=>{
+// console.log("fetching data 1")
+// let p1 =asyncfunc1()
+//       p1.then((res)=>{
             
-            console.log("fetching data 2")
-let p2 =asyncfunc2()
-      p2.then((res)=>{
+//             console.log("fetching data 2")
+// let p2 =asyncfunc2()
+//       p2.then((res)=>{
             
-      })
-      })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//       })
+//       })
 
 
 // const getPromise = ()=>{
@@ -89,26 +74,24 @@ let p2 =asyncfunc2()
 //     reject("error");
 // });
 
-// function getData(dataId, getNextData){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-           
-//             reject("error"); 
-//             if(getNextData){
-//                 getNextData();
-//             }
-//         }, 4000);
-//     });
-// }
 
-// function getData(dataId , getNextData){
-//       setTimeout(()=>{
-//  console.log("data",dataId);
-//  if(getNextData){
-//       getNextData();
-//  }
-//       },2000)
-// }
+function getData(dataId , getNextData){
+      return new Promise((resolve,reject)=>{
+                  setTimeout(()=>{
+ console.log("data",dataId);
+ resolve("sucess")
+ if(getNextData){
+      getNextData();
+ }
+      },5000)
+      })
+
+}
+
+let p1 = getData(1)
+p1 .then ((res)=>{
+      console.log(res)
+})
 // //callback hell
 // getData(1,()=>{
 //       getData(2,()=>{
