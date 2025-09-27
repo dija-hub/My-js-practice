@@ -1,4 +1,4 @@
-function asyncfunc () {
+function asyncfunc1 () {
       return new Promise((resolve,reject)=>{
             setTimeout(()=>{
                   console.log("some data1");
@@ -6,9 +6,24 @@ function asyncfunc () {
             },4000)
       })
 }
+
+function asyncfunc2 () {
+      return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                  console.log("some data1");
+                  resolve ("sucess")
+            },4000)
+      })
+}
+
 console.log("fetching data 1")
 let p1 =asyncfunc()
       p1.then((res)=>{
+            console.log(res)
+      })
+console.log("fetching data 2")
+let p2 =asyncfunc()
+      p2.then((res)=>{
             console.log(res)
       })
 
