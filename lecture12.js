@@ -118,7 +118,7 @@ function api(){
             })
       })
 }
-async function getWeather(){
-            await api();
-            await api();
-}
+// async function getWeather(){
+//             await api();
+//             await api();
+// }
