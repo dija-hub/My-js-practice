@@ -23,7 +23,7 @@
 //             console.log("fetching data 2")
 // let p2 =asyncfunc2()
 //       p2.then((res)=>{
-       h     
+          
 //       })
 //       })
 
