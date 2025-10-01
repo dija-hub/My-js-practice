@@ -21,6 +21,6 @@ const fetchData = new Promise((resolve, reject) => {
   setTimeout(() => {
     const data = "📦 Data received!";
     resolve(data);
-    // or reject("Error loading data");
+    
   }, 2000); 
 });
