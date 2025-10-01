@@ -17,10 +17,10 @@
 //   }
 // });
 
-const fetchData = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    const data = "📦 Data received!";
-    resolve(data);
+// const fetchData = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const data = "📦 Data received!";
+//     resolve(data);
     
-  }, 2000); 
-});
+//   }, 2000); 
+// });
