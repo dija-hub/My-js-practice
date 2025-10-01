@@ -6,13 +6,21 @@
 // console.log(response.status);
 // }
 
-const myPromise = new Promise((resolve, reject) => {
-  // some async or time-consuming task
-  const success = true; // or false
+// const myPromise = new Promise((resolve, reject) => {
+//   // some async or time-consuming task
+//   const success = true; // or false
 
-  if (success) {
-    resolve("✅ It worked!");
-  } else {
-    reject("❌ Something went wrong.");
-  }
+//   if (success) {
+//     resolve("✅ It worked!");
+//   } else {
+//     reject("❌ Something went wrong.");
+//   }
+// });
+
+const fetchData = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const data = "📦 Data received!";
+    resolve(data);
+    // or reject("Error loading data");
+  }, 2000); // Simulate 2 sec delay
 });
