@@ -24,19 +24,19 @@
     
 //   }, 2000); 
 // });
-async function hello(){
-    console.log("hello");
-}
+// async function hello(){
+//     console.log("hello");
+// }
 
-async function mello(){
-    console.log("mello");
-}
+// async function mello(){
+//     console.log("mello");
+// }
 
-async function run(){
-    await hello();   // waits for hello
-    console.log("next");
-    await mello();   // waits for mello
-    console.log("done");
-}
+// async function run(){
+//     await hello();   // waits for hello
+//     console.log("next");
+//     await mello();   // waits for mello
+//     console.log("done");
+// }
 
 run();
