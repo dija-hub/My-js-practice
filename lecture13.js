@@ -41,9 +41,9 @@
 
 // run();
 
-async function hello(){
-    console.log("hello");
-    return "done";
-}
+// async function hello(){
+//     console.log("hello");
+//     return "done";
+// }
 
-hello().then(msg => console.log(msg));
+// hello().then(msg => console.log(msg));
