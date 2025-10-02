@@ -8,6 +8,11 @@ const response =await fetch(URL);
 console.log(response);
 const data=await response.json();
 funny.innerText=data.jokes;
+  if (data.type === "single") {
+        funny.innerText = data.joke;
+    } else if (data.type === "twopart") {
+        funny.innerText = `${data.setup} ... ${data.delivery}`;
+    }
 };
 getJokes();
 
