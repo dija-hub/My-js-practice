@@ -1,13 +1,12 @@
 const URL="https://v2.jokeapi.dev/joke/Any?type=single";
-
+const jokespara=document.querySelector("#fact")
 
 const getJokes=async () => {
       console.log("getting data......")
  let response =await fetch(URL);
 console.log(response);
 let data=await response.json();
-console.log(data);
-console.log(data.joke)
+jokespara.innerText=data[0].text;
 };
 getJokes();
 
