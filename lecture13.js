@@ -1,19 +1,17 @@
-const URL="https://v2.jokeapi.dev/joke/Any?type=single";
-const funny=document.querySelector("#jokes")
+const URL = "https://v2.jokeapi.dev/joke/Any?type=single";
+const funny = document.querySelector("#jokes");
 
-const getJokes=async () => {
-      console.log("getting data......")
-      
-const response =await fetch(URL);
-console.log(response);
-const data=await response.json();
-funny.innerText=data.jokes;
-  if (data.type === "single") {
-        funny.innerText = data.joke;
-    } else if (data.type === "twopart") {
-        funny.innerText = `${data.setup} ... ${data.delivery}`;
-    }
+const getJokes = async () => {
+    console.log("getting data......");
+    
+    const response = await fetch(URL);
+    const data = await response.json();
+
+    // correct property is "joke", not "jokes"
+    funny.innerText = data.joke;  
+    console.log(data.joke); 
 };
+
 getJokes();
 
 
