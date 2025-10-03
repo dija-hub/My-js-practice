@@ -1,20 +1,20 @@
-const URL = "https://v2.jokeapi.dev/joke/Any?type=single";
-const funny = document.querySelector("#jokes");
-const btn=document.querySelector("#btn");
+// const URL = "https://v2.jokeapi.dev/joke/Any?type=single";
+// const funny = document.querySelector("#jokes");
+// const btn=document.querySelector("#btn");
 
 
 
-const getJokes = async () => {
+// const getJokes = async () => {
     
-    const response = await fetch(URL);
-    const data = await response.json();
+//     const response = await fetch(URL);
+//     const data = await response.json();
 
-    funny.innerText = data.joke;  
-    console.log(data.joke); 
-};
+//     funny.innerText = data.joke;  
+//     console.log(data.joke); 
+// };
 
 
-btn.addEventListener("click",getJokes);
+// btn.addEventListener("click",getJokes);
 
 
 // const URL = "https://v2.jokeapi.dev/joke/Any?type=single";
