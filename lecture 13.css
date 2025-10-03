@@ -1,5 +1,14 @@
 #jokes{
       margin-top:100px;
-      color:brown;
+      color:rgb(61, 11, 11);
+      font-size:30px;
 
+}
+#btn{
+      width:100px;
+      height:50px;
+      margin-left:100px;
+      background-color: rgb(224, 105, 107);
+      border-radius:50px;
+      font-size: medium;
 }
