@@ -35,13 +35,6 @@ btn.addEventListener("click",getJokes);
 // btn.addEventListener("click", getJokes);
 
 
-
-
-
-
-
-
-
 // const myPromise = new Promise((resolve, reject) => {
 //   // some async or time-consuming task
 //   const success = true; // or false
