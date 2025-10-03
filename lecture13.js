@@ -17,6 +17,22 @@
 // btn.addEventListener("click",getJokes);
 
 
+const URL = "https://v2.jokeapi.dev/joke/Any?type=single";
+const funny = document.querySelector("#jokes");
+const btn = document.querySelector("#btn");
+
+function getJokes() {
+    fetch(URL)
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data.joke);       // show joke in console
+        funny.innerText = data.joke;  // show joke in webpage
+    })
+}
+
+btn.addEventListener("click", getJokes);
 
 
 
