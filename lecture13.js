@@ -2,8 +2,6 @@
 // const funny = document.querySelector("#jokes");
 // const btn=document.querySelector("#btn");
 
-
-
 // const getJokes = async () => {
     
 //     const response = await fetch(URL);
@@ -12,7 +10,6 @@
 //     funny.innerText = data.joke;  
 //     console.log(data.joke); 
 // };
-
 
 // btn.addEventListener("click",getJokes);
 
