@@ -2,12 +2,10 @@ const URL = "https://v2.jokeapi.dev/joke/Any?type=single";
 const funny = document.querySelector("#jokes");
 
 const getJokes = async () => {
-    console.log("getting data......");
     
     const response = await fetch(URL);
     const data = await response.json();
 
-    // correct property is "joke", not "jokes"
     funny.innerText = data.joke;  
     console.log(data.joke); 
 };
