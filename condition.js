@@ -88,101 +88,101 @@ console.log(" Grade= F")
 }
 
 
-let numbers = Math.random();
+// let numbers = Math.random();
 
-if (numbers > 0.5) {
-  console.log("Heads");
-} else {
-  console.log("Tails");
-}
-// Write code below 💖
+// if (numbers > 0.5) {
+//   console.log("Heads");
+// } else {
+//   console.log("Tails");
+// }
+// // Write code below 💖
 
- let hour =16;
-if(hour<12){
-console.log("good morning");
-console.log("wake up");
-console.log("brush teeth");
-console.log("take a bath");
-console.log("go to school")
-}
-else{
-    console.log("afternoon ");
-  console.log("lunch");
-  console.log("take bath");
-  console.log("do hw");
-}
+//  let hour =16;
+// if(hour<12){
+// console.log("good morning");
+// console.log("wake up");
+// console.log("brush teeth");
+// console.log("take a bath");
+// console.log("go to school")
+// }
+// else{
+//     console.log("afternoon ");
+//   console.log("lunch");
+//   console.log("take bath");
+//   console.log("do hw");
+// }
 
-let ph=3;
-if(ph<7){
-    console.log("acidic");
-}
-else if(ph>7){
-    console.log("BASIC");
-}
-else{
-    console.log("neutral");
-}
+// let ph=3;
+// if(ph<7){
+//     console.log("acidic");
+// }
+// else if(ph>7){
+//     console.log("BASIC");
+// }
+// else{
+//     console.log("neutral");
+// }
 
-let responses = [
-    "Yes - definitely.",
-    "It is decidedly so.",
-    "Without a doubt.",
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not tell you now.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful."
-];
+// let responses = [
+//     "Yes - definitely.",
+//     "It is decidedly so.",
+//     "Without a doubt.",
+//     "Reply hazy, try again.",
+//     "Ask again later.",
+//     "Better not tell you now.",
+//     "My sources say no.",
+//     "Outlook not so good.",
+//     "Very doubtful."
+// ];
 
-let question = "Is Codédex better than Udemy yet?";
+// let question = "Is Codédex better than Udemy yet?";
 
-let randomIndex = Math.floor(Math.random() * responses.length);
+// let randomIndex = Math.floor(Math.random() * responses.length);
 
-console.log('Question: ' + question);
-console.log('Magic 8 Ball: ' + responses[randomIndex]);
+// console.log('Question: ' + question);
+// console.log('Magic 8 Ball: ' + responses[randomIndex]);
 
 
-let aqi=371;
-if(aqi>=0 && aqi<=50){
-  console.log("good");
-}
-else if(aqi>=51 && aqi<=100){
-console.log("moderate");
-}
-else if(aqi>=101 && aqi<=150){
-console.log("unhealthy ");
-}
-else if(aqi>=151 && aqi<=200){
-console.log("unhealthy Sensitive Groups");
-}
-else if(aqi>=201 && aqi<=300){
-console.log("very unhealthy");
-}
-else{
-  console.log("Hazardous");
-}
+// let aqi=371;
+// if(aqi>=0 && aqi<=50){
+//   console.log("good");
+// }
+// else if(aqi>=51 && aqi<=100){
+// console.log("moderate");
+// }
+// else if(aqi>=101 && aqi<=150){
+// console.log("unhealthy ");
+// }
+// else if(aqi>=151 && aqi<=200){
+// console.log("unhealthy Sensitive Groups");
+// }
+// else if(aqi>=201 && aqi<=300){
+// console.log("very unhealthy");
+// }
+// else{
+//   console.log("Hazardous");
+// }
 
-let rock=0;
-let paper=1;
-let scissors=2;
-let player= Math.random();
-let computer=Math.random();
-if (0<1){
-  console.log("paper win");
-}
-else if (0>2){
-      console.log("rock win")
-}
-else if (1>0){
-      console.log("paper win")
-}
-else if (1>2){
-      console.log("scissors win")
-}
-else if (2<0){
-      console.log("rock win");
-}
-else if (2>1){
-      console.log("scissors win")
-}
+// let rock=0;
+// let paper=1;
+// let scissors=2;
+// let player= Math.random();
+// let computer=Math.random();
+// if (0<1){
+//   console.log("paper win");
+// }
+// else if (0>2){
+//       console.log("rock win")
+// }
+// else if (1>0){
+//       console.log("paper win")
+// }
+// else if (1>2){
+//       console.log("scissors win")
+// }
+// else if (2<0){
+//       console.log("rock win");
+// }
+// else if (2>1){
+//       console.log("scissors win")
+// }
