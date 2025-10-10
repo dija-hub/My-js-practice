@@ -1,0 +1,1 @@
+console.warn('hello %s', 'QuickRef.ME');
