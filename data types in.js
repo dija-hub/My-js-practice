@@ -1,6 +1,6 @@
-primitive
-number
-search typeof in console
+// primitive
+// number
+// search typeof in console
 let age=25;
  let discount= 0.4;
 //string
