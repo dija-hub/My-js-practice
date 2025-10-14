@@ -1,2 +1,2 @@
-alert("Hello KHADIJA");
-console.log("welcome to js!")
+// alert("Hello KHADIJA");
+// console.log("welcome to js!")
