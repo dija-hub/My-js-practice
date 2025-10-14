@@ -13,4 +13,9 @@
 // let num=76;
 // if (num > 10){
 //       console.log(num ,"is greater then 10")
-// }else(console.log(num,"is smaller then 10"))
+// }
+// else{console.log(num,"is smaller then 10")}
+
+for (let i=1;i<=5;i++){
+      console.log(i);
+}
