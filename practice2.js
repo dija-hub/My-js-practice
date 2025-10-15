@@ -21,5 +21,10 @@
 // }
 
 for (let i = 1; i <= 10; i++) {
-  console.log("5 x " + i + " = " + 5 * i);
+  console.log( 5 * i);
 }
+
+function sum(a,b){
+  return 1+4;
+}
+console.log(sum(1,4));
