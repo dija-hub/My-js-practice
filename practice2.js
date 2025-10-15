@@ -51,9 +51,18 @@
 //   console.log("error")
 // }
  
-let num =Number(prompt("Enter the number"));
-if (num>0){
-  console.log(num,"is a positive number")
+// let num =Number(prompt("Enter the number"));
+// if (num>0){
+//   console.log(num,"is a positive number")
+// }else{
+//   console.log(num,"is negative number")
+// };
+
+let num=Math.floor(Math.random()*10);
+let guess=Number(prompt("enter your guess"));
+
+if (guess==num){
+  console.log("You guessed right .The number was",num);
 }else{
-  console.log(num,"is negative number")
-};
+  console.log("You guessed wrong .The number was",num);
+}
