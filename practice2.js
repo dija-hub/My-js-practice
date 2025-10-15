@@ -29,9 +29,26 @@
 // }
 // console.log(sum(1,4));
 
-let num=5;
-if(num%2 == 0){
-   console.log("number",num,"is even");
+// let num=5;
+// if(num%2 == 0){
+//    console.log("number",num,"is even");
+// }else{
+//   console.log("number",num , "is odd");
+// }
+
+let a= Number (prompt("enter the first number"));
+let b=Number ( prompt ("enter the second number"));
+let op=Number (prompt("enter opetation(+,-,/,*)"))
+
+if(op == "+"){
+  console.log(a+b);
+}else if ( op =="-"){
+  console.log(a -b);
+}else if ( op =="/"){
+  console.log(a/b);
+}else if ( op =="*"){
+  console.log(a*b);
 }else{
-  console.log("number",num , "is odd");
+  alert("ERROR");
 }
+ 
