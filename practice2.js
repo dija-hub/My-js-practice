@@ -20,11 +20,18 @@
 //       console.log(i);
 // }
 
-for (let i = 1; i <= 10; i++) {
-  console.log( 5 * i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log( 5 * i);
+// }
 
-function sum(a,b){
-  return 1+4;
+// function sum(a,b){
+//   return 1+4;
+// }
+// console.log(sum(1,4));
+
+let num=5;
+if(num%2 == 0){
+   console.log("number",num,"is even");
+}else{
+  console.log("number",num , "is odd");
 }
-console.log(sum(1,4));
