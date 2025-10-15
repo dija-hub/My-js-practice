@@ -36,18 +36,24 @@
 //   console.log("number",num , "is odd");
 // }
 
-let a= Number (prompt("enter the first number"));
-let b=Number ( prompt ("enter the second number"));
-let op=prompt("enter opetation(+,-,/,*)")
-if(op == "+"){
-  console.log(a+b);
-}else if ( op == "-"){
-  console.log(a - b);
-}else if ( op =="/"){
-  console.log(a/b);
-}else if ( op =="*"){
-  console.log(a*b);
-}else{
-  console.log("error")
-}
+// let a= Number (prompt("enter the first number"));
+// let b=Number ( prompt ("enter the second number"));
+// let op=prompt("enter opetation(+,-,/,*)")
+// if(op == "+"){
+//   console.log(a+b);
+// }else if ( op == "-"){
+//   console.log(a - b);
+// }else if ( op =="/"){
+//   console.log(a/b);
+// }else if ( op =="*"){
+//   console.log(a*b);
+// }else{
+//   console.log("error")
+// }
  
+let num =Number(prompt("Enter the number"));
+if (num>0){
+  console.log(num,"is a positive number")
+}else{
+  console.log(num,"is negative number")
+};
