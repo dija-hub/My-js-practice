@@ -38,17 +38,16 @@
 
 let a= Number (prompt("enter the first number"));
 let b=Number ( prompt ("enter the second number"));
-let op=Number (prompt("enter opetation(+,-,/,*)"))
-
+let op=prompt("enter opetation(+,-,/,*)")
 if(op == "+"){
   console.log(a+b);
-}else if ( op =="-"){
-  console.log(a -b);
+}else if ( op == "-"){
+  console.log(a - b);
 }else if ( op =="/"){
   console.log(a/b);
 }else if ( op =="*"){
   console.log(a*b);
 }else{
-  alert("ERROR");
+  console.log("error")
 }
  
