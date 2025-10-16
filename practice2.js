@@ -67,11 +67,24 @@
 //   console.log("You guessed wrong .The number was",num);
 // }
 
-let name=prompt("enter your name");
-let password=Number(prompt("enter your password"));
-if(name == "Khadija" && password == 5408){
-      console.log("Login successful")
+// let name=prompt("enter your name");
+// let password=Number(prompt("enter your password"));
+// if(name == "Khadija" && password == 5408){
+//       console.log("Login successful")
+// }else{
+//       alert("WRONG PASSWORD")
+//       console.log("Wrong  username and password");
+// }
+
+let marks=Number(prompt ("enter your marks"));
+if (marks >= 90 ){
+      console.log("you got A+")
+}else if (marks >=80){
+      console.log("you got A")
+}else if (marks >=70){
+      console.log("you got B")
+}else if (marks >=60){
+      console.log("you got c")
 }else{
-      alert("WRONG PASSWORD")
-      console.log("Wrong  username and password");
+      console.log("you got F")
 }
