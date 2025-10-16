@@ -58,11 +58,20 @@
 //   console.log(num,"is negative number")
 // };
 
-let num=Math.floor(Math.random()*10);
-let guess=Number(prompt("enter your guess"));
+// let num=Math.floor(Math.random()*10);
+// let guess=Number(prompt("enter your guess"));
 
-if (guess==num){
-  console.log("You guessed right .The number was",num);
+// if (guess==num){
+//   console.log("You guessed right .The number was",num);
+// }else{
+//   console.log("You guessed wrong .The number was",num);
+// }
+
+let name=prompt("enter your name");
+let password=Number(prompt("enter your password"));
+if(name == "Khadija" && password == 5408){
+      console.log("Login successful")
 }else{
-  console.log("You guessed wrong .The number was",num);
+      alert("WRONG PASSWORD")
+      console.log("Wrong  username and password");
 }
