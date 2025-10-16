@@ -89,9 +89,17 @@
 //       console.log("you got F")
 // }
 
-let text = document.getElementById("text");
-let btn= document.getElementById("btn");
+// let text = document.getElementById("text");
+// let btn= document.getElementById("btn");
 
-btn.addEventListener("click",function(){
-      text.textContent="you clicked the btn";
+// btn.addEventListener("click",function(){
+//       text.textContent="you clicked the btn";
+// })
+
+let heading =document.getElementById("h2");
+heading.addEventListener("mouseover",function(){
+   heading.style.color = "blue";
+})
+heading.addEventListener("mouseout", function(){
+      heading.style.color="black"
 })
