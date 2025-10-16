@@ -76,15 +76,22 @@
 //       console.log("Wrong  username and password");
 // }
 
-let marks=Number(prompt ("enter your marks"));
-if (marks >= 90 ){
-      console.log("you got A+")
-}else if (marks >=80){
-      console.log("you got A")
-}else if (marks >=70){
-      console.log("you got B")
-}else if (marks >=60){
-      console.log("you got c")
-}else{
-      console.log("you got F")
-}
+// let marks=Number(prompt ("enter your marks"));
+// if (marks >= 90 ){
+//       console.log("you got A+")
+// }else if (marks >=80){
+//       console.log("you got A")
+// }else if (marks >=70){
+//       console.log("you got B")
+// }else if (marks >=60){
+//       console.log("you got c")
+// }else{
+//       console.log("you got F")
+// }
+
+let text = document.getElementById("text");
+let btn= document.getElementById("btn");
+
+btn.addEventListener("click",function(){
+      text.textContent="you clicked the btn";
+})
