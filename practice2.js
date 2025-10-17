@@ -96,10 +96,15 @@
 //       text.textContent="you clicked the btn";
 // })
 
-let heading =document.getElementById("h2");
-heading.addEventListener("mouseover",function(){
-   heading.style.color = "blue";
-})
-heading.addEventListener("mouseout", function(){
-      heading.style.color="black"
-})
+// let heading =document.getElementById("h2");
+// heading.addEventListener("mouseover",function(){
+//    heading.style.color = "blue";
+// })
+// heading.addEventListener("mouseout", function(){
+//       heading.style.color="black"
+// })
+
+function changetext(){
+ let heading1=document.getElementById("heading");
+ heading1.textContent= "bye";
+}
