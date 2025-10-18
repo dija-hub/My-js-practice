@@ -122,6 +122,14 @@
 //       document.body.style.backgroundColor ="grey";
 // })
 
-  function msg(){
-      document.getElementById("text").style.display="block"
-  }
+//   function msg(){
+//       document.getElementById("text").style.display="block"
+//   }
+
+let i=0;
+let msg=document.getElementById("msg")
+let btn=document.getElementById("btn")
+
+function count (){
+  msg.textContent=i++;
+}
