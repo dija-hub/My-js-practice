@@ -104,7 +104,20 @@
 //       heading.style.color="black"
 // })
 
-function changetext(){
- let heading1=document.getElementById("heading");
- heading1.textContent= "bye";
-}
+// function changetext(){
+//  let heading1=document.getElementById("heading");
+//  heading1.textContent= "bye";
+// }
+
+// let para=document.getElementById("text");
+// let btn=document.getElementById("btn");
+
+// btn.addEventListener("click",()=>{
+// text.textContent="you click btn"
+// })
+
+let btn=document.getElementById("changeBG");
+
+btn.addEventListener("click",() =>{
+      document.body.style.backgroundColor ="grey";
+})
