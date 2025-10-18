@@ -116,8 +116,12 @@
 // text.textContent="you click btn"
 // })
 
-let btn=document.getElementById("changeBG");
+// let btn=document.getElementById("changeBG");
 
-btn.addEventListener("click",() =>{
-      document.body.style.backgroundColor ="grey";
-})
+// btn.addEventListener("click",() =>{
+//       document.body.style.backgroundColor ="grey";
+// })
+
+  function msg(){
+      document.getElementById("text").style.display="block"
+  }
