@@ -126,10 +126,14 @@
 //       document.getElementById("text").style.display="block"
 //   }
 
-let i=0;
-let msg=document.getElementById("msg")
-let btn=document.getElementById("btn")
+// let i=0;
+// let msg=document.getElementById("msg")
+// let btn=document.getElementById("btn")
 
-function count (){
-  msg.textContent=i++;
+// function count (){
+//   msg.textContent=i++;
+// }
+
+function show(){
+   document.getElementById("text").innerText="khadija";
 }
