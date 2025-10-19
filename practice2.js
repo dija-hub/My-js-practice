@@ -141,7 +141,17 @@
 
 
 
-function showname(){
-   let name=document.getElementById("input").value
-   document.getElementById("output").textContent=name;
+// function showname(){
+//    let name=document.getElementById("input").value
+//    document.getElementById("output").textContent=name;
+// }
+let result="";
+function vote(){
+
+   if(document.getElementById("input").value >=18)
+   { result="You can vote"}
+   else{
+      result="You cannot vote";
+   }
+   document.getElementById("msg").textContent=result;
 }
