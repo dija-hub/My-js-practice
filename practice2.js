@@ -134,6 +134,14 @@
 //   msg.textContent=i++;
 // }
 
-function show(){
-   document.getElementById("text").innerText="khadija";
+// function show(){
+//    document.getElementById("text").innerText="khadija";
+// }
+
+
+
+
+function showname(){
+   let name=document.getElementById("input").value
+   document.getElementById("output").textContent=name;
 }
