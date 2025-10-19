@@ -156,12 +156,13 @@
 //    }
 //    document.getElementById("msg").textContent=result;
 // }
-result="";
-let temp=Number(prompt("enter Temperature"));
-if(temp>30){
-    result="Its hot "
-   document.getElementById("output").textContent=result;
-}else{
-   result="Its cool";
-   document.getElementById("output").textContent=result;
-}
+
+// result="";
+// let temp=Number(prompt("enter Temperature"));
+// if(temp>30){
+//     result="Its hot "
+//    document.getElementById("output").textContent=result;
+// }else{
+//    result="Its cool";
+//    document.getElementById("output").textContent=result;
+// }
