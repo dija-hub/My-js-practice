@@ -172,4 +172,6 @@ const square=(num)=>{
 }
 square(4);
 
+const mul = (a, b) => a * b;
+console.log(mul(4, 8));
 
