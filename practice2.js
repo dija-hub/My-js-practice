@@ -166,3 +166,10 @@
 //    result="Its cool";
 //    document.getElementById("output").textContent=result;
 // }
+
+const square=(num)=>{
+      console.log(num*num);
+}
+square(4);
+
+
