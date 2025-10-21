@@ -175,33 +175,51 @@
 // const mul = (a, b) => a * b;
 // console.log(mul(4, 8));
 
-const sum=(num)=>{
-console.log(num+num);
-}
-sum(6)
+// const sum=(num)=>{
+// console.log(num+num);
+// }
+// sum(6)
 
-const square=(num)=>{
-console.log(num*num);
-}
-square(100);
+// const square=(num)=>{
+// console.log(num*num);
+// }
+// square(100);
 
-const add=(a,b)=>{
-console.log(a+b);
-}
-add(4,1)
+// const add=(a,b)=>{
+// console.log(a+b);
+// }
+// add(4,1)
 
-const check=(num)=>{
-if (num%2==0){
-      console.log("num is even")
-}else{
-      console.log("num is odd")
-}
-}
-check(9);
+// const check=(num)=>{
+// if (num%2==0){
+//       console.log("num is even")
+// }else{
+//       console.log("num is odd")
+// }
+// }
+// check(9);
 
-const greet=(name)=>{
- console.log("hello",name);
+// const greet=(name)=>{
+//  console.log("hello",name);
 
-}
-greet("khadija")
+// }
+// greet("khadija")
     
+// const mul3=(a,b,c)=>{
+// console.log(a*b*c);
+// }
+// mul3(2,1,3);
+
+const convert=(num)=>{
+     console.log(num*60)
+}
+convert(5);
+
+const age=(num)=>{
+      if(num>=18){
+            console.log("you can drive")
+      }else{
+            console.log("You cannot drive ")
+      }
+}
+age(8);
