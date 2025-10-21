@@ -210,25 +210,39 @@
 // }
 // mul3(2,1,3);
 
-const convert=(num)=>{
-     console.log(num*60)
-}
-convert(5);
+// const convert=(num)=>{
+//      console.log(num*60)
+// }
+// convert(5);
 
-const age=(num)=>{
-      if(num>=18){
-            console.log("you can drive")
+// const age=(num)=>{
+//       if(num>=18){
+//             console.log("you can drive")
+//       }else{
+//             console.log("You cannot drive ")
+//       }
+// }
+// age(8);
+
+// const max=(a,b)=>{
+// if(a>b){
+//       console.log(a," is greater")
+// }else{
+//       console.log(b,"is greater")
+// }
+// }
+// max(9,4);
+
+let promise=new Promise((resolve,reject)=>{
+      let name="khadija";
+      let pass="55"
+
+      if(name=="khadija"&& pass=="555"){
+            resolve("done")
       }else{
-            console.log("You cannot drive ")
+            reject("wrong")
       }
-}
-age(8);
-
-const max=(a,b)=>{
-if(a>b){
-      console.log(a," is greater")
-}else{
-      console.log(b,"is greater")
-}
-}
-max(9,4);
+})
+promise
+.then((msg)=>console.log((msg)))
+.catch((err)=>console.log(err));
