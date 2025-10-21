@@ -233,16 +233,29 @@
 // }
 // max(9,4);
 
-let promise=new Promise((resolve,reject)=>{
-      let name="khadija";
-      let pass="55"
+// let promise=new Promise((resolve,reject)=>{
+//       let name="khadija";
+//       let pass="55"
 
-      if(name=="khadija"&& pass=="555"){
-            resolve("done")
-      }else{
-            reject("wrong")
-      }
-})
-promise
-.then((msg)=>console.log((msg)))
+//       if(name=="khadija"&& pass=="555"){
+//             resolve("done")
+//       }else{
+//             reject("wrong")
+//       }
+// })
+// promise
+// .then((msg)=>console.log((msg)))
+// .catch((err)=>console.log(err));
+
+let numchecker=new Promise((resolve,reject)=>{
+       let num=3;
+
+       if(num%2==0){
+            resolve("num is even")
+       }else{
+            reject("num is odd ")
+       }
+});
+numchecker
+.then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
