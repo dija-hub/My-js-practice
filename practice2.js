@@ -247,15 +247,32 @@
 // .then((msg)=>console.log((msg)))
 // .catch((err)=>console.log(err));
 
-let numchecker=new Promise((resolve,reject)=>{
-       let num=3;
+// let numchecker=new Promise((resolve,reject)=>{
+//        let num=3;
 
-       if(num%2==0){
-            resolve("num is even")
-       }else{
-            reject("num is odd ")
-       }
-});
-numchecker
-.then((msg)=>console.log(msg))
+//        if(num%2==0){
+//             resolve("num is even")
+//        }else{
+//             reject("num is odd ")
+//        }
+// });
+// numchecker
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+let compare=new Promise ((resolve,reject)=>{
+      let a=8;
+      let b=6;
+      if(a>b){
+            resolve(a," is greater")
+      }else{
+            reject(b ,"is greater")
+      }
+})
+
+compare
+    .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
+
+
+
