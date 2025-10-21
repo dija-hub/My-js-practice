@@ -167,11 +167,28 @@
 //    document.getElementById("output").textContent=result;
 // }
 
-const square=(num)=>{
-      console.log(num*num);
+// const square=(num)=>{
+//       console.log(num*num);
+// }
+// square(4);
+
+// const mul = (a, b) => a * b;
+// console.log(mul(4, 8));
+
+const sum=(num)=>{
+console.log(num+num);
 }
-square(4);
+sum(6)
 
-const mul = (a, b) => a * b;
-console.log(mul(4, 8));
+const square=(num)=>{
+console.log(num*num);
+}
+square(100);
 
+const add=(a,b)=>{
+console.log(a+b);
+}
+add(4,1)
+
+
+    
