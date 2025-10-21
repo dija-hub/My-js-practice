@@ -190,5 +190,18 @@ console.log(a+b);
 }
 add(4,1)
 
+const check=(num)=>{
+if (num%2==0){
+      console.log("num is even")
+}else{
+      console.log("num is odd")
+}
+}
+check(9);
 
+const greet=(name)=>{
+ console.log("hello",name);
+
+}
+greet("khadija")
     
