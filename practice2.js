@@ -223,3 +223,12 @@ const age=(num)=>{
       }
 }
 age(8);
+
+const max=(a,b)=>{
+if(a>b){
+      console.log(a," is greater")
+}else{
+      console.log(b,"is greater")
+}
+}
+max(9,4);
