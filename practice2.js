@@ -299,3 +299,22 @@ numcheck
 .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
 
+const result=new Promise((resolve,reject)=>{
+    
+
+      setTimeout(()=>{
+            console.log("wait")
+ const result=60;
+            if(result>=80){
+      resolve("exelent");
+}else if(result>=50){
+      resolve("pass");
+}else{
+      reject("fail")
+}
+      },2000)
+})
+result
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err));
+
