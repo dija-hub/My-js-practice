@@ -260,19 +260,41 @@
 // .then((msg)=>console.log(msg))
 // .catch((err)=>console.log(err));
 
-let compare=new Promise ((resolve,reject)=>{
-      let a=8;
-      let b=6;
-      if(a>b){
-            resolve(a," is greater")
+// let compare=new Promise ((resolve,reject)=>{
+//       let a=8;
+//       let b=6;
+//       if(a>b){
+//             resolve(a," is greater")
+//       }else{
+//             reject(b ,"is greater")
+//       }
+// })
+
+// compare
+//     .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+
+const length=new Promise((resolve,reject)=>{
+let name="kaiz"
+if(name.length>5){
+      resolve("Long string")
+}else{
+      reject("Short string")
+}
+})
+length
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err))
+
+let numcheck=new Promise((resolve,reject)=>{
+      let num=4;
+      if(num>0){
+            resolve("positive num");
       }else{
-            reject(b ,"is greater")
+            reject("negative");
       }
 })
-
-compare
-    .then((msg)=>console.log(msg))
+numcheck
+.then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
-
-
-
