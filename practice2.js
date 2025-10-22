@@ -288,7 +288,7 @@ length
 .catch((err)=>console.log(err))
 
 let numcheck=new Promise((resolve,reject)=>{
-      let num=4;
+      let num=-4;
       if(num>0){
             resolve("positive num");
       }else{
@@ -298,3 +298,4 @@ let numcheck=new Promise((resolve,reject)=>{
 numcheck
 .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
+
