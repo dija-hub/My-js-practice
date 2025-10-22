@@ -318,3 +318,22 @@ result
 .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
 
+async function greet(){
+      return "hello js";
+
+}
+greet().then((msg)=>console.log(msg));
+
+async function wait (){
+      const message=new Promise((resolve)=>{
+  setTimeout(()=>{
+            resolve("hello")
+         
+      },6000)
+      })
+
+    let result =await message;
+    console.log(result)
+
+}
+wait();
