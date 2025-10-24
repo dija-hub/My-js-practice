@@ -388,3 +388,14 @@ let bulb=new Promise((resolve ,reject)=>{
 })
 .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
+
+let bankbalance=new Promise((resolve,reject)=>{
+   balance=2000;
+   if(balance>1000){
+      resolve("enough balance")
+   }else{
+      reject("low balance");
+   }
+})
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err));
