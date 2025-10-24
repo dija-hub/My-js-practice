@@ -337,3 +337,42 @@ async function wait (){
 
 }
 wait();
+
+
+let task=new Promise((resolve,reject)=>{
+      let sucess=true;
+
+      if(sucess){
+            resolve("task ")
+      }else{
+            reject("failed")
+      }
+})
+task
+ .then((msg)=>console.log(msg))
+ .catch((err)=>console.log(err));
+
+
+ let promise=new Promise((resolve,reject)=>{
+      let num=6;
+     if(num%2==0){
+      resolve("even number")
+     }else{
+      reject("odd number")
+     }
+ })
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err));
+
+let internet=new Promise((resolve,reject)=>{
+      let connected=false;
+
+      if(connected==true){
+            resolve("connected")
+      }else{
+            reject("no internet")
+      }
+
+})
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err));
