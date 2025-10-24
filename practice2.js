@@ -376,3 +376,15 @@ let internet=new Promise((resolve,reject)=>{
 })
 .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
+
+let bulb=new Promise((resolve ,reject)=>{
+     let lighton=true;
+
+     if(lighton==true){
+      resolve("light is on")
+     }else{
+      reject("light is off")
+     }
+})
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err));
