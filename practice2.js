@@ -429,3 +429,4 @@ async function mathPromise(){
       console.log(result);
 }
 mathPromise()
+
