@@ -411,13 +411,21 @@
 // .then((msg)=>console.log(msg))
 // .catch((err)=>console.log(err));
 
-async function greet(){
-      let hello=new Promise((resolve)=>{
-            setTimeout(()=>resolve("hello khadija"),2000);
+// async function greet(){
+//       let hello=new Promise((resolve)=>{
+//             setTimeout(()=>resolve("hello khadija"),2000);
+//       })
+
+// let result=await hello;
+// console.log(result);
+// }
+// greet();
+
+async function mathPromise(){
+      let promise=new Promise((resolve)=>{
+            setTimeout(()=>resolve(5*5),2000);
       })
-
-let result=await hello;
-console.log(result);
+      let result=await promise;
+      console.log(result);
 }
-greet();
-
+mathPromise()
