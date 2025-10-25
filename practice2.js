@@ -275,138 +275,149 @@
 // .catch((err)=>console.log(err));
 
 
-const length=new Promise((resolve,reject)=>{
-let name="kaiz"
-if(name.length>5){
-      resolve("Long string")
-}else{
-      reject("Short string")
-}
-})
-length
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err))
+// const length=new Promise((resolve,reject)=>{
+// let name="kaiz"
+// if(name.length>5){
+//       resolve("Long string")
+// }else{
+//       reject("Short string")
+// }
+// })
+// length
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err))
 
-let numcheck=new Promise((resolve,reject)=>{
-      let num=-4;
-      if(num>0){
-            resolve("positive num");
-      }else{
-            reject("negative");
-      }
-})
-numcheck
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
+// let numcheck=new Promise((resolve,reject)=>{
+//       let num=-4;
+//       if(num>0){
+//             resolve("positive num");
+//       }else{
+//             reject("negative");
+//       }
+// })
+// numcheck
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
 
-const result=new Promise((resolve,reject)=>{
+// const result=new Promise((resolve,reject)=>{
     
 
-      setTimeout(()=>{
-            console.log("wait")
- const result=60;
-            if(result>=80){
-      resolve("exelent");
-}else if(result>=50){
-      resolve("pass");
-}else{
-      reject("fail")
-}
-      },2000)
-})
-result
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
+//       setTimeout(()=>{
+//             console.log("wait")
+//  const result=60;
+//             if(result>=80){
+//       resolve("exelent");
+// }else if(result>=50){
+//       resolve("pass");
+// }else{
+//       reject("fail")
+// }
+//       },2000)
+// })
+// result
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+// async function greet(){
+//       return "hello js";
+
+// }
+// greet().then((msg)=>console.log(msg));
+
+// async function wait (){
+//       const message=new Promise((resolve)=>{
+//   setTimeout(()=>{
+//             resolve("hello")
+         
+//       },6000)
+//       })
+
+//     let result =await message;
+//     console.log(result)
+
+// }
+// wait();
+
+
+// let task=new Promise((resolve,reject)=>{
+//       let sucess=true;
+
+//       if(sucess){
+//             resolve("task ")
+//       }else{
+//             reject("failed")
+//       }
+// })
+// task
+//  .then((msg)=>console.log(msg))
+//  .catch((err)=>console.log(err));
+
+
+//  let promise=new Promise((resolve,reject)=>{
+//       let num=6;
+//      if(num%2==0){
+//       resolve("even number")
+//      }else{
+//       reject("odd number")
+//      }
+//  })
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+// let internet=new Promise((resolve,reject)=>{
+//       let connected=false;
+
+//       if(connected==true){
+//             resolve("connected")
+//       }else{
+//             reject("no internet")
+//       }
+
+// })
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+// let bulb=new Promise((resolve ,reject)=>{
+//      let lighton=true;
+
+//      if(lighton==true){
+//       resolve("light is on")
+//      }else{
+//       reject("light is off")
+//      }
+// })
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+// let bankbalance=new Promise((resolve,reject)=>{
+//    balance=2000;
+//    if(balance>1000){
+//       resolve("enough balance")
+//    }else{
+//       reject("low balance");
+//    }
+// })
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+
+// let order=new Promise ((resolve,reject )=>{
+//  let pizzaReady=false;
+//  if(pizzaReady==true ){
+//       resolve("Pizza is ready")
+//  }else{
+//       reject("still baking")
+//  }
+// })
+// .then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
 
 async function greet(){
-      return "hello js";
-
-}
-greet().then((msg)=>console.log(msg));
-
-async function wait (){
-      const message=new Promise((resolve)=>{
-  setTimeout(()=>{
-            resolve("hello")
-         
-      },6000)
+      let hello=new Promise((resolve)=>{
+            setTimeout(()=>resolve("hello khadija"),2000);
       })
 
-    let result =await message;
-    console.log(result)
-
+let result=await hello;
+console.log(result);
 }
-wait();
+greet();
 
-
-let task=new Promise((resolve,reject)=>{
-      let sucess=true;
-
-      if(sucess){
-            resolve("task ")
-      }else{
-            reject("failed")
-      }
-})
-task
- .then((msg)=>console.log(msg))
- .catch((err)=>console.log(err));
-
-
- let promise=new Promise((resolve,reject)=>{
-      let num=6;
-     if(num%2==0){
-      resolve("even number")
-     }else{
-      reject("odd number")
-     }
- })
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
-
-let internet=new Promise((resolve,reject)=>{
-      let connected=false;
-
-      if(connected==true){
-            resolve("connected")
-      }else{
-            reject("no internet")
-      }
-
-})
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
-
-let bulb=new Promise((resolve ,reject)=>{
-     let lighton=true;
-
-     if(lighton==true){
-      resolve("light is on")
-     }else{
-      reject("light is off")
-     }
-})
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
-
-let bankbalance=new Promise((resolve,reject)=>{
-   balance=2000;
-   if(balance>1000){
-      resolve("enough balance")
-   }else{
-      reject("low balance");
-   }
-})
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
-
-let order=new Promise ((resolve,reject )=>{
- let pizzaReady=false;
- if(pizzaReady==true ){
-      resolve("Pizza is ready")
- }else{
-      reject("still baking")
- }
-})
-.then((msg)=>console.log(msg))
-.catch((err)=>console.log(err));
