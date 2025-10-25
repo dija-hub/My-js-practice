@@ -399,3 +399,14 @@ let bankbalance=new Promise((resolve,reject)=>{
 })
 .then((msg)=>console.log(msg))
 .catch((err)=>console.log(err));
+
+let order=new Promise ((resolve,reject )=>{
+ let pizzaReady=false;
+ if(pizzaReady==true ){
+      resolve("Pizza is ready")
+ }else{
+      reject("still baking")
+ }
+})
+.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err));
