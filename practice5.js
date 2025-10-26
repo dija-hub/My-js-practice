@@ -1,6 +1,9 @@
 let btn=document.getElementById("btn");
-let msg=document.getElementById("msg");
+color
 
 btn.addEventListener("click",()=>{
-      msg.textContent= "hello";
+
+     let color=Math.floor(Math.random()*10)
+     let bg=document.body.style.backgroundColor;
+     console.log(bg)
 });

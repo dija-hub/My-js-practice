@@ -430,3 +430,7 @@ async function mathPromise(){
 }
 mathPromise()
 
+let name=prompt("enter your name");
+let age=prompt("enter your age");
+
+console.log(`hello ${name} you are ${age} years old`)

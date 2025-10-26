@@ -1,5 +1,9 @@
-#msg{
-        font-size:3rem;
-        font-family: monospace;
-        
-    }
+body{
+    display:flex;
+    justify-content: center;
+}
+#btn{
+    width:100px;
+    height:40px;
+    margin-top:350px;
+}
