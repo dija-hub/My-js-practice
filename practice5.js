@@ -1,9 +1,13 @@
 let btn=document.getElementById("btn");
-color
+
 
 btn.addEventListener("click",()=>{
+let red=Math.floor(Math.random()*255)
+let green=Math.floor(Math.random()*255)
+let blue=Math.floor(Math.random()*255)
 
-     let color=Math.floor(Math.random()*10)
-     let bg=document.body.style.backgroundColor;
-     console.log(bg)
+let color=`RGB ${red},${green},${blue}`;
+
+document.body.style.backgroundColor=color;
+ 
 });
