@@ -421,32 +421,37 @@
 // }
 // greet();
 
-async function mathPromise(){
-      let promise=new Promise((resolve)=>{
-            setTimeout(()=>resolve(5*5),2000);
-      })
-      let result=await promise;
-      console.log(result);
-}
-mathPromise()
+// async function mathPromise(){
+//       let promise=new Promise((resolve)=>{
+//             setTimeout(()=>resolve(5*5),2000);
+//       })
+//       let result=await promise;
+//       console.log(result);
+// }
+// mathPromise()
 
-let name=prompt("enter your name");
-let age=prompt("enter your age");
+// let name=prompt("enter your name");
+// let age=prompt("enter your age");
 
-console.log(`hello ${name} you are ${age} years old`)
+// console.log(`hello ${name} you are ${age} years old`)
 
-let red=Math.floor(Math.random()*255)
-let green=Math.floor(Math.random()*255)
-let blue=Math.floor(Math.random()*255)
+// let red=Math.floor(Math.random()*255)
+// let green=Math.floor(Math.random()*255)
+// let blue=Math.floor(Math.random()*255)
 
-console.log(`RGB ${red},${green},${blue}`);
+// console.log(`RGB ${red},${green},${blue}`);
 
-let x=10;
-let y=20;
-let r=x+y;
-console.log(`${x} + ${y} is ${r}`)
+// let x=10;
+// let y=20;
+// let r=x+y;
+// console.log(`${x} + ${y} is ${r}`)
 
-console.log(`i am learning js
-backticks are fun`)
+// console.log(`i am learning js
+// backticks are fun`)
 
-console.log(`she said ,"javascript is cool"`)
+// console.log(`she said ,"javascript is cool"`)
+
+let name="kahdija";
+let sub="js";
+let hour=3;
+console.log(`${name},studied ${sub},for ${hour}hour today`)
