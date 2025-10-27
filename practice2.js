@@ -455,3 +455,7 @@ let name="kahdija";
 let sub="js";
 let hour=3;
 console.log(`${name},studied ${sub},for ${hour}hour today`)
+
+let a = 5;
+let b = 3;
+console.log(`The sum is ${a + b}`);
