@@ -445,3 +445,8 @@ let x=10;
 let y=20;
 let r=x+y;
 console.log(`${x} + ${y} is ${r}`)
+
+console.log(`i am learning js
+backticks are fun`)
+
+console.log(`she said ,"javascript is cool"`)
