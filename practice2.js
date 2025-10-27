@@ -440,3 +440,8 @@ let green=Math.floor(Math.random()*255)
 let blue=Math.floor(Math.random()*255)
 
 console.log(`RGB ${red},${green},${blue}`);
+
+let x=10;
+let y=20;
+let r=x+y;
+console.log(`${x} + ${y} is ${r}`)
