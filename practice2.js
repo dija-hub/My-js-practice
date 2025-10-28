@@ -459,3 +459,9 @@ console.log(`${name},studied ${sub},for ${hour}hour today`)
 let a = 5;
 let b = 3;
 console.log(`The sum is ${a + b}`);
+
+
+let fruit = "apple";
+let number = 10;
+console.log(fruit);
+console.log(number);
