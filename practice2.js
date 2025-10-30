@@ -480,3 +480,12 @@ for (let i = 0; i < 5; i++) {
 
 let n = 4;
 console.log(n * n);
+
+let num = prompt("Enter a number:");
+if (num > 0) console.log("Positive");
+else if (num < 0) console.log("Negative");
+else console.log("Zero");
+
+for (let i = 2; i <= 20; i += 2) {
+  console.log(i);
+}
