@@ -473,3 +473,15 @@ if (age >= 18) {
 } else {
   console.log("You are a child.");
 }
+
+for (let i = 0; i < 5; i++) {
+  console.log("Hello");
+}
+
+fetch("https://official-joke-api.appspot.com/random_joke")
+  .then(res => res.json())
+  .then(data => {
+    console.log(`${data.setup} 😂 ${data.punchline}`);
+  })
+  .catch(err => console.log("Error:", err));
+
