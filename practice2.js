@@ -490,16 +490,19 @@
 //   console.log(i);
 // }
 
-let res=document.getElementById("res");
-let btn=document.getElementById("btn");
-let btn1=document.getElementById("btn1");
+// fetch("https://official-joke-api.appspot.com/random_joke")
 
-count=0;
-btn.addEventListener("click",()=>{
- res.textContent=count++;
-  }
-)
-btn1.addEventListener("click",()=>{
-  res.textContent=count--;
-  }
-)
+//   .then(res => res.json())
+//   .then(data => {
+//     console.log("Joke:", data.setup);
+//     console.log("Punchline:", data.punchline);
+//   })
+//   .catch(err => console.error("Error:", err));
+
+  fetch("https://api.chucknorris.io/jokes/random")
+  .then(res=>res.json())
+.then(data=>{
+  console.log(data.value)
+
+})
+.catch(err=>console.error(err));
