@@ -499,10 +499,25 @@
 //   })
 //   .catch(err => console.error("Error:", err));
 
-  fetch("https://api.chucknorris.io/jokes/random")
-  .then(res=>res.json())
-.then(data=>{
-  console.log(data.value)
+//   fetch("https://api.chucknorris.io/jokes/random")
+//   .then(res=>res.json())
+// .then(data=>{
+//   console.log(data.value)
 
+// })
+// .catch(err=>console.error(err));
+
+// fetch("https://api.adviceslip.com/advice")
+// .then(res=>res.json())
+// .then(data=>{
+//   console.log(data.slip.advice)
+// })
+// .catch(err=>console.log(err));
+
+fetch("https://api.spacexdata.com/v4/launches/latest")
+.then(res=>res.json())
+.then(data=>{
+  console.log(data.name)
+  console.log(data.rocket)
 })
-.catch(err=>console.error(err));
+.catch(err=>console.log(err));
