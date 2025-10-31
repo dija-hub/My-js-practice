@@ -451,41 +451,55 @@
 
 // console.log(`she said ,"javascript is cool"`)
 
-let name="kahdija";
-let sub="js";
-let hour=3;
-console.log(`${name},studied ${sub},for ${hour}hour today`)
+// let name="kahdija";
+// let sub="js";
+// let hour=3;
+// console.log(`${name},studied ${sub},for ${hour}hour today`)
 
-let a = 5;
-let b = 3;
-console.log(`The sum is ${a + b}`);
+// let a = 5;
+// let b = 3;
+// console.log(`The sum is ${a + b}`);
 
 
-let fruit = "apple";
-let number = 10;
-console.log(fruit);
-console.log(number);
+// let fruit = "apple";
+// let number = 10;
+// console.log(fruit);
+// console.log(number);
 
-let age = 18;
+// let age = 18;
 
-if (age >= 18) {
-  console.log("You are an adult.");
-} else {
-  console.log("You are a child.");
-}
+// if (age >= 18) {
+//   console.log("You are an adult.");
+// } else {
+//   console.log("You are a child.");
+// }
 
-for (let i = 0; i < 5; i++) {
-  console.log("Hello");
-}
+// for (let i = 0; i < 5; i++) {
+//   console.log("Hello");
+// }
 
-let n = 4;
-console.log(n * n);
+// let n = 4;
+// console.log(n * n);
 
-let num = prompt("Enter a number:");
-if (num > 0) console.log("Positive");
-else if (num < 0) console.log("Negative");
-else console.log("Zero");
+// let num = prompt("Enter a number:");
+// if (num > 0) console.log("Positive");
+// else if (num < 0) console.log("Negative");
+// else console.log("Zero");
 
-for (let i = 2; i <= 20; i += 2) {
-  console.log(i);
-}
+// for (let i = 2; i <= 20; i += 2) {
+//   console.log(i);
+// }
+
+let res=document.getElementById("res");
+let btn=document.getElementById("btn");
+let btn1=document.getElementById("btn1");
+
+count=0;
+btn.addEventListener("click",()=>{
+ res.textContent=count++;
+  }
+)
+btn1.addEventListener("click",()=>{
+  res.textContent=count--;
+  }
+)
