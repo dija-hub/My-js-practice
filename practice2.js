@@ -40,22 +40,27 @@
 // let b=Number ( prompt ("enter the second number"));
 // let op=prompt("enter opetation(+,-,/,*)")
 let fistnm=document.getElementById("1num")
-let secnm=document.getElementById("2num")
-let op=document.getElementById("oper")
+let secnm=document.getElementById("num2")
+let oper=document.getElementById("oper")
 let enter=document.getElementById("enter")
 let display=document.getElementById("display")
 
-let result;
 
 enter.addEventListener("click",()=>{
+      
+let a=Number(fistnm.value)
+let b=Number(secnm.value)
+let op=oper.value;
+
+let result;
 if(op == "+"){
-  let result=fistnm+secnm;
+   result=a+b;
 }else if ( op == "-"){
-  let result=fistnm - secnm;
+   result=a - b;
 }else if ( op =="/"){
-   let result=fistnm / secnm;
+    result=a / b;
 }else if ( op =="*"){
-   let result=fistnm * secnm;
+    result=a * b;
 }else{
   console.log("error")
 }
