@@ -42,19 +42,26 @@
 let fistnm=document.getElementById("1num")
 let secnm=document.getElementById("2num")
 let op=document.getElementById("oper")
+let enter=document.getElementById("enter")
+let display=document.getElementById("display")
 
+let result;
+
+enter.addEventListener("click",()=>{
 if(op == "+"){
-  display.textContent(fistnm+secnm);
+  let result=fistnm+secnm;
 }else if ( op == "-"){
-  console.log(a - b);
+  let result=fistnm - secnm;
 }else if ( op =="/"){
-  console.log(a/b);
+   let result=fistnm / secnm;
 }else if ( op =="*"){
-  console.log(a*b);
+   let result=fistnm * secnm;
 }else{
   console.log("error")
 }
- 
+ display.textContent=result;
+})
+
 // let num =Number(prompt("Enter the number"));
 // if (num>0){
 //   console.log(num,"is a positive number")
