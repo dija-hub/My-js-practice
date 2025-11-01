@@ -39,17 +39,21 @@
 // let a= Number (prompt("enter the first number"));
 // let b=Number ( prompt ("enter the second number"));
 // let op=prompt("enter opetation(+,-,/,*)")
-// if(op == "+"){
-//   console.log(a+b);
-// }else if ( op == "-"){
-//   console.log(a - b);
-// }else if ( op =="/"){
-//   console.log(a/b);
-// }else if ( op =="*"){
-//   console.log(a*b);
-// }else{
-//   console.log("error")
-// }
+let fistnm=document.getElementById("1num")
+let secnm=document.getElementById("2num")
+let op=document.getElementById("oper")
+
+if(op == "+"){
+  display.textContent(fistnm+secnm);
+}else if ( op == "-"){
+  console.log(a - b);
+}else if ( op =="/"){
+  console.log(a/b);
+}else if ( op =="*"){
+  console.log(a*b);
+}else{
+  console.log("error")
+}
  
 // let num =Number(prompt("Enter the number"));
 // if (num>0){
@@ -514,10 +518,12 @@
 // })
 // .catch(err=>console.log(err));
 
-fetch("https://api.spacexdata.com/v4/launches/latest")
-.then(res=>res.json())
-.then(data=>{
-  console.log(data.name)
-  console.log(data.rocket)
-})
-.catch(err=>console.log(err));
+// fetch("https://api.spacexdata.com/v4/launches/latest")
+// .then(res=>res.json())
+// .then(data=>{
+//   console.log(data.name)
+//   console.log(data.rocket)
+// })
+// .catch(err=>console.log(err));
+
+
