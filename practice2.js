@@ -548,11 +548,21 @@
 
 // console.log("Double of", num, "is", double);
 
-console.log(true + 1);
-console.log(false +4)
+// console.log(true + 1);
+// console.log(false +4)
 
-console.log("5"+3);
-console.log("5"-3)
+// console.log("5"+3);
+// console.log("5"-3)
 
-console.log("5" + null);  
-console.log("5" * undefined);
+// console.log("5" + null);  
+// console.log("5" * undefined);
+
+let a = [1, 2, 3];
+let b = [4, 5];
+let merged = [...a, ...b];
+console.log(merged); 
+
+let arr1=["apple","banana", "grapes"];
+let arr2=["mango","orange"]
+let merge=[...arr1,...arr2];
+console.log(merge);
