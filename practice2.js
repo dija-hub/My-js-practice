@@ -553,3 +553,6 @@ console.log(false +4)
 
 console.log("5"+3);
 console.log("5"-3)
+
+console.log("5" + null);  
+console.log("5" * undefined);
