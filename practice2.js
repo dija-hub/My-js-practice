@@ -36,36 +36,41 @@
 //   console.log("number",num , "is odd");
 // }
 
-// let a= Number (prompt("enter the first number"));
-// let b=Number ( prompt ("enter the second number"));
-// let op=prompt("enter opetation(+,-,/,*)")
-let fistnm=document.getElementById("1num")
-let secnm=document.getElementById("num2")
-let oper=document.getElementById("oper")
-let enter=document.getElementById("enter")
-let display=document.getElementById("display")
+
+// let fistnm=document.getElementById("1num")
+// let secnm=document.getElementById("num2")
+// let oper=document.getElementById("oper")
+// let enter=document.getElementById("enter")
+// let display=document.getElementById("display")
 
 
-enter.addEventListener("click",()=>{
+// enter.addEventListener("click",()=>{
       
-let a=Number(fistnm.value)
-let b=Number(secnm.value)
-let op=oper.value;
+// let a=Number(fistnm.value)
+// let b=Number(secnm.value)
+// let op=oper.value;
 
-let result;
-if(op == "+"){
-   result=a+b;
-}else if ( op == "-"){
-   result=a - b;
-}else if ( op =="/"){
-    result=a / b;
-}else if ( op =="*"){
-    result=a * b;
-}else{
-  console.log("error")
-}
- display.textContent=result;
-})
+// let result;
+// if(op == "+"){
+//    result=a+b;
+// }else if ( op == "-"){
+//    result=a - b;
+// }else if ( op =="/"){
+//     result=a / b;
+// }else if ( op =="*"){
+//     result=a * b;
+// }else{
+//   console.log("error")
+// }
+//  display.textContent=result;
+// })
+
+// const box = document.getElementById("box");
+
+// box.addEventListener("click", function() {
+//   box.style.backgroundColor = "orange";
+//   box.textContent = "You clicked me! 😄";
+// });
 
 // let num =Number(prompt("Enter the number"));
 // if (num>0){
@@ -538,4 +543,13 @@ if(op == "+"){
 // })
 // .catch(err=>console.log(err));
 
+// let num = 5;
+// let double = num * 2;
 
+// console.log("Double of", num, "is", double);
+
+console.log(true + 1);
+console.log(false +4)
+
+console.log("5"+3);
+console.log("5"-3)
