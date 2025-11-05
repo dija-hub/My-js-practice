@@ -33,3 +33,7 @@
 const {num1,num2}={num1:13,num2:12}
 console.log(num1)
 console.log(num2);
+
+console.log("start")
+setTimeout(()=>console.log("after 2 sec"),3000)
+console.log("end")
