@@ -1,19 +1,23 @@
-sayhi()
-function sayhi(){
-      console.log("hii")
-}
+// sayhi()
+// function sayhi(){
+//       console.log("hii")
+// }
 
-let x=50;
-function sum(){
-      console.log(y+x);
-}
+// let x=50;
+// function sum(){
+//       console.log(y+x);
+// }
 
-function greet(){
-      let name="khadija"
-      function sayhi(){
-            console.log("helo",name)
-      }
-      return sayhi;
-}
-const hi =greet();
-hi();
+// function greet(){
+//       let name="khadija"
+//       function sayhi(){
+//             console.log("helo",name)
+//       }
+//       return sayhi;
+// }
+// const hi =greet();
+// hi();
+
+const[name,age]=["lilu",16]
+console.log(name);
+console.log(age);
