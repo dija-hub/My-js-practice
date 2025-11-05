@@ -461,6 +461,11 @@
 // let blue=Math.floor(Math.random()*255)
 
 // console.log(`RGB ${red},${green},${blue}`);
+// let fruits = ["apple", "banana", "mango", "grapes", "orange"];
+
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
 
 // let x=10;
 // let y=20;
@@ -481,6 +486,9 @@
 // let b = 3;
 // console.log(`The sum is ${a + b}`);
 
+let name = "Khadija";
+let age = 20;
+console.log(`My name is ${name} and I am ${age} years old.`);
 
 // let fruit = "apple";
 // let number = 10;
@@ -557,12 +565,12 @@
 // console.log("5" + null);  
 // console.log("5" * undefined);
 
-let a = [1, 2, 3];
-let b = [4, 5];
-let merged = [...a, ...b];
-console.log(merged); 
+// let a = [1, 2, 3];
+// let b = [4, 5];
+// let merged = [...a, ...b];
+// console.log(merged); 
 
-let arr1=["apple","banana", "grapes"];
-let arr2=["mango","orange"]
-let merge=[...arr1,...arr2];
-console.log(merge);
+// let arr1=["apple","banana", "grapes"];
+// let arr2=["mango","orange"]
+// let merge=[...arr1,...arr2];
+// console.log(merge);
