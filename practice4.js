@@ -38,21 +38,21 @@
 // setTimeout(()=>console.log("after 2 sec"),3000)
 // console.log("end")
 
-let p=new Promise((resolve,reject)=>{
-      let a =1+2;
-      if(a==2){
-            resolve("success")
-      }
-      else{
-            reject("failed")
-      }
-})
-p.then((message)=>{
-console.log("this is in the then",message)
-})
-.catch((message)=>{
-      console.log("this is in the catch",message)
-})
+// let p=new Promise((resolve,reject)=>{
+//       let a =1+2;
+//       if(a==2){
+//             resolve("success")
+//       }
+//       else{
+//             reject("failed")
+//       }
+// })
+// p.then((message)=>{
+// console.log("this is in the then",message)
+// })
+// .catch((message)=>{
+//       console.log("this is in the catch",message)
+// })
 
 let pobj1=new Promise((resolve,reject)=>{
   setTimeout(() => {
@@ -61,3 +61,5 @@ let pobj1=new Promise((resolve,reject)=>{
   },2000);
 })
 
+pobj1.then((result)=>console.log(result))
+.catch((err)=>console.log(err));
