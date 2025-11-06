@@ -54,3 +54,10 @@ console.log("this is in the then",message)
       console.log("this is in the catch",message)
 })
 
+let pobj1=new Promise((resolve,reject)=>{
+  setTimeout(() => {
+      let rollno=[1,2,3,4,5];
+      resolve(rollno)
+  },2000);
+})
+
