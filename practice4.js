@@ -61,5 +61,5 @@ let pobj1=new Promise((resolve,reject)=>{
   },2000);
 })
 
-pobj1.then((result)=>console.log(result))
+pobj1.then((rollno)=>console.log(rollno))
 .catch((err)=>console.log(err));
