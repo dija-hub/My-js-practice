@@ -30,10 +30,26 @@
 //   };
 // }
 
-const {num1,num2}={num1:13,num2:12}
-console.log(num1)
-console.log(num2);
+// const {num1,num2}={num1:13,num2:12}
+// console.log(num1)
+// console.log(num2);
 
-console.log("start")
-setTimeout(()=>console.log("after 2 sec"),3000)
-console.log("end")
+// console.log("start")
+// setTimeout(()=>console.log("after 2 sec"),3000)
+// console.log("end")
+
+let p=new Promise((resolve,reject)=>{
+      let a =1+1;
+      if(a==2){
+            resolve("success")
+      }
+      else{
+            reject("failed")
+      }
+})
+p.then((message)=>{
+console.log("this is in the then",message)
+})
+.catch((message)=>{
+      cobsole.log("this is in the catch",message)
+})
