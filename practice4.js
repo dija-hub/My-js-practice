@@ -39,7 +39,7 @@
 // console.log("end")
 
 let p=new Promise((resolve,reject)=>{
-      let a =1+1;
+      let a =1+2;
       if(a==2){
             resolve("success")
       }
@@ -51,5 +51,6 @@ p.then((message)=>{
 console.log("this is in the then",message)
 })
 .catch((message)=>{
-      cobsole.log("this is in the catch",message)
+      console.log("this is in the catch",message)
 })
+
