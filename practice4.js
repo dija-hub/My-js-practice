@@ -80,13 +80,14 @@
 //  })
 // }
 
-pobj1.then((rollno)=>{
-  console.log(rollno)
-  return getbiodata(rollno[1]);
+// pobj1.then((rollno)=>{
+//   console.log(rollno)
+//   return getbiodata(rollno[1]);
 
-  })
-.then((result)=>{
-console.log(result)
-})
-.catch((err)=>{
-  console.log(err)});
+//   })
+// .then((result)=>{
+// console.log(result)
+// })
+// .catch((err)=>{
+//   console.log(err)});
+
