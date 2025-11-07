@@ -54,12 +54,39 @@
 //       console.log("this is in the catch",message)
 // })
 
+
 let pobj1=new Promise((resolve,reject)=>{
   setTimeout(() => {
       let rollno=[1,2,3,4,5];
-      resolve(rollno)
+     resolve(rollno)  
+      
   },2000);
+  
 })
 
-pobj1.then((rollno)=>console.log(rollno))
-.catch((err)=>console.log(err));
+const getbiodata=(indexdata)=>{
+
+ return new Promise((resolve,reject)=>{
+   setTimeout((indexdata)=>{
+
+   let biodata={
+    name:"lilu",
+    age:16
+   }
+
+    resolve(`My roll no is ${indexdata}.My name is ${biodata.name} and i am ${biodata.age} year old`)
+   
+   },2000,indexdata)
+ })
+}
+
+pobj1.then((rollno)=>{
+  console.log(rollno)
+  return getbiodata(rollno[1]);
+
+  })
+.then((result)=>{
+console.log(result)
+})
+.catch((err)=>{
+  console.log(err)});
