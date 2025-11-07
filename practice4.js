@@ -55,30 +55,30 @@
 // })
 
 
-let pobj1=new Promise((resolve,reject)=>{
-  setTimeout(() => {
-      let rollno=[1,2,3,4,5];
-     resolve(rollno)  
+// let pobj1=new Promise((resolve,reject)=>{
+//   setTimeout(() => {
+//       let rollno=[1,2,3,4,5];
+//      resolve(rollno)  
       
-  },2000);
-  
-})
+//   },2000);
 
-const getbiodata=(indexdata)=>{
+// })
 
- return new Promise((resolve,reject)=>{
-   setTimeout((indexdata)=>{
+// const getbiodata=(indexdata)=>{
 
-   let biodata={
-    name:"lilu",
-    age:16
-   }
+//  return new Promise((resolve,reject)=>{
+//    setTimeout((indexdata)=>{
 
-    resolve(`My roll no is ${indexdata}.My name is ${biodata.name} and i am ${biodata.age} year old`)
+//    let biodata={
+//     name:"lilu",
+//     age:16
+//    }
+
+//     resolve(`My roll no is ${indexdata}.My name is ${biodata.name} and i am ${biodata.age} year old`)
    
-   },2000,indexdata)
- })
-}
+//    },2000,indexdata)
+//  })
+// }
 
 pobj1.then((rollno)=>{
   console.log(rollno)
