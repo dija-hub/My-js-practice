@@ -91,3 +91,9 @@
 // .catch((err)=>{
 //   console.log(err)});
 
+function orderPizza(size, toppings, crust) { 
+  console.log(`I want ${size} pizza with ${toppings} on ${crust} crust`);
+}
+orderPizza("large", "pepperoni", "thin");
+orderPizza("medium", "cheese", "thick")
+orderPizza("small", "mushrooms", "regular"); 
