@@ -91,9 +91,17 @@
 // .catch((err)=>{
 //   console.log(err)});
 
-function orderPizza(size, toppings, crust) { 
-  console.log(`I want ${size} pizza with ${toppings} on ${crust} crust`);
+// function orderPizza(size, toppings, crust) { 
+//   console.log(`I want ${size} pizza with ${toppings} on ${crust} crust`);
+// }
+// orderPizza("large", "pepperoni", "thin");
+// orderPizza("medium", "cheese", "thick")
+// orderPizza("small", "mushrooms", "regular"); 
+
+class person {
+  talk(){
+    return "talking"
+  }
 }
-orderPizza("large", "pepperoni", "thin");
-orderPizza("medium", "cheese", "thick")
-orderPizza("small", "mushrooms", "regular"); 
+const me=new person()
+const you=new person()
