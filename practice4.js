@@ -105,3 +105,22 @@ class person {
 }
 const me=new person()
 const you=new person()
+
+const person1={
+  name:"lili",
+  favfood:"hamburgers",
+  sayhello:function(){
+    console.log(`hi i am ${this.name}`)
+  },
+  eat:function(){
+console.log(`${this.name} is eating ${this.favfood}`)
+  }
+}
+person1.sayhello()
+person1.eat()
+
+// function person(){
+//   this.talk=function(){
+//     return "talking"
+// }
+// }
