@@ -98,29 +98,56 @@
 // orderPizza("medium", "cheese", "thick")
 // orderPizza("small", "mushrooms", "regular"); 
 
-class person {
-  talk(){
-    return "talking"
-  }
-}
-const me=new person()
-const you=new person()
+// class person {
+//   talk(){
+//     return "talking"
+//   }
+// }
+// const me=new person()
+// const you=new person()
 
-const person1={
-  name:"lili",
-  favfood:"hamburgers",
-  sayhello:function(){
-    console.log(`hi i am ${this.name}`)
-  },
-  eat:function(){
-console.log(`${this.name} is eating ${this.favfood}`)
-  }
-}
-person1.sayhello()
-person1.eat()
+// const person1={
+//   name:"lili",
+//   favfood:"hamburgers",
+//   sayhello:function(){
+//     console.log(`hi i am ${this.name}`)
+//   },
+//   eat:function(){
+// console.log(`${this.name} is eating ${this.favfood}`)
+//   }
+// }
+// person1.sayhello()
+// person1.eat()
 
 // function person(){
 //   this.talk=function(){
 //     return "talking"
 // }
 // }
+
+class animal{
+  alive=true;
+  eat(){
+    console.log(`This ${this.name} is eating`)
+  }
+    sleep(){
+    console.log(`This ${this.name} is sleeping`)
+  }
+}
+class Rabbit extends animal{
+  name="rabbit";
+}
+class Fish extends animal{
+  name="fish";
+}
+
+const rabbit=new Rabbit()
+const fish=new Fish();
+
+console.log(rabbit.alive)
+rabbit.eat();
+rabbit.sleep()
+
+console.log(fish.alive)
+fish.eat();
+fish.sleep()
