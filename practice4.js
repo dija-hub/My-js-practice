@@ -151,3 +151,14 @@ rabbit.sleep()
 console.log(fish.alive)
 fish.eat();
 fish.sleep()
+
+
+let myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Apple is ready!");
+  }, 2000);
+});
+
+myPromise
+  .then((msg) => console.log(msg))
+  .catch((err) => console.log(err));
