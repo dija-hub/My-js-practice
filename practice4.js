@@ -164,7 +164,16 @@ myPromise
   .catch((err) => console.log(err));
 
   let promise1 = new Promise((resolve, reject) => {
-  resolve("✅ Task done successfully!");
+  resolve(" Task done successfully!");
 });
 
 promise1.then((msg) => console.log(msg));
+
+let promise =new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+  resolve("Candy ready after 1 second!")
+   },1000) 
+})
+promiseB.then ((msg)=>{
+console.log(msg)
+})
