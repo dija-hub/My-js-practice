@@ -177,3 +177,16 @@ let promise =new Promise((resolve,reject)=>{
 promiseB.then ((msg)=>{
 console.log(msg)
 })
+
+function add(a, b) {
+  return a + b;
+}
+console.log(add(3, 2));
+
+let age = 16;
+
+if (age >= 18) {
+  console.log("You can vote");
+} else {
+  console.log("Too young");
+}
