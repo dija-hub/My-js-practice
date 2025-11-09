@@ -162,3 +162,9 @@ let myPromise = new Promise((resolve, reject) => {
 myPromise
   .then((msg) => console.log(msg))
   .catch((err) => console.log(err));
+
+  let promise1 = new Promise((resolve, reject) => {
+  resolve("✅ Task done successfully!");
+});
+
+promise1.then((msg) => console.log(msg));
