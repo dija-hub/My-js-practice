@@ -204,3 +204,17 @@ class Dog extends Animal{
 let d= new Dog()
 d.sound()
 d.bark()
+
+class Parent {
+  show(){
+    console.log("i am parent")
+}
+}
+class Child extends Parent {
+  show() {
+    console.log("I am Child");
+  }
+}
+
+let c = new Child();
+c.show();
