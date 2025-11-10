@@ -125,68 +125,82 @@
 // }
 // }
 
-class animal{
-  alive=true;
-  eat(){
-    console.log(`This ${this.name} is eating`)
+// class animal{
+//   alive=true;
+//   eat(){
+//     console.log(`This ${this.name} is eating`)
+//   }
+//     sleep(){
+//     console.log(`This ${this.name} is sleeping`)
+//   }
+// }
+// class Rabbit extends animal{
+//   name="rabbit";
+// }
+// class Fish extends animal{
+//   name="fish";
+// }
+
+// const rabbit=new Rabbit()
+// const fish=new Fish();
+
+// console.log(rabbit.alive)
+// rabbit.eat();
+// rabbit.sleep()
+
+// console.log(fish.alive)
+// fish.eat();
+// fish.sleep()
+
+
+// let myPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Apple is ready!");
+//   }, 2000);
+// });
+
+// myPromise
+//   .then((msg) => console.log(msg))
+//   .catch((err) => console.log(err));
+
+//   let promise1 = new Promise((resolve, reject) => {
+//   resolve(" Task done successfully!");
+// });
+
+// promise1.then((msg) => console.log(msg));
+
+// let promise =new Promise((resolve,reject)=>{
+//    setTimeout(()=>{
+//   resolve("Candy ready after 1 second!")
+//    },1000) 
+// })
+// promiseB.then ((msg)=>{
+// console.log(msg)
+// })
+
+// function add(a, b) {
+//   return a + b;
+// }
+// console.log(add(3, 2));
+
+// let age = 16;
+
+// if (age >= 18) {
+//   console.log("You can vote");
+// } else {
+//   console.log("Too young");
+// }
+
+class Animal{
+  sound(){
+    console.log("animal make sound")
   }
-    sleep(){
-    console.log(`This ${this.name} is sleeping`)
+}
+class Dog extends Animal{
+  bark(){
+    console.log("dog barks")
   }
 }
-class Rabbit extends animal{
-  name="rabbit";
-}
-class Fish extends animal{
-  name="fish";
-}
-
-const rabbit=new Rabbit()
-const fish=new Fish();
-
-console.log(rabbit.alive)
-rabbit.eat();
-rabbit.sleep()
-
-console.log(fish.alive)
-fish.eat();
-fish.sleep()
-
-
-let myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Apple is ready!");
-  }, 2000);
-});
-
-myPromise
-  .then((msg) => console.log(msg))
-  .catch((err) => console.log(err));
-
-  let promise1 = new Promise((resolve, reject) => {
-  resolve(" Task done successfully!");
-});
-
-promise1.then((msg) => console.log(msg));
-
-let promise =new Promise((resolve,reject)=>{
-   setTimeout(()=>{
-  resolve("Candy ready after 1 second!")
-   },1000) 
-})
-promiseB.then ((msg)=>{
-console.log(msg)
-})
-
-function add(a, b) {
-  return a + b;
-}
-console.log(add(3, 2));
-
-let age = 16;
-
-if (age >= 18) {
-  console.log("You can vote");
-} else {
-  console.log("Too young");
-}
+let d= new Dog()
+d.sound()
+d.bark()
