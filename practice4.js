@@ -237,3 +237,17 @@ new Promise((resolve) => {
   .then((result) => {
     console.log("Double:", result);
   });
+
+  let promise = new Promise((resolve, reject) => {
+  let workDone = false;
+
+  if (workDone) {
+    resolve("Work completed!");
+  } else {
+    reject(" Work not done!");
+  }
+});
+
+promise
+  .then((msg) => console.log(msg))
+  .catch((err) => console.log(err));
