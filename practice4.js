@@ -226,3 +226,14 @@ let greet = new Promise((resolve) => {
 });
 
 greet.then((msg) => console.log(msg));
+
+new Promise((resolve) => {
+  resolve(10);
+})
+  .then((num) => {
+    console.log("Number:", num);
+    return num * 2;
+  })
+  .then((result) => {
+    console.log("Double:", result);
+  });
