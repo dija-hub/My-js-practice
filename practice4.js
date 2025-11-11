@@ -219,3 +219,10 @@ class Child extends Parent {
 let c = new Child();
 c.show();
 
+let greet = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("⏳ Hello after 2 seconds!");
+  }, 2000);
+});
+
+greet.then((msg) => console.log(msg));
