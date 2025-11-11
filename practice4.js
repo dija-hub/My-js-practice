@@ -251,3 +251,17 @@ new Promise((resolve) => {
 promise
   .then((msg) => console.log(msg))
   .catch((err) => console.log(err));
+
+  let randomPromise = new Promise((resolve, reject) => {
+  let num = Math.random(); 
+
+  if (num > 0.5) {
+    resolve("Success!");
+  } else {
+    reject("Failed!");
+  }
+});
+
+randomPromise
+  .then((msg) => console.log(msg))
+  .catch((err) => console.log(err));
