@@ -1,4 +1,13 @@
 
+
+let name = "Alice";
+console.log("Hello, " + name + "!");
+console.log(`Hello, ${name}!`); 
+
+let a = 10;
+let b = 5;
+console.log("Sum:", a + b);
+console.log("Difference:", a - b);
 // // let x = 5;
 // // let y = 7;
 // // console.log(`Total is ${x + y}`);
