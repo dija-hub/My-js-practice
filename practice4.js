@@ -300,3 +300,13 @@ new Promise((resolve) => {
     return num * 2;
   })
   .then((result) => console.log("Double:", result));
+
+  function loadData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("📦 Data loaded successfully!");
+    }, 1500);
+  });
+}
+
+loadData().then((msg) => console.log(msg));
