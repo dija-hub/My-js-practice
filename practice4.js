@@ -333,3 +333,7 @@ let msg = `Hi Khadija,
 Welcome to JS practice,
 Keep learning daily! 🌷`;
 console.log(msg);
+
+let name = "Khadija";
+let time = "evening";
+console.log(`Good ${time}, ${name}!`);
