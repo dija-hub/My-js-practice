@@ -284,3 +284,10 @@ let p4 = new Promise((resolve) => {
   resolve(sum);
 });
 p4.then((ans) => console.log("Sum is:", ans));
+
+function sayHi() {
+  return new Promise((resolve) => {
+    resolve("👋 Hi Khadija!");
+  });
+}
+sayHi().then((msg) => console.log(msg));
