@@ -328,3 +328,8 @@ console.log(`Sum: ${x + y}, Difference: ${x - y}`);
 let first = "Java";
 let last = "Script";
 console.log(`${first}${last} is fun to learn!`);
+
+let msg = `Hi Khadija,
+Welcome to JS practice,
+Keep learning daily! 🌷`;
+console.log(msg);
