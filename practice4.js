@@ -320,3 +320,7 @@ multiply.then((ans) => console.log("Multiplication:", ans));
 
 let age = 16;
 console.log(`Next year, you’ll be ${age + 1} years old.`);
+
+let x = 10;
+let y = 5;
+console.log(`Sum: ${x + y}, Difference: ${x - y}`);
