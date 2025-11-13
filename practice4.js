@@ -267,4 +267,14 @@ randomPromise
   .catch((err) => console.log(err));
 
 
-  
+  let p1 = new Promise((resolve) => {
+  resolve("✅ Promise 1 done!");
+});
+p1.then((msg) => console.log(msg));
+
+let p3 = new Promise((resolve, reject) => {
+  let success = false;
+  if (success) resolve("✅ Success");
+  else reject("❌ Error occurred");
+});
+p3.then((msg) => console.log(msg)).catch((err) => console.log(err));
