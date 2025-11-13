@@ -291,3 +291,12 @@ function sayHi() {
   });
 }
 sayHi().then((msg) => console.log(msg));
+
+new Promise((resolve) => {
+  resolve(5);
+})
+  .then((num) => {
+    console.log("First number:", num);
+    return num * 2;
+  })
+  .then((result) => console.log("Double:", result));
