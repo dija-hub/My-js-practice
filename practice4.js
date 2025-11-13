@@ -278,3 +278,9 @@ let p3 = new Promise((resolve, reject) => {
   else reject("❌ Error occurred");
 });
 p3.then((msg) => console.log(msg)).catch((err) => console.log(err));
+
+let p4 = new Promise((resolve) => {
+  let sum = 5 + 10;
+  resolve(sum);
+});
+p4.then((ans) => console.log("Sum is:", ans));
