@@ -317,3 +317,6 @@ let multiply = new Promise((resolve) => {
 });
 
 multiply.then((ans) => console.log("Multiplication:", ans));
+
+let age = 16;
+console.log(`Next year, you’ll be ${age + 1} years old.`);
