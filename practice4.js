@@ -310,3 +310,10 @@ new Promise((resolve) => {
 }
 
 loadData().then((msg) => console.log(msg));
+
+let multiply = new Promise((resolve) => {
+  let result = 4 * 5;
+  resolve(result);
+});
+
+multiply.then((ans) => console.log("Multiplication:", ans));
