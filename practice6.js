@@ -21,5 +21,7 @@ const person ={
 }
 const me =Object.create(person);
 
-
+let first = "Web";
+let second = "Developer";
+console.log(`${first} ${second}`);
 
