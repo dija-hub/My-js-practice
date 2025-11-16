@@ -40,3 +40,11 @@ let p5 = new Promise((resolve, reject)=>{
 
 p5.then(msg => console.log(msg))
   .catch(err => console.log(err));
+
+  function add(a,b){
+  return new Promise(resolve=>{
+    resolve(a + b);
+  });
+}
+
+add(4,5).then(sum => console.log(sum));
