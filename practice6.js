@@ -28,3 +28,6 @@ console.log(`${first} ${second}`);
 let item = "pen";
 let price = 20;
 console.log(`The ${item} costs ${price} rupees.`);
+
+let fruits = ["apple", "banana"];
+console.log(`I like ${fruits[1]}`);
