@@ -25,3 +25,6 @@ let first = "Web";
 let second = "Developer";
 console.log(`${first} ${second}`);
 
+let item = "pen";
+let price = 20;
+console.log(`The ${item} costs ${price} rupees.`);
