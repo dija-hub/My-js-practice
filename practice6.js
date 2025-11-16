@@ -48,3 +48,11 @@ p5.then(msg => console.log(msg))
 }
 
 add(4,5).then(sum => console.log(sum));
+
+function greet(name){
+  return new Promise(resolve=>{
+    resolve(`Welcome ${name}!`);
+  });
+}
+
+greet("Khadija").then(msg => console.log(msg));
