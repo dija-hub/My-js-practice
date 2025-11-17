@@ -95,3 +95,14 @@ function add(){
   console.log(2+4)
 }
 cal(add)
+
+function step1(cb){
+  console.log("Step 1 completed");
+  cb();
+}
+
+function step2(){
+  console.log("Step 2 completed");
+}
+
+step1(step2);
