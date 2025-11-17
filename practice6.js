@@ -140,3 +140,15 @@ function two(){
 }
 
 one(two);
+
+
+function subject(cb){
+  console.log("Your subject:");
+  cb();
+}
+
+function show(){
+  console.log("JavaScript");
+}
+
+subject(show);
