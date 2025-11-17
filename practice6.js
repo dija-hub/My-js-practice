@@ -77,3 +77,12 @@ function msg2(){
 }
 
 msg1(msg2)
+
+function msg(msg1){
+  console.log("your fruit is:")
+  msg1()
+}
+function fruit(){
+  console.log("banana")
+}
+msg(fruit)
