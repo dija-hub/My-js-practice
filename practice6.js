@@ -152,3 +152,14 @@ function show(){
 }
 
 subject(show);
+
+function ask(cb){
+  console.log("Your age is:");
+  cb();
+}
+
+function age(){
+  console.log(16);
+}
+
+ask(age);
