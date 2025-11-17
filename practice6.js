@@ -66,3 +66,14 @@ function name(){
 }
 
 greet (name);
+
+function msg1(msg){
+  console.log("js")
+msg();
+}
+
+function msg2(){
+  console.log("is fun")
+}
+
+msg1(msg2)
