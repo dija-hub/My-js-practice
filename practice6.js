@@ -128,3 +128,15 @@ function sound(){
 }
 
 animal(sound);
+
+
+function one(cb){
+  console.log(1);
+  cb();
+}
+
+function two(){
+  console.log(2);
+}
+
+one(two);
