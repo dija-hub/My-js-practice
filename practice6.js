@@ -58,7 +58,8 @@
 // greet("Khadija").then(msg => console.log(msg));
 
 function greet(name){
-  console.log("hello",name)
+  console.log("hello")
+  name()
 }
 function name(){
   console.log("khadija")
