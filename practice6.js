@@ -106,3 +106,14 @@ function step2(){
 }
 
 step1(step2);
+
+function show(cb){
+  console.log("Color:");
+  cb();
+}
+
+function color(){
+  console.log("Blue");
+}
+
+show(color);
