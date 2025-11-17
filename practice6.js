@@ -117,3 +117,14 @@ function color(){
 }
 
 show(color);
+
+function animal(cb){
+  console.log("Animal sound:");
+  cb();
+}
+
+function sound(){
+  console.log("Meow");
+}
+
+animal(sound);
