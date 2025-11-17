@@ -86,3 +86,12 @@ function fruit(){
   console.log("banana")
 }
 msg(fruit)
+
+function cal(cb){
+  console.log("doing math ...")
+  cb()
+}
+function add(){
+  console.log(2+4)
+}
+cal(add)
