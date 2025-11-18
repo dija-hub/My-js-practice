@@ -57,109 +57,121 @@
 
 // greet("Khadija").then(msg => console.log(msg));
 
-function greet(name){
-  console.log("hello")
-  name()
+// function greet(name){
+//   console.log("hello")
+//   name()
+// }
+// function name(){
+//   console.log("khadija")
+// }
+
+// greet (name);
+
+// function msg1(msg){
+//   console.log("js")
+// msg();
+// }
+
+// function msg2(){
+//   console.log("is fun")
+// }
+
+// msg1(msg2)
+
+// function msg(msg1){
+//   console.log("your fruit is:")
+//   msg1()
+// }
+// function fruit(){
+//   console.log("banana")
+// }
+// msg(fruit)
+
+// function cal(cb){
+//   console.log("doing math ...")
+//   cb()
+// }
+// function add(){
+//   console.log(2+4)
+// }
+// cal(add)
+
+// function step1(cb){
+//   console.log("Step 1 completed");
+//   cb();
+// }
+
+// function step2(){
+//   console.log("Step 2 completed");
+// }
+
+// step1(step2);
+
+// function show(cb){
+//   console.log("Color:");
+//   cb();
+// }
+
+// function color(){
+//   console.log("Blue");
+// }
+
+// show(color);
+
+// function animal(cb){
+//   console.log("Animal sound:");
+//   cb();
+// }
+
+// function sound(){
+//   console.log("Meow");
+// }
+
+// animal(sound);
+
+
+// function one(cb){
+//   console.log(1);
+//   cb();
+// }
+
+// function two(){
+//   console.log(2);
+// }
+
+// one(two);
+
+
+// function subject(cb){
+//   console.log("Your subject:");
+//   cb();
+// }
+
+// function show(){
+//   console.log("JavaScript");
+// }
+
+// subject(show);
+
+// function ask(cb){
+//   console.log("Your age is:");
+//   cb();
+// }
+
+// function age(){
+//   console.log(16);
+// }
+
+// ask(age);
+
+function processData(data){
+console.log("processing",data)
 }
-function name(){
-  console.log("khadija")
+
+function deleteData(){
+      console.log("deteting...",data)
 }
-
-greet (name);
-
-function msg1(msg){
-  console.log("js")
-msg();
+function func(callback){
+     callback("jhon");
 }
-
-function msg2(){
-  console.log("is fun")
-}
-
-msg1(msg2)
-
-function msg(msg1){
-  console.log("your fruit is:")
-  msg1()
-}
-function fruit(){
-  console.log("banana")
-}
-msg(fruit)
-
-function cal(cb){
-  console.log("doing math ...")
-  cb()
-}
-function add(){
-  console.log(2+4)
-}
-cal(add)
-
-function step1(cb){
-  console.log("Step 1 completed");
-  cb();
-}
-
-function step2(){
-  console.log("Step 2 completed");
-}
-
-step1(step2);
-
-function show(cb){
-  console.log("Color:");
-  cb();
-}
-
-function color(){
-  console.log("Blue");
-}
-
-show(color);
-
-function animal(cb){
-  console.log("Animal sound:");
-  cb();
-}
-
-function sound(){
-  console.log("Meow");
-}
-
-animal(sound);
-
-
-function one(cb){
-  console.log(1);
-  cb();
-}
-
-function two(){
-  console.log(2);
-}
-
-one(two);
-
-
-function subject(cb){
-  console.log("Your subject:");
-  cb();
-}
-
-function show(){
-  console.log("JavaScript");
-}
-
-subject(show);
-
-function ask(cb){
-  console.log("Your age is:");
-  cb();
-}
-
-function age(){
-  console.log(16);
-}
-
-ask(age);
+func(processData)
