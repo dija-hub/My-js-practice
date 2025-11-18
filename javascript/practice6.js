@@ -1,4 +1,12 @@
+function hello(){
+  console.log("Hello");
+}
 
+function run(cb){
+  cb();
+}
+
+run(hello);
 
 // let name = "Alice";
 // console.log("Hello, " + name + "!");
@@ -492,66 +500,67 @@
 
 // greet(sayname);
 
-function printArray(arr){
-  console.log(arr)
-}
+// function printArray(arr){
+//   console.log(arr)
+// }
 
-function send(cb){
-  let nums=[1,2,3,4]
-  cb(nums)
-}
+// function send(cb){
+//   let nums=[1,2,3,4]
+//   cb(nums)
+// }
 
-send(printArray)
+// send(printArray)
 
-function showAge(age){
-  console.log("Your age is:" + age)
-}
+// function showAge(age){
+//   console.log("Your age is:" + age)
+// }
 
-function askAge(cb){
-  cb(20)
-}
-askAge(showAge);
-
-
-function sum(a,b){
-  console.log("Sum is:" + (a + b))
-}
-
-function calculate(cb){
-  cb(4,10)
-}
-
-calculate(sum);
-
-function subtract(a,b){
-  console.log("answer",a-b);
-}
-
-function calculate(cb){
-  cb(10,4)
-}
-
-calculate(subtract);
+// function askAge(cb){
+//   cb(20)
+// }
+// askAge(showAge);
 
 
-function fullName(first,last){
-  console.log(first + " " + last)
-}
+// function sum(a,b){
+//   console.log("Sum is:" + (a + b))
+// }
 
-function sendName(cb){
-  cb("Khadija","khadija")
-}
+// function calculate(cb){
+//   cb(4,10)
+// }
 
-sendName(fullName);
+// calculate(sum);
+
+// function subtract(a,b){
+//   console.log("answer",a-b);
+// }
+
+// function calculate(cb){
+//   cb(10,4)
+// }
+
+// calculate(subtract);
 
 
-function answer(response){
-  if(response === "yes") console.log("You agreed!");
-  else console.log("You disagreed!");
-}
+// function fullName(first,last){
+//   console.log(first + " " + last)
+// }
 
-function ask(cb){
-  cb("yes");
-}
+// function sendName(cb){
+//   cb("Khadija","khadija")
+// }
 
-ask(answer);
+// sendName(fullName);
+
+
+// function answer(response){
+//   if(response === "yes") console.log("You agreed!");
+//   else console.log("You disagreed!");
+// }
+
+// function ask(cb){
+//   cb("yes");
+// }
+
+// ask(answer);
+
