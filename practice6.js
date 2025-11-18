@@ -5,14 +5,12 @@
 // }
 // const me= new Person()
 
-
 // class superhuman extends Person{
 //       fly(){
 //             return"flyinggg";
 //       }
 // }
 // const you=new superhuman();
-
 
 // const person ={
 //       talk(){
@@ -129,7 +127,6 @@
 
 // animal(sound);
 
-
 // function one(cb){
 //   console.log(1);
 //   cb();
@@ -140,7 +137,6 @@
 // }
 
 // one(two);
-
 
 // function subject(cb){
 //   console.log("Your subject:");
@@ -164,14 +160,26 @@
 
 // ask(age);
 
-function processData(data){
-console.log("processing",data)
+function processData(data) {
+  console.log("processing", data);
 }
 
-function deleteData(){
-      console.log("deteting...",data)
+function deleteData() {
+  console.log("deteting...", data);
 }
-function func(callback){
-     callback("jhon");
+function func(callback) {
+  callback("jhon");
 }
-func(processData)
+func(processData);
+
+function orderFood(callback) {
+  console.log(" Cooking food...");
+  console.log(" Food ready!");
+  callback();
+}
+
+function receiveFood() {
+  console.log(" Thank you! I'm eating now");
+}
+
+orderFood(receiveFood);
