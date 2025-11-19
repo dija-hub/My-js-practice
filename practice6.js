@@ -188,3 +188,22 @@ orderFood(receiveFood);
 setTimeout(function() {
   console.log("This runs after 1 second");
 }, 1000);
+
+button.addEventListener("click", function() {
+  console.log("Button clicked!");
+});
+
+const myFirstPromise = new Promise((resolve, reject) => {
+  const success = true;
+  
+  if (success) {
+    resolve(" Promise fulfilled! Data received.");
+  } else {
+    reject(" Promise rejected! Error occurred.");
+  }
+});
+
+myFirstPromise
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
+
