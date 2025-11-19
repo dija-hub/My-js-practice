@@ -240,3 +240,17 @@ function checkNumber(num) {
 
 checkNumber(15).then(console.log).catch(console.log); 
 checkNumber(5).then(console.log).catch(console.log); 
+
+function randomOutcome() {
+  return new Promise((resolve, reject) => {
+    const success = Math.random() > 0.5;
+    
+    if (success) {
+      resolve(" You got lucky!");
+    } else {
+      reject(" Better luck next time!");
+    }
+  });
+}
+
+randomOutcome().then(console.log).catch(console.log);
