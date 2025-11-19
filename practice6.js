@@ -207,3 +207,20 @@ myFirstPromise
   .then(result => console.log(result))
   .catch(error => console.log(error));
 
+
+function fakeFetch(){
+  return new Promise(res => {
+    setTimeout(()=> res("data loaded"), 1000);
+  });
+}
+
+function createPromise() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Hello World!");
+    }, 1000);
+  });
+}
+
+
+createPromise().then(result => console.log(result));
