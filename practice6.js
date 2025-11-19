@@ -223,4 +223,20 @@ function createPromise() {
 }
 
 
+
+
 createPromise().then(result => console.log(result));
+
+
+function checkNumber(num) {
+  return new Promise((resolve, reject) => {
+    if (num > 10) {
+      resolve(`${num} is greater than 10`);
+    } else {
+      reject(`${num} is 10 or less`);
+    }
+  });
+}
+
+checkNumber(15).then(console.log).catch(console.log); 
+checkNumber(5).then(console.log).catch(console.log); 
