@@ -1,14 +1,15 @@
 
-let x = 5;
-let y = 7;
-console.log(`Total is ${x + y}`);
+// let x = 5;
+// let y = 7;
+// console.log(`Total is ${x + y}`);
 
 let x = 5;
 let y = 7;
 console.log(`Total is ${x + y}`);
 
 
-
+let student = { name: "Khadija", age: 20 };
+console.log(`Name: ${student.name}, Age: ${student.age}`);
 // class Person{
 //       talk(){
 //             return"talking"
