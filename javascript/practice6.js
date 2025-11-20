@@ -1,22 +1,23 @@
 
+// // let x = 5;
+// // let y = 7;
+// // console.log(`Total is ${x + y}`);
+
 // let x = 5;
 // let y = 7;
 // console.log(`Total is ${x + y}`);
 
-let x = 5;
-let y = 7;
-console.log(`Total is ${x + y}`);
+
+// let student = { name: "Khadija", age: 20 };
+// console.log(`Name: ${student.name}, Age: ${student.age}`);
+
+// for (let i = 1; i <= 3; i++) {
+//   console.log(`Number is ${i}`);
+// }
 
 
-let student = { name: "Khadija", age: 20 };
-console.log(`Name: ${student.name}, Age: ${student.age}`);
-
-for (let i = 1; i <= 3; i++) {
-  console.log(`Number is ${i}`);
-}
-
-
-
+let fruits = ["apple", "banana"];
+console.log(`My fruit: ${fruits[1]}`);
 
 
 
@@ -296,10 +297,10 @@ list.forEach(process)
 // list.forEach(i=>
 //   console.log(i))
 
-const fruits = ["apple", "banana", "mango"];
+// const fruits = ["apple", "banana", "mango"];
 
-fruits.forEach(f => {
-  console.log("Fruit:", f);
-});
+// fruits.forEach(f => {
+//   console.log("Fruit:", f);
+// });
 
 
