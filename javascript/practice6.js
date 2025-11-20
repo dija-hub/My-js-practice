@@ -10,6 +10,17 @@ console.log(`Total is ${x + y}`);
 
 let student = { name: "Khadija", age: 20 };
 console.log(`Name: ${student.name}, Age: ${student.age}`);
+
+for (let i = 1; i <= 3; i++) {
+  console.log(`Number is ${i}`);
+}
+
+
+
+
+
+
+
 // class Person{
 //       talk(){
 //             return"talking"
