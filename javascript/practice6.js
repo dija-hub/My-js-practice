@@ -160,97 +160,109 @@
 
 // ask(age);
 
-function processData(data) {
-  console.log("processing", data);
-}
+// function processData(data) {
+//   console.log("processing", data);
+// }
 
-function deleteData() {
-  console.log("deteting...", data);
-}
-function func(callback) {
-  callback("jhon");
-}
-func(processData);
+// function deleteData() {
+//   console.log("deteting...", data);
+// }
+// function func(callback) {
+//   callback("jhon");
+// }
+// func(processData);
 
-function orderFood(callback) {
-  console.log(" Cooking food...");
-  console.log(" Food ready!");
-  callback();
-}
+// function orderFood(callback) {
+//   console.log(" Cooking food...");
+//   console.log(" Food ready!");
+//   callback();
+// }
 
-function receiveFood() {
-  console.log(" Thank you! I'm eating now");
-}
+// function receiveFood() {
+//   console.log(" Thank you! I'm eating now");
+// }
 
-orderFood(receiveFood);
+// orderFood(receiveFood);
 
 
-setTimeout(function() {
-  console.log("This runs after 1 second");
-}, 1000);
+// setTimeout(function() {
+//   console.log("This runs after 1 second");
+// }, 1000);
 
-button.addEventListener("click", function() {
-  console.log("Button clicked!");
-});
+// button.addEventListener("click", function() {
+//   console.log("Button clicked!");
+// });
 
-const myFirstPromise = new Promise((resolve, reject) => {
-  const success = true;
+// const myFirstPromise = new Promise((resolve, reject) => {
+//   const success = true;
   
-  if (success) {
-    resolve(" Promise fulfilled! Data received.");
-  } else {
-    reject(" Promise rejected! Error occurred.");
-  }
-});
+//   if (success) {
+//     resolve(" Promise fulfilled! Data received.");
+//   } else {
+//     reject(" Promise rejected! Error occurred.");
+//   }
+// });
 
-myFirstPromise
-  .then(result => console.log(result))
-  .catch(error => console.log(error));
-
-
-function fakeFetch(){
-  return new Promise(res => {
-    setTimeout(()=> res("data loaded"), 1000);
-  });
-}
-
-function createPromise() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Hello World!");
-    }, 1000);
-  });
-}
+// myFirstPromise
+//   .then(result => console.log(result))
+//   .catch(error => console.log(error));
 
 
+// function fakeFetch(){
+//   return new Promise(res => {
+//     setTimeout(()=> res("data loaded"), 1000);
+//   });
+// }
+
+// function createPromise() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Hello World!");
+//     }, 1000);
+//   });
+// }
 
 
-createPromise().then(result => console.log(result));
 
 
-function checkNumber(num) {
-  return new Promise((resolve, reject) => {
-    if (num > 10) {
-      resolve(`${num} is greater than 10`);
-    } else {
-      reject(`${num} is 10 or less`);
-    }
-  });
-}
+// createPromise().then(result => console.log(result));
 
-checkNumber(15).then(console.log).catch(console.log); 
-checkNumber(5).then(console.log).catch(console.log); 
 
-function randomOutcome() {
-  return new Promise((resolve, reject) => {
-    const success = Math.random() > 0.5;
+// function checkNumber(num) {
+//   return new Promise((resolve, reject) => {
+//     if (num > 10) {
+//       resolve(`${num} is greater than 10`);
+//     } else {
+//       reject(`${num} is 10 or less`);
+//     }
+//   });
+// }
+
+// checkNumber(15).then(console.log).catch(console.log); 
+// checkNumber(5).then(console.log).catch(console.log); 
+
+// function randomOutcome() {
+//   return new Promise((resolve, reject) => {
+//     const success = Math.random() > 0.5;
     
-    if (success) {
-      resolve(" You got lucky!");
-    } else {
-      reject(" Better luck next time!");
-    }
-  });
-}
+//     if (success) {
+//       resolve(" You got lucky!");
+//     } else {
+//       reject(" Better luck next time!");
+//     }
+//   });
+// }
 
-randomOutcome().then(console.log).catch(console.log);
+// randomOutcome().then(console.log).catch(console.log);
+
+let list=[1,2,3,4]
+
+for(let i of list){
+  console.log(i)
+  console.log(i)
+  console.log(i)
+  console.log(i)
+  console.log(i)
+  console.log(i)
+
+}
