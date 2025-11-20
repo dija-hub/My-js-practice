@@ -1,3 +1,10 @@
+
+let x = 5;
+let y = 7;
+console.log(`Total is ${x + y}`);
+
+
+
 // class Person{
 //       talk(){
 //             return"talking"
@@ -278,3 +285,5 @@ const fruits = ["apple", "banana", "mango"];
 fruits.forEach(f => {
   console.log("Fruit:", f);
 });
+
+
