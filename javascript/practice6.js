@@ -257,12 +257,24 @@
 
 let list=[1,2,3,4]
 
-for(let i of list){
-  console.log(i)
-  console.log(i)
-  console.log(i)
-  console.log(i)
-  console.log(i)
-  console.log(i)
+// for(let i of list){
+ 
+// }
 
-}
+list.forEach(process)
+// function process(i){
+//  console.log(i)
+//   console.log(i)
+//   console.log(i)
+//   console.log(i)
+//   console.log(i)
+//   console.log(i)
+// }
+// list.forEach(i=>
+//   console.log(i))
+
+const fruits = ["apple", "banana", "mango"];
+
+fruits.forEach(f => {
+  console.log("Fruit:", f);
+});
