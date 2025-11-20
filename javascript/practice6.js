@@ -22,7 +22,8 @@ console.log(`My fruit: ${fruits[1]}`);
 let age = 18;
 console.log(`You are ${age >= 18 ? "Adult" : "Minor"}`);
 
-
+let city = "Karachi";
+console.log(`Welcome to ${city}!`);
 // class Person{
 //       talk(){
 //             return"talking"
