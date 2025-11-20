@@ -3,6 +3,10 @@ let x = 5;
 let y = 7;
 console.log(`Total is ${x + y}`);
 
+let x = 5;
+let y = 7;
+console.log(`Total is ${x + y}`);
+
 
 
 // class Person{
