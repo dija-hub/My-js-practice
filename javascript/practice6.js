@@ -8,6 +8,15 @@ function run(cb){
 
 run(hello);
 
+function color(){
+  console.log("Blue");
+}
+
+function show(cb){
+  cb();
+}
+
+show(color);
 // let name = "Alice";
 // console.log("Hello, " + name + "!");
 // console.log(`Hello, ${name}!`); 
