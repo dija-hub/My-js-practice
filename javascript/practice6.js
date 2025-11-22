@@ -310,3 +310,15 @@ function hello(){
 }
 
 setTimeout(hello,2000)
+
+function sum(a,b){
+console.log(a+b)
+}
+function calculator(a,b,sumcb){
+    sumcb(a,b)
+}
+
+calculator(1,2,sum)
+
+
+
