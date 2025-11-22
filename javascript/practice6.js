@@ -320,5 +320,17 @@ function calculator(a,b,sumcb){
 
 calculator(1,2,sum)
 
+function greet(callback){
+  console.log("Hello");
+  callback();
+}
+
+function sayName(){
+  console.log("Khadija");
+}
+
+greet(sayName);
+
+
 
 
