@@ -282,13 +282,13 @@
 
 // randomOutcome().then(console.log).catch(console.log);
 
-let list=[1,2,3,4]
+// let list=[1,2,3,4]
 
 // for(let i of list){
  
 // }
 
-list.forEach(process)
+// list.forEach(process)
 // function process(i){
 //  console.log(i)
 //   console.log(i)
@@ -305,5 +305,8 @@ list.forEach(process)
 // fruits.forEach(f => {
 //   console.log("Fruit:", f);
 // });
+function hello(){
+    console.log("hello")
+}
 
-
+setTimeout(hello,2000)
