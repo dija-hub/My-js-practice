@@ -332,5 +332,14 @@ function sayName(){
 greet(sayName);
 
 
+function printMessage(cb){
+  cb("JavaScript is fun!");
+}
+
+function show(msg){
+  console.log(msg);
+}
+
+printMessage(show);
 
 
