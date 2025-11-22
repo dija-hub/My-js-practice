@@ -342,4 +342,10 @@ function show(msg){
 
 printMessage(show);
 
+function calculate(a, b, cb){
+  cb(a + b);
+}
 
+calculate(5, 3, function(result){
+  console.log(result);
+});
