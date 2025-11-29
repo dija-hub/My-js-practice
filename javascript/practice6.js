@@ -351,15 +351,23 @@
 // });
 
 
-// function getData(dataid, nextdata){
-//   setTimeout(()=>{
-//     console.log("data",dataid)
-//     if(nextdata) {
-//       nextdata()
-//     };
-//   },4000)
+function getData(dataid){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+    console.log("data",dataid)
+    resolve ("sucess")
+  
+  },4000)
+  })
+}
+//promise chain
+getData(3).then((res)=>{
+  console.log(res)
+  getData(4).then((res2)=>{
+    console.log(res2)
+  })
+})
 
-// }
 // //callback hell
 // getData(1,()=>{
 //   getData(2,()=>{
@@ -390,33 +398,37 @@
 // console.log(err)
 // })
 
-function async1 () {
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      console.log("some data1")
-      resolve("sucess")
-    },4000)
-  })
-  
-}
-function async2 () {
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      console.log("some data2")
-      resolve("sucess")
-    },4000)
-  })
-  
-}
-console.log("fetaching data1...");
 
-let res=async1();
-res.then((result)=>{
-  console.log(result)
-  console.log("fetaching data2...");
-  let p2=async2();
-  p2.then((result2)=>{
-    console.log(result2)
-  })
-})
+
+
+
+// function async1 () {
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log("some data1")
+//       resolve("sucess")
+//     },4000)
+//   })
+  
+// }
+// function async2 () {
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log("some data2")
+//       resolve("sucess")
+//     },4000)
+//   })
+  
+// }
+// console.log("fetaching data1...");
+
+// let res=async1();
+// res.then((result)=>{
+//   console.log(result)
+//   console.log("fetaching data2...");
+//   let p2=async2();
+//   p2.then((result2)=>{
+//     console.log(result2)
+//   })
+// })
 
