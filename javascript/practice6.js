@@ -361,6 +361,13 @@ function getData(dataid, nextdata){
 
 }
 getData(1,()=>{
-  getData(4)
+  getData(2,()=>{
+    getData(3,()=>{
+      getData(4)
+    });
+  })
 });
+
+
+
 
