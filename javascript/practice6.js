@@ -305,49 +305,62 @@
 // fruits.forEach(f => {
 //   console.log("Fruit:", f);
 // });
-function hello(){
-    console.log("hello")
+// function hello(){
+//     console.log("hello")
+// }
+
+// setTimeout(hello,2000)
+
+// function sum(a,b){
+// console.log(a+b)
+// }
+// function calculator(a,b,sumcb){
+//     sumcb(a,b)
+// }
+
+// calculator(1,2,sum)
+
+// function greet(callback){
+//   console.log("Hello");
+//   callback();
+// }
+
+// function sayName(){
+//   console.log("Khadija");
+// }
+
+// greet(sayName);
+
+
+// function printMessage(cb){
+//   cb("JavaScript is fun!");
+// }
+
+// function show(msg){
+//   console.log(msg);
+// }
+
+// printMessage(show);
+
+// function calculate(a, b, cb){
+//   cb(a + b);
+// }
+
+// calculate(5, 3, function(result){
+//   console.log(result);
+// });
+
+
+function getData(dataid, nextdata){
+  setTimeout(()=>{
+    console.log("data",dataid)
+    if(nextdata) {
+      nextdata()
+    };
+  },4000)
+
 }
-
-setTimeout(hello,2000)
-
-function sum(a,b){
-console.log(a+b)
-}
-function calculator(a,b,sumcb){
-    sumcb(a,b)
-}
-
-calculator(1,2,sum)
-
-function greet(callback){
-  console.log("Hello");
-  callback();
-}
-
-function sayName(){
-  console.log("Khadija");
-}
-
-greet(sayName);
-
-
-function printMessage(cb){
-  cb("JavaScript is fun!");
-}
-
-function show(msg){
-  console.log(msg);
-}
-
-printMessage(show);
-
-function calculate(a, b, cb){
-  cb(a + b);
-}
-
-calculate(5, 3, function(result){
-  console.log(result);
+getData(1,()=>{
+  getData(4)
 });
-
 
