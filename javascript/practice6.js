@@ -374,20 +374,49 @@
 // reject("error")
 // })
 
-const getPromise=()=>{
- return new Promise((resolve,reject)=>{
-console.log("hello")
-resolve("error")
-})
+// const getPromise=()=>{
+//  return new Promise((resolve,reject)=>{
+// console.log("hello")
+// resolve("error")
+// })
+// }
+
+// let res=getPromise()
+
+// res.then(()=>{
+// console.log("fulfilled")
+// });
+// res.catch((err)=>{
+// console.log(err)
+// })
+
+function async1 () {
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      console.log("some data1")
+      resolve("sucess")
+    },4000)
+  })
+  
 }
+function async2 () {
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      console.log("some data2")
+      resolve("sucess")
+    },4000)
+  })
+  
+}
+console.log("fetaching data1...");
 
-let res=getPromise()
-
-res.then(()=>{
-console.log("fulfilled")
-});
-res.catch((err)=>{
-console.log(err)
+let res=async1();
+res.then((result)=>{
+  console.log(result)
+  console.log("fetaching data2...");
+  let p2=async2();
+  p2.then((result2)=>{
+    console.log(result2)
+  })
 })
-
 
