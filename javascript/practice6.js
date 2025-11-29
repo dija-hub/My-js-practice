@@ -351,22 +351,29 @@
 // });
 
 
-function getData(dataid, nextdata){
-  setTimeout(()=>{
-    console.log("data",dataid)
-    if(nextdata) {
-      nextdata()
-    };
-  },4000)
+// function getData(dataid, nextdata){
+//   setTimeout(()=>{
+//     console.log("data",dataid)
+//     if(nextdata) {
+//       nextdata()
+//     };
+//   },4000)
 
-}
-getData(1,()=>{
-  getData(2,()=>{
-    getData(3,()=>{
-      getData(4)
-    });
-  })
-});
+// }
+// //callback hell
+// getData(1,()=>{
+//   getData(2,()=>{
+//     getData(3,()=>{
+//       getData(4)
+//     });
+//   })
+// });
+
+let promise=new Promise((resolve,reject)=>{
+console.log("hello")
+reject("error")
+})
+
 
 
 
