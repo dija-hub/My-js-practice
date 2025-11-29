@@ -369,12 +369,25 @@
 //   })
 // });
 
-let promise=new Promise((resolve,reject)=>{
+// let promise=new Promise((resolve,reject)=>{
+// console.log("hello")
+// reject("error")
+// })
+
+const getPromise=()=>{
+ return new Promise((resolve,reject)=>{
 console.log("hello")
-reject("error")
+resolve("error")
 })
+}
 
+let res=getPromise()
 
-
+res.then(()=>{
+console.log("fulfilled")
+});
+res.catch((err)=>{
+console.log(err)
+})
 
 
