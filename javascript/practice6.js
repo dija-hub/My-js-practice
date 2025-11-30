@@ -510,3 +510,15 @@ function showAge(age){
 function askAge(cb){
   cb(20)
 }
+askAge(showAge);
+
+
+function sum(a,b){
+  console.log("Sum is:" + (a + b))
+}
+
+function calculate(cb){
+  cb(4,10)
+}
+
+calculate(sum);
