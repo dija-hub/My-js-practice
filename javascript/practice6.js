@@ -502,3 +502,11 @@ function send(cb){
 }
 
 send(printArray)
+
+function showAge(age){
+  console.log("Your age is:" + age)
+}
+
+function askAge(cb){
+  cb(20)
+}
