@@ -471,12 +471,23 @@
 //   return a + b;
 // }
 
-function after(){
-  console.log("task completed")
+// function after(){
+//   console.log("task completed")
+// }
+
+// function dotask(cb){
+//   console.log("doing task...")
+//   setTimeout(cb,2000);
+// }
+// dotask(after);
+
+
+function sayname(){
+  console.log("helo",+name)
 }
 
-function dotask(cb){
-  console.log("doing task...")
-  setTimeout(cb,2000);
+function greet(cb){
+  cb("khadija")
 }
-dotask(after);
+
+greet(sayname);
