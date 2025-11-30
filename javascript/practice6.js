@@ -482,12 +482,23 @@
 // dotask(after);
 
 
-function sayname(){
-  console.log("helo",+name)
+// function sayname(name){
+//   console.log("helo" + name)
+// }
+
+// function greet(cb){
+//   cb(" khadija")
+// }
+
+// greet(sayname);
+
+function printArray(arr){
+  console.log(arr)
 }
 
-function greet(cb){
-  cb("khadija")
+function send(cb){
+  let nums=[1,2,3,4]
+  cb(nums)
 }
 
-greet(sayname);
+send(printArray)
