@@ -445,29 +445,38 @@
 //   })
 // })
 
-function first(){
-  console.log("first")
+// function first(){
+//   console.log("first")
+// }
+
+// function second(cb){
+//   console.log("second")
+//   cb();
+// }
+
+// second(first);
+
+
+// function printName(){
+//   console.log("Khadija")
+// }
+
+// function show(callback){
+//   console.log("Your name is:")
+//   callback()
+// }
+// show(printName);
+
+// function add(a,b){
+//   return a + b;
+// }
+
+function after(){
+  console.log("task completed")
 }
 
-function second(cb){
-  console.log("second")
-  cb();
+function dotask(cb){
+  console.log("doing task...")
+  setTimeout(cb,2000);
 }
-
-second(first);
-
-
-function printName(){
-  console.log("Khadija")
-}
-
-function show(callback){
-  console.log("Your name is:")
-  callback()
-}
-show(printName);
-
-function add(a,b){
-  return a + b;
-}
-
+dotask(after);
