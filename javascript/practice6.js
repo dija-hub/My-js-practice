@@ -1,15 +1,17 @@
 
 
-let name = "Alice";
-console.log("Hello, " + name + "!");
-console.log(`Hello, ${name}!`); 
+// let name = "Alice";
+// console.log("Hello, " + name + "!");
+// console.log(`Hello, ${name}!`); 
 
-let a = 10;
-let b = 5;
-console.log("Sum:", a + b);
-console.log("Difference:", a - b);
-console.log("Product:", a * b);
-console.log("Quotient:", a / b);
+// let a = 10;
+// let b = 5;
+// console.log("Sum:", a + b);
+// console.log("Difference:", a - b);
+// console.log("Product:", a * b);
+// console.log("Quotient:", a / b);
+
+
 // // let x = 5;
 // // let y = 7;
 // // console.log(`Total is ${x + y}`);
@@ -362,22 +364,22 @@ console.log("Quotient:", a / b);
 // });
 
 
-function getData(dataid){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-    console.log("data",dataid)
-    resolve ("sucess")
+// function getData(dataid){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//     console.log("data",dataid)
+//     resolve ("sucess")
   
-  },4000)
-  })
-}
+//   },4000)
+//   })
+// }
 //promise chain
-getData(3).then((res)=>{
-  console.log(res)
-  getData(4).then((res2)=>{
-    console.log(res2)
-  })
-})
+// getData(3).then((res)=>{
+//   console.log(res)
+//   getData(4).then((res2)=>{
+//     console.log(res2)
+//   })
+// })
 
 // //callback hell
 // getData(1,()=>{
@@ -442,4 +444,30 @@ getData(3).then((res)=>{
 //     console.log(result2)
 //   })
 // })
+
+function first(){
+  console.log("first")
+}
+
+function second(cb){
+  console.log("second")
+  cb();
+}
+
+second(first);
+
+
+function printName(){
+  console.log("Khadija")
+}
+
+function show(callback){
+  console.log("Your name is:")
+  callback()
+}
+show(printName);
+
+function add(a,b){
+  return a + b;
+}
 
