@@ -522,3 +522,13 @@ function calculate(cb){
 }
 
 calculate(sum);
+
+function subtract(a,b){
+  console.log("answer",a-b);
+}
+
+function calculate(cb){
+  cb(10,4)
+}
+
+calculate(subtract);
