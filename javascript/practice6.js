@@ -532,3 +532,13 @@ function calculate(cb){
 }
 
 calculate(subtract);
+
+function fullName(first,last){
+  console.log(first + " " + last)
+}
+
+function sendName(cb){
+  cb("Khadija","khadija")
+}
+
+sendName(fullName);
