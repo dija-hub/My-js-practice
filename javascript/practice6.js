@@ -533,6 +533,7 @@ function calculate(cb){
 
 calculate(subtract);
 
+
 function fullName(first,last){
   console.log(first + " " + last)
 }
@@ -542,3 +543,15 @@ function sendName(cb){
 }
 
 sendName(fullName);
+
+
+function answer(response){
+  if(response === "yes") console.log("You agreed!");
+  else console.log("You disagreed!");
+}
+
+function ask(cb){
+  cb("yes");
+}
+
+ask(answer);
