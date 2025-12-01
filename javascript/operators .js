@@ -167,6 +167,8 @@ g++;
 console.log(g);
 
 
-let g = 7;
-g++;
-console.log(g);
+
+let age = 20;
+if (age > 18 && age < 25) {
+  console.log("Young adult");
+}
