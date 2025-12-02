@@ -574,10 +574,26 @@ show(color);
 
 // ask(answer);
 
-function day(){
-  console.log("monday");
+// function day(){
+//   console.log("monday");
+// }
+// function show(cb){
+//   cb();
+// }
+// show (day);
+
+
+function ageCheck(age){
+  if (age>=18){
+    console.log("Adult");
+  }
+  else{
+    console.log("Minor");
+  }
 }
-function show(cb){
-  cb();
+function sendAge(age){
+  age(12)
 }
-show (day);
+sendAge(ageCheck);
+
+
