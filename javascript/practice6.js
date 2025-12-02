@@ -661,3 +661,18 @@ function third(cb){
   cb(first)
 }
 third(second);
+
+function pass(){
+  console.log("pass")
+}
+function fail(){
+  console.log("fail")
+}
+function checkmarks(marks,cb1,cb2){
+  if(marks>=40){
+    cb1()
+  }else{
+    cb2()
+  }
+}
+checkmarks(90,pass,fail);
