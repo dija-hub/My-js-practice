@@ -648,3 +648,16 @@ function two(cb){
   cb()
 }
 two(one);
+
+function first(){
+  console.log("1")
+}
+function second(cb){
+  console.log("2")
+  cb()
+} 
+function third(cb){
+  console.log("3")
+  cb(first)
+}
+third(second);
