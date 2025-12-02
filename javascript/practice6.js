@@ -618,3 +618,15 @@ function sendtemp(temp){
   temp(25)
 }
 sendtemp(checktemp);
+
+function step1(){
+  console.log("step1 completed")
+}
+function step2(){
+  console.log("step2 completed")
+}
+function ready(cb1,cb2){
+  cb1()
+  cb2()
+}
+ready(step1,step2);
