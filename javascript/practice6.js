@@ -597,3 +597,10 @@ function sendAge(age){
 sendAge(ageCheck);
 
 
+function text(msg){
+  console.log(msg.toUpperCase());
+}
+function msg(Rmsg){
+  Rmsg("javascript");
+}
+msg(text);
