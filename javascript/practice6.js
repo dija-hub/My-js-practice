@@ -17,6 +17,7 @@ function show(cb){
 }
 
 show(color);
+
 // let name = "Alice";
 // console.log("Hello, " + name + "!");
 // console.log(`Hello, ${name}!`); 
@@ -573,3 +574,10 @@ show(color);
 
 // ask(answer);
 
+function day(){
+  console.log("monday");
+}
+function show(cb){
+  cb();
+}
+show (day);
