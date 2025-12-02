@@ -639,3 +639,12 @@ function showname(name){
 name("khadija")
 }
 showname(email);
+
+function one(){
+  console.log("A")
+}
+function two(cb){
+  console.log("B")
+  cb()
+}
+two(one);
