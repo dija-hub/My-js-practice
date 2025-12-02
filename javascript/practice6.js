@@ -630,3 +630,12 @@ function ready(cb1,cb2){
   cb2()
 }
 ready(step1,step2);
+
+
+function email(name ){
+  console.log(name,"@gmail.com")
+}
+function showname(name){
+name("khadija")
+}
+showname(email);
