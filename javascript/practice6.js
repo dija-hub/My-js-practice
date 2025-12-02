@@ -676,3 +676,12 @@ function checkmarks(marks,cb1,cb2){
   }
 }
 checkmarks(90,pass,fail);
+
+function finish(){
+  console.log("finished")
+}
+function start(cb){
+  console.log("starting ...")
+  setTimeout(cb,2000)
+}
+start(finish);
