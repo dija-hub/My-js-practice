@@ -685,3 +685,11 @@ function start(cb){
   setTimeout(cb,2000)
 }
 start(finish);
+
+function add(x,y){
+  console.log(x+y)
+}
+function cal(cb){
+  cb(3,4)
+}
+cal(add)
