@@ -1,22 +1,22 @@
-function hello(){
-  console.log("Hello");
-}
+// function hello(){
+//   console.log("Hello");
+// }
 
-function run(cb){
-  cb();
-}
+// function run(cb){
+//   cb();
+// }
 
-run(hello);
+// run(hello);
 
-function color(){
-  console.log("Blue");
-}
+// function color(){
+//   console.log("Blue");
+// }
 
-function show(cb){
-  cb();
-}
+// function show(cb){
+//   cb();
+// }
 
-show(color);
+// show(color);
 
 // let name = "Alice";
 // console.log("Hello, " + name + "!");
@@ -583,113 +583,125 @@ show(color);
 // show (day);
 
 
-function ageCheck(age){
-  if (age>=18){
-    console.log("Adult");
+// function ageCheck(age){
+//   if (age>=18){
+//     console.log("Adult");
+//   }
+//   else{
+//     console.log("Minor");
+//   }
+// }
+// function sendAge(age){
+//   age(12)
+// }
+// sendAge(ageCheck);
+
+
+// function text(msg){
+//   console.log(msg.toUpperCase());
+// }
+// function msg(Rmsg){
+//   Rmsg("javascript");
+// }
+// msg(text);
+
+
+// function checktemp(temp){
+//   if(temp>30){
+//     console.log("Hot");
+//   }
+//   else{
+//     console.log("Cold");
+//   }
+// }
+// function sendtemp(temp){
+//   temp(25)
+// }
+// sendtemp(checktemp);
+
+// function step1(){
+//   console.log("step1 completed")
+// }
+// function step2(){
+//   console.log("step2 completed")
+// }
+// function ready(cb1,cb2){
+//   cb1()
+//   cb2()
+// }
+// ready(step1,step2);
+
+
+// function email(name ){
+//   console.log(name,"@gmail.com")
+// }
+// function showname(name){
+// name("khadija")
+// }
+// showname(email);
+
+// function one(){
+//   console.log("A")
+// }
+// function two(cb){
+//   console.log("B")
+//   cb()
+// }
+// two(one);
+
+// function first(){
+//   console.log("1")
+// }
+// function second(cb){
+//   console.log("2")
+//   cb()
+// } 
+// function third(cb){
+//   console.log("3")
+//   cb(first)
+// }
+// third(second);
+
+// function pass(){
+//   console.log("pass")
+// }
+// function fail(){
+//   console.log("fail")
+// }
+// function checkmarks(marks,cb1,cb2){
+//   if(marks>=40){
+//     cb1()
+//   }else{
+//     cb2()
+//   }
+// }
+// checkmarks(90,pass,fail);
+
+// function finish(){
+//   console.log("finished")
+// }
+// function start(cb){
+//   console.log("starting ...")
+//   setTimeout(cb,2000)
+// }
+// start(finish);
+
+// function add(x,y){
+//   console.log(x+y)
+// }
+// function cal(cb){
+//   cb(3,4)
+// }
+// cal(add)
+
+async function run(){
+  try{
+    const a=await waitpromise('A')
+    console.log(a)
+    const b= await waitB('B')
+  console.log(b)
+  }catch(err){
+    console.log(err)
   }
-  else{
-    console.log("Minor");
-  }
 }
-function sendAge(age){
-  age(12)
-}
-sendAge(ageCheck);
-
-
-function text(msg){
-  console.log(msg.toUpperCase());
-}
-function msg(Rmsg){
-  Rmsg("javascript");
-}
-msg(text);
-
-
-function checktemp(temp){
-  if(temp>30){
-    console.log("Hot");
-  }
-  else{
-    console.log("Cold");
-  }
-}
-function sendtemp(temp){
-  temp(25)
-}
-sendtemp(checktemp);
-
-function step1(){
-  console.log("step1 completed")
-}
-function step2(){
-  console.log("step2 completed")
-}
-function ready(cb1,cb2){
-  cb1()
-  cb2()
-}
-ready(step1,step2);
-
-
-function email(name ){
-  console.log(name,"@gmail.com")
-}
-function showname(name){
-name("khadija")
-}
-showname(email);
-
-function one(){
-  console.log("A")
-}
-function two(cb){
-  console.log("B")
-  cb()
-}
-two(one);
-
-function first(){
-  console.log("1")
-}
-function second(cb){
-  console.log("2")
-  cb()
-} 
-function third(cb){
-  console.log("3")
-  cb(first)
-}
-third(second);
-
-function pass(){
-  console.log("pass")
-}
-function fail(){
-  console.log("fail")
-}
-function checkmarks(marks,cb1,cb2){
-  if(marks>=40){
-    cb1()
-  }else{
-    cb2()
-  }
-}
-checkmarks(90,pass,fail);
-
-function finish(){
-  console.log("finished")
-}
-function start(cb){
-  console.log("starting ...")
-  setTimeout(cb,2000)
-}
-start(finish);
-
-function add(x,y){
-  console.log(x+y)
-}
-function cal(cb){
-  cb(3,4)
-}
-cal(add)
+run()
