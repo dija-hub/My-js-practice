@@ -725,3 +725,10 @@ async function run(){
   console.log("end")
 }
 run()
+
+
+async function task1(){
+  await new Promise(res => setTimeout(res,2000))
+  console.log("task 1 done")
+}
+task1()
