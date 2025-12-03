@@ -694,14 +694,24 @@
 // }
 // cal(add)
 
+function waitPromise(name){
+return new Promise((resolve)=>{
+  setTimeout(()=>{
+    resolve(name+" done")
+  },500)})
+}
 async function run(){
   try{
-    const a=await waitpromise('A')
-    console.log(a)
-    const b= await waitB('B')
-  console.log(b)
+
+const a=await waitPromise("A");
+console.log(a);
+
+const b=await waitPromise("B");
+console.log(b);
+
   }catch(err){
     console.log(err)
   }
+  
 }
 run()
