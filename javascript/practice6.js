@@ -732,3 +732,8 @@ async function task1(){
   console.log("task 1 done")
 }
 task1()
+
+async function task2(){
+  return "hello"
+}
+task2().then(res => console.log(res))
