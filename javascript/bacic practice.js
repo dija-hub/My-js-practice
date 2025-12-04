@@ -142,13 +142,13 @@
 //     }
 // }
 
-// for(let i=1;i<=10;i++){
-//     console.log("smartphone",i,"arrived")
-// } 
+for(let i=1;i<=10;i++){
+    console.log("smartphone",i,"arrived")
+} 
 
-// for (let i = 2; i <= 20; i += 2) {
-//     console.log("Even number: " + i);
-// }
+for (let i = 2; i <= 20; i += 2) {
+    console.log("Even number: " + i);
+}
 
 
 // const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
@@ -170,3 +170,4 @@ for (let i = 0; i < prices.length; i++) {
     console.log(`Standard Price: $${prices[i]}`);
   }
 }
+
