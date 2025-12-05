@@ -272,6 +272,14 @@ console.log(a);
 let name = "Khadija";
 name += " Ali";
 console.log(name);
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+alert(
+person
+);
 // function fakeFetch(){
 //   return new Promise(res => {
 //     setTimeout(()=> res("data loaded"), 1000);
