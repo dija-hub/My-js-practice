@@ -391,6 +391,10 @@
 //   },4000)
 //   })
 // }
+// async function run(){
+//   await getData(1);
+//   await getData(2);
+// }
 //promise chain
 // getData(3).then((res)=>{
 //   console.log(res)
@@ -716,24 +720,37 @@
 // }
 // run()
 
-function wait (ms){
-  return new Promise(resolve=> setTimeout(resolve,ms))
-}
-async function run(){
-  console.log("start")
-  await wait (2000)
-  console.log("end")
-}
-run()
+// function wait (ms){
+//   return new Promise(resolve=> setTimeout(resolve,ms))
+// }
+// async function run(){
+//   console.log("start")
+//   await wait (2000)
+//   console.log("end")
+// }
+// run()
 
 
-async function task1(){
-  await new Promise(res => setTimeout(res,2000))
-  console.log("task 1 done")
-}
-task1()
+// async function task1(){
+//   await new Promise(res => setTimeout(res,2000))
+//   console.log("task 1 done")
+// }
+// task1()
 
-async function task2(){
-  return "hello"
+// async function task2(){
+//   return "hello"
+// }
+// task2().then(res => console.log(res))
+
+function api(){
+  return new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+    console.log("weater data ")
+   resolve(200)
+   },2000)
+  })
 }
-task2().then(res => console.log(res))
+async function getdata(){
+  await api();
+  await api();
+}
