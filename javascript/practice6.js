@@ -392,9 +392,12 @@ function getData(dataid){
   })
 }
 async function run(){
+  console.log("getting data1")
   await getData(1);
+    console.log("getting data2")
   await getData(2);
 }
+
 //promise chain
 // getData(3).then((res)=>{
 //   console.log(res)
@@ -754,3 +757,11 @@ async function getdata(){
   await api();
   await api();
 }
+//iffe
+
+(async function (){
+  console.log("getting data1")
+  await getData(1);
+    console.log("getting data2")
+  await getData(2);
+})()
