@@ -265,7 +265,9 @@
 //   .then(result => console.log(result))
 //   .catch(error => console.log(error));
 
-
+let a = 5;
+a += 3; 
+console.log(a); 
 // function fakeFetch(){
 //   return new Promise(res => {
 //     setTimeout(()=> res("data loaded"), 1000);
@@ -765,3 +767,4 @@ async function getdata(){
     console.log("getting data2")
   await getData(2);
 })()
+
