@@ -268,6 +268,10 @@
 let a = 5;
 a += 3; 
 console.log(a); 
+
+let name = "Khadija";
+name += " Ali";
+console.log(name);
 // function fakeFetch(){
 //   return new Promise(res => {
 //     setTimeout(()=> res("data loaded"), 1000);
