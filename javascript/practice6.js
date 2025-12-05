@@ -382,19 +382,19 @@
 // });
 
 
-// function getData(dataid){
-//   return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//     console.log("data",dataid)
-//     resolve ("sucess")
+function getData(dataid){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+    console.log("data",dataid)
+    resolve ("sucess")
   
-//   },4000)
-//   })
-// }
-// async function run(){
-//   await getData(1);
-//   await getData(2);
-// }
+  },4000)
+  })
+}
+async function run(){
+  await getData(1);
+  await getData(2);
+}
 //promise chain
 // getData(3).then((res)=>{
 //   console.log(res)
