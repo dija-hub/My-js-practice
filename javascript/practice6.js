@@ -817,3 +817,7 @@ const car ={
   model:"2022"
 }
 console.log(Object.entries(car))
+
+car.color='white'
+
+console.log(car)
