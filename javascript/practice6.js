@@ -795,3 +795,10 @@ let obj={
   }
 }
 obj.talk();
+
+let cat={
+  talk(){
+    console.log("meowww")
+  }
+}
+cat.talk();
