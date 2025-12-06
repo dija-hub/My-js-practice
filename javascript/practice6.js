@@ -811,3 +811,9 @@ let dog={
 }
 console.log(Object.entries(dog));
 
+const car ={
+  brand:"Toyota",
+  color:"black",
+  model:"2022"
+}
+console.log(Object.entries(car))
