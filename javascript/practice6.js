@@ -788,3 +788,10 @@ let person = {
   }
 }
 person.sayHello();
+
+let obj={
+  talk:function(){
+    console.log("talking...")
+  }
+}
+obj.talk();
