@@ -804,8 +804,10 @@ let cat={
 cat.talk();
 
 let dog={
+  breed:"huskey",
   bark:()=>{
     console.log("woof woof")
   }
 }
-dog.bark()
+console.log(Object.entries(dog));
+
