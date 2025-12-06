@@ -802,3 +802,10 @@ let cat={
   }
 }
 cat.talk();
+
+let dog={
+  bark:()=>{
+    console.log("woof woof")
+  }
+}
+dog.bark()
