@@ -265,21 +265,21 @@
 //   .then(result => console.log(result))
 //   .catch(error => console.log(error));
 
-let a = 5;
-a += 3; 
-console.log(a); 
+// let a = 5;
+// a += 3; 
+// console.log(a); 
 
-let name = "Khadija";
-name += " Ali";
-console.log(name);
-const person = {
-  firstName: "John",
-  lastName: "Doe"
-};
+// let name = "Khadija";
+// name += " Ali";
+// console.log(name);
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe"
+// };
 
-alert(
-person
-);
+// alert(
+// person
+// );
 // function fakeFetch(){
 //   return new Promise(res => {
 //     setTimeout(()=> res("data loaded"), 1000);
@@ -780,3 +780,11 @@ async function getdata(){
   await getData(2);
 })()
 
+
+let person = {
+  name:"khadija",
+  sayHello:function(){
+    console.log(`hello ${this.name}`)
+  }
+}
+person.sayHello();
