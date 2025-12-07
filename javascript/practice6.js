@@ -876,3 +876,14 @@ function Movie(name,rating,year){
   this.year=year;
 }
 console.log(movie);
+
+let person=new Person("kahdija",20,function sayHi(){
+  console.log(`Hi i am ${this.name}`)
+})
+function Person(name,age,greet){
+  this.name=name;
+  this.age=age;
+  this.greet=greet;
+}
+console.log(person);
+person.greet();
