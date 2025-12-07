@@ -940,18 +940,22 @@ Employee.prototype.increaseSalary=function(amount){
 console.log(employee);
 employee.increaseSalary(50);
 
-let library=new Library("city library",["To Kill a Mockingbird","1984","The Great Gatsby",])
+let library=new Library("city library",[
+  "To Kill a Mockingbird",
+  "1984",
+  "The Great Gatsby"
+])
 function Library(name,books){
   this.name=name;
   this.books=books;
 }
 Library.prototype.addbook=function (bookname){
-bookname.concat(this.books)
+this.books.push(bookname)
 }
-Library.prototype.showbooks=function(showbook){
+Library.prototype.showbooks=function(){
   console.log("books available:",this.books)
 }
 
 console.log(library);
 library.addbook("Moby");
-library.showbooks(showbook);
+library.showbooks();
