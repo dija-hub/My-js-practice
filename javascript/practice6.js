@@ -834,97 +834,108 @@ async function run(){
 // console.log(car1);
 // console.log(car2);
 
-let student1 = new Student("kahdija",16)
-let student2=new Student ("aiman",18)
+// let student1 = new Student("kahdija",16)
+// let student2=new Student ("aiman",18)
 
-function Student(name,age){
-  this.name=name;
-  this.age=age;
-}
-console.log(student1);
-console.log(student2);
+// function Student(name,age){
+//   this.name=name;
+//   this.age=age;
+// }
+// console.log(student1);
+// console.log(student2);
 
-let book=new Book ("Math","Khadija",2022)
+// let book=new Book ("Math","Khadija",2022)
 
-function Book(title,writer,year){
-  this.title=title;
-  this.writer=writer;
-  this.year=year;
-}
-console.log(book)
+// function Book(title,writer,year){
+//   this.title=title;
+//   this.writer=writer;
+//   this.year=year;
+// }
+// console.log(book)
 
-let phone1=new Phone("iPhone",40000)
-let phone2=new Phone("Samsung",35000)
-function Phone(brand,price){
-  this.brand=brand;
-  this.price=price;
-}
-console.log(phone1);
-console.log(phone2);
+// let phone1=new Phone("iPhone",40000)
+// let phone2=new Phone("Samsung",35000)
+// function Phone(brand,price){
+//   this.brand=brand;
+//   this.price=price;
+// }
+// console.log(phone1);
+// console.log(phone2);
 
-let bag=new Bag("black","large")
-function Bag(color,size){
-  this.color=color;
-  this.size=size;
-}
-console.log(bag);
+// let bag=new Bag("black","large")
+// function Bag(color,size){
+//   this.color=color;
+//   this.size=size;
+// }
+// console.log(bag);
 
-let movie=new Movie("Sweet Home","5 star",2022)
-function Movie(name,rating,year){
-  this.name=name;
-  this.rating=rating;
-  this.year=year;
-}
-console.log(movie);
+// let movie=new Movie("Sweet Home","5 star",2022)
+// function Movie(name,rating,year){
+//   this.name=name;
+//   this.rating=rating;
+//   this.year=year;
+// }
+// console.log(movie);
 
-let person=new Person("kahdija",20,function sayHi(){
-  console.log(`Hi i am ${this.name}`)
-})
-function Person(name,age,greet){
-  this.name=name;
-  this.age=age;
-  this.greet=greet;
-}
-console.log(person);
-person.greet();
+// let person=new Person("kahdija",20,function sayHi(){
+//   console.log(`Hi i am ${this.name}`)
+// })
+// function Person(name,age,greet){
+//   this.name=name;
+//   this.age=age;
+//   this.greet=greet;
+// }
+// console.log(person);
+// person.greet();
 
-let car1 =new Car ("Toyota","black")
-let car2 =new Car ("honda","black")
-function Car(brand,color){
-  this.brand=brand;
-  this.color=color;
-}
-Car.prototype.drive=function(){
-  console.log("driving...")
-}
-console.log(car1);
-console.log(car2);
-car1.drive();
-car2.drive();
+// let car1 =new Car ("Toyota","black")
+// let car2 =new Car ("honda","black")
+// function Car(brand,color){
+//   this.brand=brand;
+//   this.color=color;
+// }
+// Car.prototype.drive=function(){
+//   console.log("driving...")
+// }
+// console.log(car1);
+// console.log(car2);
+// car1.drive();
+// car2.drive();
 
-let product=new Product("laptop",50000)
-function Product(name,price){
-  this.name=name;
-  this.price=price;
-}
-Product.prototype.disount=function(discount){
-  return this.price-discount;
-}
-console.log(product);
-console.log(product.disount(5000));
+// let product=new Product("laptop",50000)
+// function Product(name,price){
+//   this.name=name;
+//   this.price=price;
+// }
+// Product.prototype.disount=function(discount){
+//   return this.price-discount;
+// }
+// console.log(product);
+// console.log(product.disount(5000));
 
 
-let account =new Account("khadija",10000)
-function Account(owner,balance){
-  this.owner=owner;
-  this.balance=balance;
+// let account =new Account("khadija",10000)
+// function Account(owner,balance){
+//   this.owner=owner;
+//   this.balance=balance;
+// }
+// Account.prototype.deposite=function(deposite){
+//   console.log("deposited:",deposite)
+// }
+// Account.prototype.withdraw=function(withdraw){
+//   console.log("withdrawn:",withdraw)
+// }
+// console.log(account);
+// account.deposite(2000);
+// account.withdraw(1500);
+
+let employee=new Employee("khadija",1000)
+function Employee(name,salary){
+  this .name=name;
+  this .salary=salary;
 }
-Account.prototype.deposite=function(deposite){
-  console.log("deposited:",deposite)
+Employee.prototype.increaseSalary=function(amount){
+  this.salary+=amount;
 }
-Account.prototype.withdraw=function(withdraw){
-  console.log("withdrawn:",withdraw)
-}
-console.log(account);
-account.deposite(2000);
-account.withdraw(1500);
+console.log(employee);
+employee.increaseSalary(50);
