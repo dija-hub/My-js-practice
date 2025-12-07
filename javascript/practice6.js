@@ -861,3 +861,10 @@ function Phone(brand,price){
 }
 console.log(phone1);
 console.log(phone2);
+
+let bag=new Bag("black","large")
+function Bag(color,size){
+  this.color=color;
+  this.size=size;
+}
+console.log(bag);
