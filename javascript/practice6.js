@@ -759,65 +759,77 @@ async function run(){
 // }
 // task2().then(res => console.log(res))
 
-function api(){
-  return new Promise((resolve,reject)=>{
-   setTimeout(()=>{
-    console.log("weater data ")
-   resolve(200)
-   },2000)
-  })
+// function api(){
+//   return new Promise((resolve,reject)=>{
+//    setTimeout(()=>{
+//     console.log("weater data ")
+//    resolve(200)
+//    },2000)
+//   })
+// }
+// async function getdata(){
+//   await api();
+//   await api();
+// }
+// //iffe
+
+// (async function (){
+//   console.log("getting data1")
+//   await getData(1);
+//     console.log("getting data2")
+//   await getData(2);
+// })()
+
+
+// let person = {
+//   name:"khadija",
+//   sayHello:function(){
+//     console.log(`hello ${this.name}`)
+//   }
+// }
+// person.sayHello();
+
+// let obj={
+//   talk:function(){
+//     console.log("talking...")
+//   }
+// }
+// obj.talk();
+
+// let cat={
+//   talk(){
+//     console.log("meowww")
+//   }
+// }
+// cat.talk();
+
+// let dog={
+//   breed:"huskey",
+//   bark:()=>{
+//     console.log("woof woof")
+//   }
+// }
+// console.log(Object.entries(dog));
+
+// const car ={
+//   brand:"Toyota",
+//   color:"black",
+//   model:"2022"
+// }
+// console.log(Object.entries(car))
+
+// car.color='white'
+
+// console.log(car)
+
+let car1=new Car("toyota","black","2022")
+let car2=new Car("honda","red","2020")
+
+
+function Car(brand,color,model){
+  this.brand=brand;
+  this.color=color;
+  this.model=model;
 }
-async function getdata(){
-  await api();
-  await api();
-}
-//iffe
-
-(async function (){
-  console.log("getting data1")
-  await getData(1);
-    console.log("getting data2")
-  await getData(2);
-})()
-
-
-let person = {
-  name:"khadija",
-  sayHello:function(){
-    console.log(`hello ${this.name}`)
-  }
-}
-person.sayHello();
-
-let obj={
-  talk:function(){
-    console.log("talking...")
-  }
-}
-obj.talk();
-
-let cat={
-  talk(){
-    console.log("meowww")
-  }
-}
-cat.talk();
-
-let dog={
-  breed:"huskey",
-  bark:()=>{
-    console.log("woof woof")
-  }
-}
-console.log(Object.entries(dog));
-
-const car ={
-  brand:"Toyota",
-  color:"black",
-  model:"2022"
-}
-console.log(Object.entries(car))
-
-car.color='white'
-
-console.log(car)
+console.log(car1);
+console.log(car2);
