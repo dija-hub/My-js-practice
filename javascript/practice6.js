@@ -912,3 +912,19 @@ Product.prototype.disount=function(discount){
 }
 console.log(product);
 console.log(product.disount(5000));
+
+
+let account =new Account("khadija",10000)
+function Account(owner,balance){
+  this.owner=owner;
+  this.balance=balance;
+}
+Account.prototype.deposite=function(deposite){
+  console.log("deposited:",deposite)
+}
+Account.prototype.withdraw=function(withdraw){
+  console.log("withdrawn:",withdraw)
+}
+console.log(account);
+account.deposite(2000);
+account.withdraw(1500);
