@@ -844,3 +844,11 @@ function Student(name,age){
 console.log(student1);
 console.log(student2);
 
+let book=new Book ("Math","Khadija",2022)
+
+function Book(title,writer,year){
+  this.title=title;
+  this.writer=writer;
+  this.year=year;
+}
+console.log(book)
