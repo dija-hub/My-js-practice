@@ -852,3 +852,12 @@ function Book(title,writer,year){
   this.year=year;
 }
 console.log(book)
+
+let phone1=new Phone("iPhone",40000)
+let phone2=new Phone("Samsung",35000)
+function Phone(brand,price){
+  this.brand=brand;
+  this.price=price;
+}
+console.log(phone1);
+console.log(phone2);
