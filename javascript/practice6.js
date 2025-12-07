@@ -822,14 +822,25 @@ async function run(){
 
 // console.log(car)
 
-let car1=new Car("toyota","black","2022")
-let car2=new Car("honda","red","2020")
+// let car1=new Car("toyota","black","2022")
+// let car2=new Car("honda","red","2020")
 
 
-function Car(brand,color,model){
-  this.brand=brand;
-  this.color=color;
-  this.model=model;
+// function Car(brand,color,model){
+//   this.brand=brand;
+//   this.color=color;
+//   this.model=model;
+// }
+// console.log(car1);
+// console.log(car2);
+
+let student1 = new Student("kahdija",16)
+let student2=new Student ("aiman",18)
+
+function Student(name,age){
+  this.name=name;
+  this.age=age;
 }
-console.log(car1);
-console.log(car2);
+console.log(student1);
+console.log(student2);
+
