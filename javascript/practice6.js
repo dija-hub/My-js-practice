@@ -887,3 +887,17 @@ function Person(name,age,greet){
 }
 console.log(person);
 person.greet();
+
+let car1 =new Car ("Toyota","black")
+let car2 =new Car ("honda","black")
+function Car(brand,color){
+  this.brand=brand;
+  this.color=color;
+}
+Car.prototype.drive=function(){
+  console.log("driving...")
+}
+console.log(car1);
+console.log(car2);
+car1.drive();
+car2.drive();
