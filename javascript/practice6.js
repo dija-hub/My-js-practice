@@ -868,3 +868,11 @@ function Bag(color,size){
   this.size=size;
 }
 console.log(bag);
+
+let movie=new Movie("Sweet Home","5 star",2022)
+function Movie(name,rating,year){
+  this.name=name;
+  this.rating=rating;
+  this.year=year;
+}
+console.log(movie);
