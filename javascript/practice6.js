@@ -901,3 +901,14 @@ console.log(car1);
 console.log(car2);
 car1.drive();
 car2.drive();
+
+let product=new Product("laptop",50000)
+function Product(name,price){
+  this.name=name;
+  this.price=price;
+}
+Product.prototype.disount=function(discount){
+  return this.price-discount;
+}
+console.log(product);
+console.log(product.disount(5000));
