@@ -87,3 +87,7 @@ sayHi();
 let nums = [1, 2, 3];
 nums.push(4);
 console.log(nums);
+
+let person = { name: "Sara", age: 15 };
+person.age = 16;
+console.log(person);
