@@ -971,6 +971,7 @@ let shop=new Shop(["shampoo",
   "conditioner",
   "hair oil",
   "body wash"])
+
   function Shop(item){
  this.item=item;
   }
@@ -979,8 +980,8 @@ let shop=new Shop(["shampoo",
 Shop.prototype.newitem=function(newitem){
   console.log(this.item.push(newitem))
 }
-Shop.prototype.removeitem=function(item){
-  console.log(this.item.slice(item,1))
+Shop.prototype.removeitem=function(ritem){
+  console.log(this.item.filter(item =>item !== ritem))
 }
 
 
