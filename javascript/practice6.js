@@ -929,33 +929,61 @@ async function run(){
 // account.deposite(2000);
 // account.withdraw(1500);
 
-let employee=new Employee("khadija",1000)
-function Employee(name,salary){
-  this .name=name;
-  this .salary=salary;
-}
-Employee.prototype.increaseSalary=function(amount){
-  this.salary+=amount;
-}
-console.log(employee);
-employee.increaseSalary(50);
+// let employee=new Employee("khadija",1000)
+// function Employee(name,salary){
+//   this .name=name;
+//   this .salary=salary;
+// }
+// Employee.prototype.increaseSalary=function(amount){
+//   this.salary+=amount;
+// }
+// console.log(employee);
+// employee.increaseSalary(50);
 
-let library=new Library("city library",[
-  "To Kill a Mockingbird",
-  "1984",
-  "The Great Gatsby"
-])
-function Library(name,books){
-  this.name=name;
-  this.books=books;
+// let library=new Library("city library",[
+//   "To Kill a Mockingbird",
+//   "1984",
+//   "The Great Gatsby"
+// ])
+// function Library(name,books){
+//   this.name=name;
+//   this.books=books;
+// }
+// Library.prototype.addbook=function (bookname){
+// this.books.push(bookname)
+// }
+// Library.prototype.showbooks=function(){
+//   console.log("books available:",this.books)
+// }
+
+// console.log(library);
+// library.addbook("Moby");
+// library.showbooks();
+
+
+let shop=new Shop(["shampoo",
+  "soap",
+  "toothpaste",
+  "perfume",
+  "lotion",
+  "cream",
+  "facewash",
+  "conditioner",
+  "hair oil",
+  "body wash"])
+  function Shop(item){
+ this.item=item;
+  }
+  console.log(shop)
+
+Shop.prototype.newitem=function(newitem){
+  console.log(this.item.push(newitem))
 }
-Library.prototype.addbook=function (bookname){
-this.books.push(bookname)
-}
-Library.prototype.showbooks=function(){
-  console.log("books available:",this.books)
+Shop.prototype.removeitem=function(item){
+  console.log(this.item.pop(item))
 }
 
-console.log(library);
-library.addbook("Moby");
-library.showbooks();
+
+shop.removeitem("cream")
+shop.newitem("deodorant")
+
