@@ -980,7 +980,7 @@ Shop.prototype.newitem=function(newitem){
   console.log(this.item.push(newitem))
 }
 Shop.prototype.removeitem=function(item){
-  console.log(this.item.pop(item))
+  console.log(this.item.slice(item,1))
 }
 
 
