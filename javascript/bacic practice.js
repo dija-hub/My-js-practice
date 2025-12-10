@@ -83,3 +83,7 @@ function sayHi() {
   console.log("Hello");
 }
 sayHi();
+
+let nums = [1, 2, 3];
+nums.push(4);
+console.log(nums);
