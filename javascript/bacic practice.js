@@ -36,3 +36,10 @@ function showFruits(arr) {
 }
 
 showFruits(["banana", "orange"]);
+
+let books = [
+  { title: "Math", pages: 100 },
+  { title: "Science", pages: 120 }
+];
+
+console.log(books[1].title); // Science
