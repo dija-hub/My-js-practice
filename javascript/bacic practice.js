@@ -42,4 +42,14 @@ let books = [
   { title: "Science", pages: 120 }
 ];
 
-console.log(books[1].title); // Science
+console.log(books[1].title); 
+
+function makePerson(name, age) {
+  return {
+    personName: name,
+    personAge: age
+  };
+}
+
+let p1 = makePerson("Khadija", 16);
+console.log(p1);
