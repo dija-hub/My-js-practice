@@ -30,3 +30,9 @@ let car = {
 };
 
 car.start();
+
+function showFruits(arr) {
+  console.log("Your fruits:", arr);
+}
+
+showFruits(["banana", "orange"]);
