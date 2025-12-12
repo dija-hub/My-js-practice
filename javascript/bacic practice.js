@@ -62,3 +62,11 @@ function showNames(list) {
 }
 
 showNames(["Ali", "Sara", "Zara"]);
+
+function showNames(list) {
+  for (let name of list) {
+    console.log("Name:", name);
+  }
+}
+
+showNames(["Ali", "Sara", "Zara"]);
