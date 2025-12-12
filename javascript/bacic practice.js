@@ -12,3 +12,8 @@ let student = {
 };
 
 console.log(student.name); 
+
+function greet() {
+  console.log("Hello!");
+}
+greet();
