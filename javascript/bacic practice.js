@@ -78,3 +78,8 @@
 
 let fruits = ["apple", "mango", "banana"];
 console.log(fruits[1]);
+
+function sayHi() {
+  console.log("Hello");
+}
+sayHi();
