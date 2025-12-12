@@ -20,3 +20,13 @@ greet();
 
 let fruits = ["apple", "mango", "grapes"];
 console.log(fruits[0]); 
+
+
+let car = {
+  brand: "Toyota",
+  start: function() {
+    console.log("Car started");
+  }
+};
+
+car.start();
