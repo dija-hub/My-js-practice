@@ -53,3 +53,12 @@ function makePerson(name, age) {
 
 let p1 = makePerson("Khadija", 16);
 console.log(p1);
+
+
+function showNames(list) {
+  for (let name of list) {
+    console.log("Name:", name);
+  }
+}
+
+showNames(["Ali", "Sara", "Zara"]);
