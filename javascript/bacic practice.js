@@ -97,10 +97,10 @@
 
 var array=["apple", "banana", "grape", "orange", "mango", "peach","kiwi"];
 
-document.write(array.length);
-document.write("<br>");
-document.write(array.sort());
-document.write("<br>");
-document.write(array.push("watermelon"));
+console.log(array.length);
 
+console.log(array.sort());
+
+array.push("watermelon");
+console.log("after push:"+array);
 
