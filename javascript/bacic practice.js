@@ -76,28 +76,31 @@
 // let car = { brand: "Honda", color: "red" };
 // console.log(car.brand);
 
-let fruits = ["apple", "mango", "banana"];
-console.log(fruits[1]);
+// let fruits = ["apple", "mango", "banana"];
+// console.log(fruits[1]);
 
-function sayHi() {
-  console.log("Hello");
-}
-sayHi();
+// function sayHi() {
+//   console.log("Hello");
+// }
+// sayHi();
 
-let nums = [1, 2, 3];
-nums.push(4);
-console.log(nums);
+// let nums = [1, 2, 3];
+// nums.push(4);
+// console.log(nums);
 
-let person = { name: "Sara", age: 15 };
-person.age = 16;
-console.log(person);
+// let person = { name: "Sara", age: 15 };
+// person.age = 16;
+// console.log(person);
 
 // var friends =["Ali", "Sara", "Zara"];
 // document.write(friends[0]);
 
 var array=["apple", "banana", "grape", "orange", "mango", "peach","kiwi"];
 
-var length=array.length;
+document.write(array.length);
+document.write("<br>");
+document.write(array.sort());
+document.write("<br>");
+document.write(array.push("watermelon"));
 
-document .write(length);
 
