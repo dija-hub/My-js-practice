@@ -92,7 +92,12 @@ let person = { name: "Sara", age: 15 };
 person.age = 16;
 console.log(person);
 
-var friends =["Ali", "Sara", "Zara"];
-document.write(friends[0]);
+// var friends =["Ali", "Sara", "Zara"];
+// document.write(friends[0]);
 
+var array=["apple", "banana", "grape", "orange", "mango", "peach","kiwi"];
+
+var length=array.length;
+
+document .write(length);
 
