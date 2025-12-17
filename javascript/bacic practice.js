@@ -95,12 +95,24 @@
 // var friends =["Ali", "Sara", "Zara"];
 // document.write(friends[0]);
 
-var array=["apple", "banana", "grape", "orange", "mango", "peach","kiwi"];
+// var array=["apple", "banana", "grape", "orange", "mango", "peach","kiwi"];
 
-console.log(array.length);
+// console.log(array.length);
 
-console.log(array.sort());
+// console.log(array.sort());
 
-array.push("watermelon");
-console.log("after push:"+array);
+// array.push("watermelon");
+// console.log("after push:"+array);
 
+let fruits = ["apple", "banana", "mango"];
+fruits.push("orange")
+fruits.pop()
+fruits.unshift("grapes")
+fruits.shift()
+fruits.length
+fruits.includes("banana")
+fruits.indexOf("mango")
+fruits.sort()
+fruits.reverse()
+fruits.join()
+console.log(fruits)
