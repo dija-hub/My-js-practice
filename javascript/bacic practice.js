@@ -307,3 +307,10 @@ function BankAccount(name, balance) {
 let acc1 = new BankAccount("Khadija", 1000);
 acc1.checkBalance();
 
+function User(username, isLoggedIn) {
+  this.username = username;
+  this.isLoggedIn = isLoggedIn;
+}
+
+let u1 = new User("khadija123", true);
+console.log(u1);
