@@ -294,3 +294,16 @@ let b2 = new Book("HTML Easy", "John");
 
 console.log(b1);
 console.log(b2);
+
+
+function BankAccount(name, balance) {
+  this.name = name;
+  this.balance = balance;
+  this.checkBalance = function () {
+    console.log(this.balance);
+  };
+}
+
+let acc1 = new BankAccount("Khadija", 1000);
+acc1.checkBalance();
+
