@@ -283,3 +283,14 @@ let m1 = new Mobile("Samsung", 50000);
 m1.price = 45000;  
 console.log(m1);
 
+
+function Book(title, author) {
+  this.title = title;
+  this.author = author;
+}
+
+let b1 = new Book("JS Basics", "Alex");
+let b2 = new Book("HTML Easy", "John");
+
+console.log(b1);
+console.log(b2);
