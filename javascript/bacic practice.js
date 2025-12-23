@@ -197,7 +197,7 @@ function BankAccount(username,balance=0){
 // console.log(jhon ,alison);
 
 
-// console.log(jhon .accnum);
+
 
 const accform= document.querySelector("#accform")
 const username= document.querySelector("#name")
