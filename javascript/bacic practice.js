@@ -136,8 +136,12 @@
 //     }
 // }
 
-for (let i=1;i<=10;i++){
-    if(i>5){
-        console.log(i)
-    }
+// for (let i=1;i<=10;i++){
+//     if(i>5){
+//         console.log(i)
+//     }
+// }
+let total=20;
+for (let i=0;i+2;i++){
+    console.log(i)
 }
