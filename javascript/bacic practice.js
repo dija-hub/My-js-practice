@@ -104,15 +104,28 @@
 // array.push("watermelon");
 // console.log("after push:"+array);
 
-let fruits = ["apple", "banana", "mango"];
-fruits.push("orange")
-fruits.pop()
-fruits.unshift("grapes")
-fruits.shift()
-console.log(fruits.length)
-console.log(fruits.includes("banana"))
-console.log(fruits.indexOf("mango"))
-fruits.sort()
-fruits.reverse()
-console.log(fruits.join("|"))
-console.log(console.log(fruits))
+// let fruits = ["apple", "banana", "mango"];
+// fruits.push("orange")
+// fruits.pop()
+// fruits.unshift("grapes")
+// fruits.shift()
+// console.log(fruits.length)
+// console.log(fruits.includes("banana"))
+// console.log(fruits.indexOf("mango"))
+// fruits.sort()
+// fruits.reverse()
+// console.log(fruits.join("|"))
+// console.log(console.log(fruits))
+
+
+// let num=[2,4,6];
+// let arr =num.map(num=>num+1)
+// console.log(arr)
+
+// let fruits=["apple", "banana", "kiwi", "mango"]
+// let NF=fruits.filter(fruits.length < 5);
+// console.log(NF)
+
+for(let i=1;i<=5;i++){
+    console.log("student",i)
+}
