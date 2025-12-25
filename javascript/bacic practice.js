@@ -153,6 +153,7 @@
 
 const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
 
-for(let i=0;i<prices.length;){
+for(let i=0;i<prices.length;i++){
     console.log(prices[i])
 }
+
