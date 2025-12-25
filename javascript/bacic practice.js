@@ -151,9 +151,22 @@
 // }
 
 
+// const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
+
+// for(let i=0;i<prices.length;i++){
+//     console.log(prices[i])
+// }
+
+
 const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
 
-for(let i=0;i<prices.length;i++){
-    console.log(prices[i])
+for (let i = 0; i < prices.length; i++) {
+  if (prices[i] > 20) {
+    
+    let discountedPrice = prices[i] * 0.9;
+    console.log(`VIP Price: $${discountedPrice}`);
+  } else {
+    
+    console.log(`Standard Price: $${prices[i]}`);
+  }
 }
-
