@@ -206,6 +206,6 @@ const balance= document.querySelector("#balance")
 
 accform .addEventListener("submit",(e)=>{
 e.preventDefault()
-console.log(name .value,balance.value)
+console.log(username .value,balance.value)
 })
 
