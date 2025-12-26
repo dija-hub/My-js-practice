@@ -175,10 +175,30 @@ function BankAccount(username,balance=0){
   this.username=username;
   this.balance=balance;
   this.accnum =Date.now();
+
+  this.deposit =function (amount){
+    this .balance += amount
+  }
+
+  this.withdraw=function (amount){
+    this.balance-=amount
+  }
 }
 
-const jhon=new BankAccount("jhon ",1000)
-const alison=new BankAccount("alisoon")
 
-console.log(jhon ,alison)
-console.log(jhon .accnum)
+const jhon=new BankAccount("jhon ",1000);
+const alison=new BankAccount("alisoon");
+
+alison .deposit(1000)
+jhon .deposit(5000)
+
+jhon.withdraw(1000)
+
+console.log(jhon ,alison);
+
+
+// console.log(jhon .accnum);
+
+
+
+
