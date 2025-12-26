@@ -126,48 +126,57 @@
 // let NF=fruits.filter(fruits.length < 5);
 // console.log(NF)
 
-for(let i=1;i<=5;i++){
-    console.log("student",i)
-}
+// for(let i=1;i<=5;i++){
+//     console.log("student",i)
+// }
 
-for (let i=1;i<=10;i++){
-    if(i%2===0){
-    console.log( i)
-    }
-}
+// for (let i=1;i<=10;i++){
+//     if(i%2===0){
+//     console.log( i)
+//     }
+// }
 
-for (let i=1;i<=10;i++){
-    if(i>5){
-        console.log(i)
-    }
-}
+// for (let i=1;i<=10;i++){
+//     if(i>5){
+//         console.log(i)
+//     }
+// }
 
-for(let i=1;i<=10;i++){
-    console.log("smartphone",i,"arrived")
-} 
+// for(let i=1;i<=10;i++){
+//     console.log("smartphone",i,"arrived")
+// } 
 
-for (let i = 2; i <= 20; i += 2) {
-    console.log("Even number: " + i);
-}
+// for (let i = 2; i <= 20; i += 2) {
+//     console.log("Even number: " + i);
+// }
+
+
+// // const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
+
+// // for(let i=0;i<prices.length;i++){
+// //     console.log(prices[i])
+// // }
 
 
 // const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
 
-// for(let i=0;i<prices.length;i++){
-//     console.log(prices[i])
+// for (let i = 0; i < prices.length; i++) {
+//   if (prices[i] > 20) {
+    
+//     let discountedPrice = prices[i] * 0.9;
+//     console.log(`VIP Price: $${discountedPrice}`);
+//   } else {
+    
+//     console.log(`Standard Price: $${prices[i]}`);
+//   }
 // }
 
-
-const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
-
-for (let i = 0; i < prices.length; i++) {
-  if (prices[i] > 20) {
-    
-    let discountedPrice = prices[i] * 0.9;
-    console.log(`VIP Price: $${discountedPrice}`);
-  } else {
-    
-    console.log(`Standard Price: $${prices[i]}`);
-  }
+function BankAccount(username,balance=0){
+  this.username=username;
+  this.balance=balance;
+  this.accnum =Date.now();
 }
 
+const jhon=new BankAccount("jhon ",1000)
+
+console.log(jhon)
