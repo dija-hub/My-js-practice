@@ -186,19 +186,26 @@ function BankAccount(username,balance=0){
 }
 
 
-const jhon=new BankAccount("jhon ",1000);
-const alison=new BankAccount("alisoon");
+// const jhon=new BankAccount("jhon ",1000);
+// const alison=new BankAccount("alisoon");
 
-alison .deposit(1000)
-jhon .deposit(5000)
+// alison .deposit(1000)
+// jhon .deposit(5000)
 
-jhon.withdraw(1000)
+// jhon.withdraw(1000)
 
-console.log(jhon ,alison);
+// console.log(jhon ,alison);
 
 
 // console.log(jhon .accnum);
 
+const accform= document.querySelector("#accform")
+const username= document.querySelector("#name")
+const balance= document.querySelector("#balance")
 
 
+accform .addEventListener("submit",(e)=>{
+e.preventDefault()
+console.log(name .value,balance.value)
+})
 
