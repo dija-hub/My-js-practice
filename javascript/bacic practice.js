@@ -181,3 +181,4 @@ const jhon=new BankAccount("jhon ",1000)
 const alison=new BankAccount("alisoon")
 
 console.log(jhon ,alison)
+console.log(jhon .accnum)
