@@ -178,5 +178,6 @@ function BankAccount(username,balance=0){
 }
 
 const jhon=new BankAccount("jhon ",1000)
+const alison=new BankAccount("alisoon")
 
-console.log(jhon)
+console.log(jhon ,alison)
