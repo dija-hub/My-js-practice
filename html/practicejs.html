@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #outerdiv{
+        padding: 4px;
+        border:10px solid purple;
+        width:0 auto;
+        margin:10px;
+        text-align: center;
+    }
+
+      #middiv{
+        padding: 4px;
+        border:10px solid rgb(139, 49, 139);
+        width:0 auto;
+        margin:10px;
+        text-align: center;
+    }
+
+      #innerdiv{
+        padding: 4px;
+        border:10px solid rgb(166, 99, 180);
+        width:0 auto;
+        margin:10px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="outerdiv">outer
+        <div id="middiv">mid
+            <div id="innerdiv">
+                inner
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("outerdiv").addEventListener
+        ("click",()=>{
+            console.log("outer div has been clicked")
+        },true)
+
+         document.getElementById("middiv").addEventListener
+        ("click",()=>{
+            console.log("middle div has been clicked")
+        },true)
+
+         document.getElementById("innerdiv").addEventListener
+        ("click",()=>{
+            console.log("inner div has been clicked")
+        },true)
+    </script>
+</body>
+</html>
