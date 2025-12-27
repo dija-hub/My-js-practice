@@ -214,3 +214,5 @@ let car = function(brand,model,year){
   this.year=year;
 }
 let car1= new car("toyota","Corolla",2022);
+
+
