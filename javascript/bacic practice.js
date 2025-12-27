@@ -171,22 +171,24 @@
 //   }
 // }
 
-function BankAccount(username,balance=0){
-  this.username=username;
-  this.balance=balance;
-  this.accnum =Date.now();
+// function BankAccount(username,balance=0){
+//   this.username=username;
+//   this.balance=balance;
+//   this.accnum =Date.now();
 
-  this.deposit =function (amount){
-    this .balance += amount
-  }
+//   this.deposit =function (amount){
+//     this .balance += amount
+//   }
 
-  this.withdraw=function (amount){
-    this.balance-=amount
-  }
-}
+//   this.withdraw=function (amount){
+//     this.balance-=amount
+//   }
+// }
 
 
-// const jhon=new BankAccount("jhon ",1000);
+
+
+// // const jhon=new BankAccount("jhon ",1000);
 // const alison=new BankAccount("alisoon");
 
 // alison .deposit(1000)
@@ -198,14 +200,11 @@ function BankAccount(username,balance=0){
 
 
 
+let Person =function (name ,age) {
+  this.name=name;
+  this.age=age;
+}
 
-const accform= document.querySelector("#accform")
-const username= document.querySelector("#name")
-const balance= document.querySelector("#balance")
+let person1 =new Person("khadija",2) 
 
-
-accform .addEventListener("submit",(e)=>{
-e.preventDefault()
-console.log(username .value,balance.value)
-})
 
