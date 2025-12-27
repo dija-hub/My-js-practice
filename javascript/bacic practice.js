@@ -150,10 +150,18 @@
 //     console.log("Even number: " + i);
 // }
 
-let arr = [10, 20, 30, 40];
+// let arr = [10, 20, 30, 40];
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+
+let arr = [1, 2, 3, 4, 5];
+let sum = 0;
 for(let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+    sum += arr[i];
 }
+console.log("Sum:", sum);
 
 // // const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
 
