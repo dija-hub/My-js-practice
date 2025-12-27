@@ -208,3 +208,9 @@ let Person =function (name ,age) {
 let person1 =new Person("khadija",2) 
 
 
+let car = function(brand,model,year){
+  this.brand=brand;
+  this.model=model;
+  this.year=year;
+}
+let car1= new car("toyota","Corolla",2022);
