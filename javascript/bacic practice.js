@@ -272,3 +272,14 @@ function Student(name, marks) {
 
 let s1 = new Student("Ali", 85);
 s1.showMarks();
+
+
+function Mobile(brand, price) {
+  this.brand = brand;
+  this.price = price;
+}
+
+let m1 = new Mobile("Samsung", 50000);
+m1.price = 45000;  
+console.log(m1);
+
