@@ -260,3 +260,15 @@ let car2 = new Car("Honda", "Civic");
 
 console.log(car1);
 console.log(car2);
+
+
+function Student(name, marks) {
+  this.name = name;
+  this.marks = marks;
+  this.showMarks = function () {
+    console.log(this.marks);
+  };
+}
+
+let s1 = new Student("Ali", 85);
+s1.showMarks();
