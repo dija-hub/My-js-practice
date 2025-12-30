@@ -218,33 +218,45 @@ console.log("Sum:", sum);
 
 
 
-let Person =function (name ,age) {
-  this.name=name;
-  this.age=age;
+// let Person =function (name ,age) {
+//   this.name=name;
+//   this.age=age;
+// }
+
+// let person1 =new Person("khadija",2) 
+
+
+// let car = function(brand,model,year){
+//   this.brand=brand;
+//   this.model=model;
+//   this.year=year;
+// }
+// let car1= new car("toyota","Corolla",2022);
+
+
+// let numbers = [1, 2, 3, 4];
+
+// numbers.push(5);   
+// numbers.shift();  
+
+// console.log(numbers);
+
+// function User(username, email) {
+//   this.username = username;
+//   this.email = email;
+// }
+
+// let user1 = new User("khadija123", "test@gmail.com");
+// console.log(user1);
+
+
+function Car(brand, model) {
+  this.brand = brand;
+  this.model = model;
 }
 
-let person1 =new Person("khadija",2) 
+let car1 = new Car("Toyota", "Corolla");
+let car2 = new Car("Honda", "Civic");
 
-
-let car = function(brand,model,year){
-  this.brand=brand;
-  this.model=model;
-  this.year=year;
-}
-let car1= new car("toyota","Corolla",2022);
-
-
-let numbers = [1, 2, 3, 4];
-
-numbers.push(5);   
-numbers.shift();  
-
-console.log(numbers);
-
-function User(username, email) {
-  this.username = username;
-  this.email = email;
-}
-
-let user1 = new User("khadija123", "test@gmail.com");
-console.log(user1);
+console.log(car1);
+console.log(car2);
