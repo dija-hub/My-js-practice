@@ -234,3 +234,9 @@ let car = function(brand,model,year){
 let car1= new car("toyota","Corolla",2022);
 
 
+let numbers = [1, 2, 3, 4];
+
+numbers.push(5);   
+numbers.shift();  
+
+console.log(numbers);
