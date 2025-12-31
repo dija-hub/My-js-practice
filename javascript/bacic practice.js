@@ -240,3 +240,11 @@ numbers.push(5);
 numbers.shift();  
 
 console.log(numbers);
+
+function User(username, email) {
+  this.username = username;
+  this.email = email;
+}
+
+let user1 = new User("khadija123", "test@gmail.com");
+console.log(user1);
