@@ -156,18 +156,18 @@
 // }
 
 
-for(let i = 5; i >= 1; i--) {
-    console.log(i);
-}
+// for(let i = 5; i >= 1; i--) {
+//     console.log(i);
+// }
 
 
 
-let arr = [1, 2, 3, 4, 5];
-let sum = 0;
-for(let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-}
-console.log("Sum:", sum);
+// let arr = [1, 2, 3, 4, 5];
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+// console.log("Sum:", sum);
 
 // // const prices = [49.99, 15.00, 120.00, 5.50, 22.00];
 
@@ -250,67 +250,81 @@ console.log("Sum:", sum);
 // console.log(user1);
 
 
-function Car(brand, model) {
-  this.brand = brand;
-  this.model = model;
+// function Car(brand, model) {
+//   this.brand = brand;
+//   this.model = model;
+// }
+
+// let car1 = new Car("Toyota", "Corolla");
+// let car2 = new Car("Honda", "Civic");
+
+// console.log(car1);
+// console.log(car2);
+
+
+// function Student(name, marks) {
+//   this.name = name;
+//   this.marks = marks;
+//   this.showMarks = function () {
+//     console.log(this.marks);
+//   };
+// }
+
+// let s1 = new Student("Ali", 85);
+// s1.showMarks();
+
+
+// function Mobile(brand, price) {
+//   this.brand = brand;
+//   this.price = price;
+// }
+
+// let m1 = new Mobile("Samsung", 50000);
+// m1.price = 45000;  
+// console.log(m1);
+
+
+// function Book(title, author) {
+//   this.title = title;
+//   this.author = author;
+// }
+
+// let b1 = new Book("JS Basics", "Alex");
+// let b2 = new Book("HTML Easy", "John");
+
+// console.log(b1);
+// console.log(b2);
+
+
+// function BankAccount(name, balance) {
+//   this.name = name;
+//   this.balance = balance;
+//   this.checkBalance = function () {
+//     console.log(this.balance);
+//   };
+// }
+
+// let acc1 = new BankAccount("Khadija", 1000);
+// acc1.checkBalance();
+
+// function User(username, isLoggedIn) {
+//   this.username = username;
+//   this.isLoggedIn = isLoggedIn;
+// }
+
+// let u1 = new User("khadija123", true);
+// console.log(u1);
+
+
+class Person {
+  constructor(){
+    this.name = "khadija wajid";
+    this.age = 16;
+  }
+  
 }
+let person1 = new Person();
 
-let car1 = new Car("Toyota", "Corolla");
-let car2 = new Car("Honda", "Civic");
-
-console.log(car1);
-console.log(car2);
-
-
-function Student(name, marks) {
-  this.name = name;
-  this.marks = marks;
-  this.showMarks = function () {
-    console.log(this.marks);
-  };
-}
-
-let s1 = new Student("Ali", 85);
-s1.showMarks();
-
-
-function Mobile(brand, price) {
-  this.brand = brand;
-  this.price = price;
-}
-
-let m1 = new Mobile("Samsung", 50000);
-m1.price = 45000;  
-console.log(m1);
-
-
-function Book(title, author) {
-  this.title = title;
-  this.author = author;
-}
-
-let b1 = new Book("JS Basics", "Alex");
-let b2 = new Book("HTML Easy", "John");
-
-console.log(b1);
-console.log(b2);
-
-
-function BankAccount(name, balance) {
-  this.name = name;
-  this.balance = balance;
-  this.checkBalance = function () {
-    console.log(this.balance);
-  };
-}
-
-let acc1 = new BankAccount("Khadija", 1000);
-acc1.checkBalance();
-
-function User(username, isLoggedIn) {
-  this.username = username;
-  this.isLoggedIn = isLoggedIn;
-}
-
-let u1 = new User("khadija123", true);
-console.log(u1);
+console.log(person1.name);
+console.log(person1.age);
+console.log(person1);
