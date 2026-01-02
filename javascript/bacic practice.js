@@ -352,13 +352,15 @@ console.log(car1.brand);
 console.log(car1.model);
 
 class User {
-  constructor(username ,showuser){
-    this . username =username ;
-    this . showuser =function (){
-      console.log(`the user is : ${this .username}`);
+  constructor(username) {
+    this.username = username;
+  }
+
+  showUser() {
+    console.log(`The user is: ${this.username}`);
   }
 }
-}
 
-let user1 =new User ("khadija123",showuser);
-console.log(user1);
+let user1 = new User("khadija123");
+user1.showUser();
+
