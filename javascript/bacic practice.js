@@ -379,3 +379,16 @@ let m1=new Mobile("Samsung",50000);
 console.log(m1.brand)
 console.log(m1.price)
 m1.Price();
+
+class Book {
+  constructor(title){
+    this . title =title ;
+  }
+  Title(){
+    console.log(`The title is: ${this.title}`);
+  }
+}
+
+let b1=new Book("JS Basics");
+console.log(b1.title)
+b1.Title();
