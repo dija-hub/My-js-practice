@@ -437,3 +437,20 @@ getmarks(){
 let s1= new Student(88);
 s1.setmarks(105);
 console.log(s1.getmarks());
+
+
+class User {
+  #password;
+
+  constructor(username, password){
+    this.username = username;
+    this.#password = password;
+  }
+  checkpassword(password){
+    return this.#password === password;
+}
+}
+let u1=new User("khadija","mypassword");
+console.log(u1.checkpassword("mypassword"));  
+console.log(u1.username)
+console.log(u1.password)
