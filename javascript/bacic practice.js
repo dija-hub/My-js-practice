@@ -351,3 +351,14 @@ let car1 = new Car("Toyota", "Corolla");
 console.log(car1.brand);
 console.log(car1.model);
 
+class User {
+  constructor(username ,showuser){
+    this . username =username ;
+    this . showuser =function (){
+      console.log(`the user is : ${this .username}`);
+  }
+}
+}
+
+let user1 =new User ("khadija123",showuser);
+console.log(user1);
