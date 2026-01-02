@@ -364,3 +364,18 @@ class User {
 let user1 = new User("khadija123");
 user1.showUser();
 
+class Mobile {
+
+  constructor(brand,price){
+    this.brand=brand;
+    this.price=price;
+  }
+Price(){
+  console.log(`The price is: ${this.price}`);
+}
+}
+ 
+let m1=new Mobile("Samsung",50000);
+console.log(m1.brand)
+console.log(m1.price)
+m1.Price();
