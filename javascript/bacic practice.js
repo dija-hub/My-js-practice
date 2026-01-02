@@ -329,66 +329,111 @@
 // console.log(person1.age);
 // console.log(person1);
 
-class  Student{
-  constructor (name ,marks ){
-    this . name =name ;
-    this . marks =marks ;
-  }
-}
-let student1= new Student ("Ali",85);
+// class  Student{
+//   constructor (name ,marks ){
+//     this . name =name ;
+//     this . marks =marks ;
+//   }
+// }
+// let student1= new Student ("Ali",85);
 
-console.log(student1.name);
-console.log(student1.marks);
+// console.log(student1.name);
+// console.log(student1.marks);
 
-class Car {
-  constructor(brand, model) {
-    this.brand = brand;
-    this.model = model;
-  }
-}
+// class Car {
+//   constructor(brand, model) {
+//     this.brand = brand;
+//     this.model = model;
+//   }
+// }
 
-let car1 = new Car("Toyota", "Corolla");
-console.log(car1.brand);
-console.log(car1.model);
+// let car1 = new Car("Toyota", "Corolla");
+// console.log(car1.brand);
+// console.log(car1.model);
 
-class User {
-  constructor(username) {
-    this.username = username;
-  }
+// class User {
+//   constructor(username) {
+//     this.username = username;
+//   }
 
-  showUser() {
-    console.log(`The user is: ${this.username}`);
-  }
-}
+//   showUser() {
+//     console.log(`The user is: ${this.username}`);
+//   }
+// }
 
-let user1 = new User("khadija123");
-user1.showUser();
+// let user1 = new User("khadija123");
+// user1.showUser();
 
-class Mobile {
+// class Mobile {
 
-  constructor(brand,price){
-    this.brand=brand;
-    this.price=price;
-  }
-Price(){
-  console.log(`The price is: ${this.price}`);
-}
-}
+//   constructor(brand,price){
+//     this.brand=brand;
+//     this.price=price;
+//   }
+// Price(){
+//   console.log(`The price is: ${this.price}`);
+// }
+// }
  
-let m1=new Mobile("Samsung",50000);
-console.log(m1.brand)
-console.log(m1.price)
-m1.Price();
+// let m1=new Mobile("Samsung",50000);
+// console.log(m1.brand)
+// console.log(m1.price)
+// m1.Price();
 
-class Book {
-  constructor(title){
-    this . title =title ;
+// class Book {
+//   constructor(title){
+//     this . title =title ;
+//   }
+//   Title(){
+//     console.log(`The title is: ${this.title}`);
+//   }
+// }
+
+// let b1=new Book("JS Basics");
+// console.log(b1.title)
+// b1.Title();
+
+
+ class BankAccount {
+
+  #balance;
+
+  constructor(balance){
+    this .#balance = balance;
   }
-  Title(){
-    console.log(`The title is: ${this.title}`);
+  getBalance(){
+    return this.#balance;
+  }
+  
+  deposit(amount){
+    this.#balance += amount;
+      console.log("Deposited: " + amount); 
   }
 }
 
-let b1=new Book("JS Basics");
-console.log(b1.title)
-b1.Title();
+let acc1=new BankAccount (1000);
+acc1.deposit(500);
+console.log(acc1.getBalance());
+
+class Student {
+  #marks;
+  constructor(marks){
+  this . #marks= marks;
+
+  }
+  setmarks(marks){
+
+      if(marks<0 || marks >100){
+    console.log("valid marks");
+  }else{
+    console.log("invalid marks");
+  }
+  }
+getmarks(){
+  return this.#marks;
+}
+}
+
+let s1= new Student(88);
+s1.setmarks(105);
+console.log(s1.getmarks());
