@@ -454,3 +454,25 @@ let u1=new User("khadija","mypassword");
 console.log(u1.checkpassword("mypassword"));  
 console.log(u1.username)
 console.log(u1.password)
+
+class Product{
+  #price;
+  constructor(price){
+    this.#price=price;
+
+  }
+  setter(){
+    if(this.#price<0 ){
+      console.log("invalid price");
+  }else{
+    console.log("valid price");
+  }
+}
+getter(){
+  this.#price=this.#price;
+}
+}
+
+let p1=new Product (150);
+p1.setter(400);
+console.log(p1.getter());
