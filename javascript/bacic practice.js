@@ -423,7 +423,8 @@ class Student {
   }
   setmarks(marks){
 
-      if(marks<0 || marks >100){
+      if(marks<=0 || marks >=100){
+        this.#marks=marks;
     console.log("valid marks");
   }else{
     console.log("invalid marks");
@@ -453,7 +454,7 @@ class User {
 let u1=new User("khadija","mypassword");
 console.log(u1.checkpassword("mypassword"));  
 console.log(u1.username)
-console.log(u1.password)
+
 
 class Product{
   #price;
@@ -461,15 +462,15 @@ class Product{
     this.#price=price;
 
   }
-  setter(){
-    if(this.#price<0 ){
-      console.log("invalid price");
+  setter(price){
+    if(price>0 ){
+      console.log("valid price");
   }else{
-    console.log("valid price");
+    console.log("invalid price");
   }
 }
 getter(){
-  this.#price=this.#price;
+  return this.#price;
 }
 }
 
