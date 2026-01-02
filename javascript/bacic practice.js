@@ -316,15 +316,38 @@
 // console.log(u1);
 
 
-class Person {
-  constructor(){
-    this.name = "khadija wajid";
-    this.age = 16;
-  }
+// class Person {
+//   constructor(){
+//     this.name = "khadija wajid";
+//     this.age = 16;
+//   }
   
-}
-let person1 = new Person();
+// }
+// let person1 = new Person();
 
-console.log(person1.name);
-console.log(person1.age);
-console.log(person1);
+// console.log(person1.name);
+// console.log(person1.age);
+// console.log(person1);
+
+class  Student{
+  constructor (name ,marks ){
+    this . name =name ;
+    this . marks =marks ;
+  }
+}
+let student1= new Student ("Ali",85);
+
+console.log(student1.name);
+console.log(student1.marks);
+
+class Car {
+  constructor(brand, model) {
+    this.brand = brand;
+    this.model = model;
+  }
+}
+
+let car1 = new Car("Toyota", "Corolla");
+console.log(car1.brand);
+console.log(car1.model);
+
