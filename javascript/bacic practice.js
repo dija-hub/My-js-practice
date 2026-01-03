@@ -526,3 +526,30 @@ class bankAcc{
 
 let acc1=new bankAcc(2000);
 acc1.withDraw(500);
+
+
+class User {
+  #password = "1234";
+
+  showPassword() {
+    console.log(this.#password);
+  }
+}
+
+let u1 = new User();
+u1.showPassword();
+
+
+class Student {
+  #marks;
+
+  constructor(marks) {
+    this.#marks = marks;
+  }
+
+  getMarks() {
+    return this.#marks;
+  }
+}
+let s1 = new Student(90);
+console.log(s1.getMarks());
