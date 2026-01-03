@@ -570,3 +570,17 @@ class Mobile {
 
 let m1 = new Mobile(50000);
 console.log(m1.updatePrice(30000))
+
+class Car {
+  #speed;
+constructor(speed) {
+    this.#speed =speed;
+  }
+
+  setSpeed(speed) {
+    return this.#speed = speed;
+  }
+}
+
+let c1 = new Car(200);
+console.log(c1.setSpeed(300));
