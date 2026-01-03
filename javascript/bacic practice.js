@@ -378,102 +378,117 @@
 // let m1=new Mobile("Samsung",50000);
 // console.log(m1.brand)
 // console.log(m1.price)
-// m1.Price();
+// // m1.Price();
 
-// class Book {
-//   constructor(title){
-//     this . title =title ;
+// // class Book {
+// //   constructor(title){
+// //     this . title =title ;
+// //   }
+// //   Title(){
+// //     console.log(`The title is: ${this.title}`);
+// //   }
+// // }
+
+// // let b1=new Book("JS Basics");
+// // console.log(b1.title)
+// // b1.Title();
+
+
+//  class BankAccount {
+
+//   #balance;
+
+//   constructor(balance){
+//     this .#balance = balance;
 //   }
-//   Title(){
-//     console.log(`The title is: ${this.title}`);
+//   getBalance(){
+//     return this.#balance;
+//   }
+  
+//   deposit(amount){
+//     this.#balance += amount;
+//       console.log("Deposited: " + amount); 
 //   }
 // }
 
-// let b1=new Book("JS Basics");
-// console.log(b1.title)
-// b1.Title();
+// let acc1=new BankAccount (1000);
+// acc1.deposit(500);
+// console.log(acc1.getBalance());
+
+// class Student {
+//   #marks;
+//   constructor(marks){
+//   this . #marks= marks;
+
+//   }
+//   setmarks(marks){
+
+//       if(marks<=0 || marks >=100){
+//         this.#marks=marks;
+//     console.log("valid marks");
+//   }else{
+//     console.log("invalid marks");
+//   }
+//   }
+// getmarks(){
+//   return this.#marks;
+// }
+// }
+
+// let s1= new Student(88);
+// s1.setmarks(105);
+// console.log(s1.getmarks());
 
 
- class BankAccount {
+// class User {
+//   #password;
 
-  #balance;
-
-  constructor(balance){
-    this .#balance = balance;
-  }
-  getBalance(){
-    return this.#balance;
-  }
-  
-  deposit(amount){
-    this.#balance += amount;
-      console.log("Deposited: " + amount); 
-  }
-}
-
-let acc1=new BankAccount (1000);
-acc1.deposit(500);
-console.log(acc1.getBalance());
-
-class Student {
-  #marks;
-  constructor(marks){
-  this . #marks= marks;
-
-  }
-  setmarks(marks){
-
-      if(marks<=0 || marks >=100){
-        this.#marks=marks;
-    console.log("valid marks");
-  }else{
-    console.log("invalid marks");
-  }
-  }
-getmarks(){
-  return this.#marks;
-}
-}
-
-let s1= new Student(88);
-s1.setmarks(105);
-console.log(s1.getmarks());
+//   constructor(username, password){
+//     this.username = username;
+//     this.#password = password;
+//   }
+//   checkpassword(password){
+//     return this.#password === password;
+// }
+// }
+// let u1=new User("khadija","mypassword");
+// console.log(u1.checkpassword("mypassword"));  
+// console.log(u1.username)
 
 
-class User {
+// class Product{
+//   #price;
+//   constructor(price){
+//     this.#price=price;
+
+//   }
+//   setter(price){
+//     if(price>0 ){
+//       console.log("valid price");
+//   }else{
+//     console.log("invalid price");
+//   }
+// }
+// getter(){
+//   return this.#price;
+// }
+// }
+
+// let p1=new Product (150);
+// p1.setter(400);
+// console.log(p1.getter());
+
+class User{
   #password;
-
-  constructor(username, password){
-    this.username = username;
-    this.#password = password;
+  constructor(username,password ){
+ this .username=username;
+ this.#password=password;
   }
-  checkpassword(password){
-    return this.#password === password;
-}
-}
-let u1=new User("khadija","mypassword");
-console.log(u1.checkpassword("mypassword"));  
-console.log(u1.username)
-
-
-class Product{
-  #price;
-  constructor(price){
-    this.#price=price;
-
+  checkPassword(password){
+this.#password===password
   }
-  setter(price){
-    if(price>0 ){
-      console.log("valid price");
-  }else{
-    console.log("invalid price");
-  }
-}
-getter(){
-  return this.#price;
-}
-}
 
-let p1=new Product (150);
-p1.setter(400);
-console.log(p1.getter());
+}
+let U1=new User("khadija","1234567");
+console.log(U1.checkPassword("1234567"));  
+console.log(U1.username)
