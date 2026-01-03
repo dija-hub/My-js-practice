@@ -495,14 +495,34 @@
 
 
 
-class Book {
-  #title;
-  constructor(title){
-    this.#title=title;
-  }
-  getTitle(){return this.#title;
+// class Book {
+//   #title;
+//   constructor(title){
+//     this.#title=title;
+//   }
+//   getTitle(){return this.#title;
 
+//   }
+// }
+// let b1=new Book("JS Basics");
+// console.log(b1.getTitle())
+
+class bankAcc{
+  #balance;
+  constructor(balance){
+    this.#balance=balance;
   }
+  withDraw(amount){
+    if(amount>0){
+      this.#balance-=amount;
+    console.log("withdrawn:",this.#balance);
+    }else{
+      console.log("invalid amount");
+    };
+   
+  }
+
 }
-let b1=new Book("JS Basics");
-console.log(b1.getTitle())
+
+let acc1=new bankAcc(2000);
+acc1.withDraw(500);
