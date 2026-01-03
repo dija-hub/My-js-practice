@@ -485,7 +485,7 @@ class User{
  this.#password=password;
   }
   checkPassword(password){
-this.#password===password
+return this.#password===password
   }
 
 }
