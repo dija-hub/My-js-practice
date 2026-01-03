@@ -478,17 +478,31 @@
 // p1.setter(400);
 // console.log(p1.getter());
 
-class User{
-  #password;
-  constructor(username,password ){
- this .username=username;
- this.#password=password;
-  }
-  checkPassword(password){
-return this.#password===password
-  }
+// class User{
+//   #password;
+//   constructor(username,password ){
+//  this .username=username;
+//  this.#password=password;
+//   }
+//   checkPassword(password){
+// return this.#password===password
+//   }
 
+// }
+// let U1=new User("khadija","1234567");
+// console.log(U1.checkPassword("1234567"));  
+// console.log(U1.username)
+
+
+
+class Book {
+  #title;
+  constructor(title){
+    this.#title=title;
+  }
+  getTitle(){return this.#title;
+
+  }
 }
-let U1=new User("khadija","1234567");
-console.log(U1.checkPassword("1234567"));  
-console.log(U1.username)
+let b1=new Book("JS Basics");
+console.log(b1.getTitle())
