@@ -553,3 +553,20 @@ class Student {
 }
 let s1 = new Student(90);
 console.log(s1.getMarks());
+
+class Mobile {
+  #price;
+
+  constructor(price) {
+    this.#price = price;
+  }
+
+  updatePrice(amount) {
+    if (amount > 0) {
+      return this.#price = amount;
+    }
+  }
+}
+
+let m1 = new Mobile(50000);
+console.log(m1.updatePrice(30000))
