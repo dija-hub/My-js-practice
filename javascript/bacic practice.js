@@ -680,3 +680,20 @@ class Phone{
 let p1=new Phone();
 p1.connect();
 p1.endCall();
+
+class Login {
+  #password = "1234";
+
+  login(input) {
+    if (input === this.#password) {
+      console.log("Login successful");
+    } else {
+      console.log("Wrong password");
+    }
+  }
+}
+
+let user = new Login();
+user.login("1234");
+
+
