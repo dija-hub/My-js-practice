@@ -603,3 +603,33 @@ class Car{
 let myCar=new Car();
 myCar.start();
 myCar.stop();
+
+class BankAccount{
+  #balance;
+
+  constructor(balance){
+    this.#balance=balance;
+  
+  }
+
+  deposit(amount){
+    this.#balance +=amount;
+    console.log("deposited:",this.#balance);
+  }
+  withDraw(amount){
+    if(amount>0 && amount<=this.#balance){
+      this.#balance -=amount;
+      console.log("withdrawn:",this.#balance);
+    }else{
+      console.log("invalid amount");
+    }
+  }
+
+  getBalance(){
+    console.log("balance:",this.#balance);
+  }
+}
+let ac1=new BankAccount (1000);
+acc1.deposit(500);
+acc1.withDraw(300);
+acc1.getBalance();
