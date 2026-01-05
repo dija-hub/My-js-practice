@@ -633,3 +633,20 @@ let ac1=new BankAccount (1000);
 acc1.deposit(500);
 acc1.withDraw(300);
 acc1.getBalance();
+
+class fan{
+  #isOn=false;
+
+  turnOn(){
+    this.#isOn=true;
+    console.log("fan is on");
+  }
+
+  turnOff(){
+    this.#isOn=false;
+    console.log("fan is off");
+  }
+}
+let f1=new fan();
+f1.turnOn();
+f1.turnOff();
