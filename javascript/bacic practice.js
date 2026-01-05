@@ -578,9 +578,28 @@ constructor(speed) {
   }
 
   setSpeed(speed) {
-    return this.#speed = speed;
+    this.#speed = speed;
   }
 }
 
 let c1 = new Car(200);
 console.log(c1.setSpeed(300));
+
+
+class Car{
+  #engineStatus=false;
+
+  start(){
+    this.#engineStatus=true;
+    console.log("car started");
+  }
+
+  stop(){
+    this.#engineStatus=false;
+    console.log("car stopped");
+  }
+}
+
+let myCar=new Car();
+myCar.start();
+myCar.stop();
