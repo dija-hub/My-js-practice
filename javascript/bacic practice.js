@@ -666,3 +666,17 @@ class Switch{
 let l1=new Switch();
 s1.turnon();
 s1.turnoff();
+
+class Phone{
+  #network="connected";
+
+  connect(){
+    console.log("phone is connected to network");
+  }
+  endCall(){
+    console.log("call ended");
+  }
+}
+let p1=new Phone();
+p1.connect();
+p1.endCall();
