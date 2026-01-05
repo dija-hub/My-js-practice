@@ -697,3 +697,16 @@ let user = new Login();
 user.login("1234");
 
 
+class Music{
+  #song="playing";
+
+  play(){
+    console.log("music is playing");
+  }
+  pause(){
+    console.log("music is paused");
+  }
+}
+let mu1=new Music();  
+mu1.play();
+mu1.pause();
