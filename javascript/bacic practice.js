@@ -650,3 +650,19 @@ class fan{
 let f1=new fan();
 f1.turnOn();
 f1.turnOff();
+
+class Switch{
+  #status=false;
+
+  turnon(){
+    this.#status="on";
+    console.log("light ON")
+  }
+  turnoff(){
+    this.#status="off";
+    console.log("light OFF")
+  }
+}
+let l1=new Switch();
+s1.turnon();
+s1.turnoff();
