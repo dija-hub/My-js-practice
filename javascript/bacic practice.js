@@ -726,3 +726,19 @@ class Door{
 let door=new Door();
 door.open()
 door.close()
+
+class Machine{
+  #motor=false;
+
+  start(){
+    this.#motor=true;
+    console.log("machine started");
+  }
+  stop(){
+    this.#motor=false;
+    console.log("machine stopped");
+  }
+}
+let machine=new Machine();
+machine.start();
+machine.stop();
