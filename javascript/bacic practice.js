@@ -813,3 +813,29 @@ let ac = new AC();
 ac.increase();
 ac.decrease();
 console.log(ac.showTemp());
+
+
+class Wallet {
+  #money = 2000;
+
+  spend(amount) {
+    if (amount > 0 && amount <= this.#money) {
+      this.#money -= amount;
+    }
+  }
+
+  addMoney(amount) {
+    if (amount > 0) {
+      this.#money += amount;
+    }
+  }
+
+  checkMoney() {
+    return this.#money;
+  }
+}
+
+let w1 = new Wallet();
+w1.spend(500);
+w1.addMoney(300);
+console.log(w1.checkMoney());
