@@ -711,34 +711,60 @@
 // mu1.play();
 // mu1.pause();
 
-class Door{
-  #isopen=false;
-  open (){
-    this.#isopen=true;
-    console.log("door is open");
+// class Door{
+//   #isopen=false;
+//   open (){
+//     this.#isopen=true;
+//     console.log("door is open");
 
+//   }
+//   close(){
+//     this.#isopen=false;
+//     console.log("door is closed");
+//   }
+// }
+// let door=new Door();
+// door.open()
+// door.close()
+
+// class Machine{
+//   #motor=false;
+
+//   start(){
+//     this.#motor=true;
+//     console.log("machine started");
+//   }
+//   stop(){
+//     this.#motor=false;
+//     console.log("machine stopped");
+//   }
+// }
+// let machine=new Machine();
+// machine.start();
+// machine.stop();
+
+class Bottle{
+  #level=1000;
+  
+  drink(drank){
+    if(drank>0 && drank<=this.#level){
+      this.#level-=drank;
+    }
+    else{
+      console.log("cannot drink");
+    }
   }
-  close(){
-    this.#isopen=false;
-    console.log("door is closed");
+  refill(level){
+    
+      this.#level=1000;
+    
+  
+  }
+  checklevel(){
+    return this.#level;
   }
 }
-let door=new Door();
-door.open()
-door.close()
-
-class Machine{
-  #motor=false;
-
-  start(){
-    this.#motor=true;
-    console.log("machine started");
-  }
-  stop(){
-    this.#motor=false;
-    console.log("machine stopped");
-  }
-}
-let machine=new Machine();
-machine.start();
-machine.stop();
+let bottle=new Bottle();
+bottle.drink(300);
+bottle.refill();
+console.log(bottle.checklevel());
