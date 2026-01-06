@@ -743,28 +743,73 @@
 // machine.start();
 // machine.stop();
 
-class Bottle{
-  #level=1000;
+// class Bottle{
+//   #level=1000;
   
-  drink(drank){
-    if(drank>0 && drank<=this.#level){
-      this.#level-=drank;
+//   drink(drank){
+//     if(drank>0 && drank<=this.#level){
+//       this.#level-=drank;
+//     }
+//     else{
+//       console.log("cannot drink");
+//     }
+//   }
+//   refill(level){
+    
+//       this.#level=1000;
+    
+  
+//   }
+//   checklevel(){
+//     return this.#level;
+//   }
+// }
+// let bottle=new Bottle();
+// bottle.drink(300);
+// bottle.refill();
+// console.log(bottle.checklevel());
+
+class CoffeeMachine{
+  #level=1000;
+
+  makeCoffee(amount){
+    if(amount> this.#level){
+      console.log("not enough coffee");
     }
     else{
-      console.log("cannot drink");
+      this.#level-=amount;
+      console.log("coffee made:",amount);
     }
   }
-  refill(level){
-    
-      this.#level=1000;
-    
-  
+refill(){
+  this.#level=1000;
+}
+checkLevel(){
+  return this.#level;
+}
+}
+let coffeeMachine=new CoffeeMachine();
+coffeeMachine.makeCoffee(200);
+coffeeMachine.refill();
+console.log(coffeeMachine.checkLevel());
+
+class AC {
+  #temp = 24;
+
+  increase() {
+    this.#temp++;
   }
-  checklevel(){
-    return this.#level;
+
+  decrease() {
+    this.#temp--;
+  }
+
+  showTemp() {
+    return this.#temp;
   }
 }
-let bottle=new Bottle();
-bottle.drink(300);
-bottle.refill();
-console.log(bottle.checklevel());
+
+let ac = new AC();
+ac.increase();
+ac.decrease();
+console.log(ac.showTemp());
