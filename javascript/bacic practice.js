@@ -507,206 +507,222 @@
 // let b1=new Book("JS Basics");
 // console.log(b1.getTitle())
 
-class bankAcc{
-  #balance;
-  constructor(balance){
-    this.#balance=balance;
-  }
-  withDraw(amount){
-    if(amount>0){
-      this.#balance-=amount;
-    console.log("withdrawn:",this.#balance);
-    }else{
-      console.log("invalid amount");
-    };
+// class bankAcc{
+//   #balance;
+//   constructor(balance){
+//     this.#balance=balance;
+//   }
+//   withDraw(amount){
+//     if(amount>0){
+//       this.#balance-=amount;
+//     console.log("withdrawn:",this.#balance);
+//     }else{
+//       console.log("invalid amount");
+//     };
    
-  }
+//   }
 
-}
+// }
 
-let acc1=new bankAcc(2000);
-acc1.withDraw(500);
-
-
-class User {
-  #password = "1234";
-
-  showPassword() {
-    console.log(this.#password);
-  }
-}
-
-let u1 = new User();
-u1.showPassword();
+// let acc1=new bankAcc(2000);
+// acc1.withDraw(500);
 
 
-class Student {
-  #marks;
+// class User {
+//   #password = "1234";
 
-  constructor(marks) {
-    this.#marks = marks;
-  }
+//   showPassword() {
+//     console.log(this.#password);
+//   }
+// }
 
-  getMarks() {
-    return this.#marks;
-  }
-}
-let s1 = new Student(90);
-console.log(s1.getMarks());
-
-class Mobile {
-  #price;
-
-  constructor(price) {
-    this.#price = price;
-  }
-
-  updatePrice(amount) {
-    if (amount > 0) {
-      return this.#price = amount;
-    }
-  }
-}
-
-let m1 = new Mobile(50000);
-console.log(m1.updatePrice(30000))
-
-class Car {
-  #speed;
-constructor(speed) {
-    this.#speed =speed;
-  }
-
-  setSpeed(speed) {
-    this.#speed = speed;
-  }
-}
-
-let c1 = new Car(200);
-console.log(c1.setSpeed(300));
+// let u1 = new User();
+// u1.showPassword();
 
 
-class Car{
-  #engineStatus=false;
+// class Student {
+//   #marks;
 
-  start(){
-    this.#engineStatus=true;
-    console.log("car started");
-  }
+//   constructor(marks) {
+//     this.#marks = marks;
+//   }
 
-  stop(){
-    this.#engineStatus=false;
-    console.log("car stopped");
-  }
-}
+//   getMarks() {
+//     return this.#marks;
+//   }
+// }
+// let s1 = new Student(90);
+// console.log(s1.getMarks());
 
-let myCar=new Car();
-myCar.start();
-myCar.stop();
+// class Mobile {
+//   #price;
 
-class BankAccount{
-  #balance;
+//   constructor(price) {
+//     this.#price = price;
+//   }
 
-  constructor(balance){
-    this.#balance=balance;
+//   updatePrice(amount) {
+//     if (amount > 0) {
+//       return this.#price = amount;
+//     }
+//   }
+// }
+
+// let m1 = new Mobile(50000);
+// console.log(m1.updatePrice(30000))
+
+// class Car {
+//   #speed;
+// constructor(speed) {
+//     this.#speed =speed;
+//   }
+
+//   setSpeed(speed) {
+//     this.#speed = speed;
+//   }
+// }
+
+// let c1 = new Car(200);
+// console.log(c1.setSpeed(300));
+
+
+// class Car{
+//   #engineStatus=false;
+
+//   start(){
+//     this.#engineStatus=true;
+//     console.log("car started");
+//   }
+
+//   stop(){
+//     this.#engineStatus=false;
+//     console.log("car stopped");
+//   }
+// }
+
+// let myCar=new Car();
+// myCar.start();
+// myCar.stop();
+
+// class BankAccount{
+//   #balance;
+
+//   constructor(balance){
+//     this.#balance=balance;
   
-  }
+//   }
 
-  deposit(amount){
-    this.#balance +=amount;
-    console.log("deposited:",this.#balance);
-  }
-  withDraw(amount){
-    if(amount>0 && amount<=this.#balance){
-      this.#balance -=amount;
-      console.log("withdrawn:",this.#balance);
-    }else{
-      console.log("invalid amount");
-    }
-  }
+//   deposit(amount){
+//     this.#balance +=amount;
+//     console.log("deposited:",this.#balance);
+//   }
+//   withDraw(amount){
+//     if(amount>0 && amount<=this.#balance){
+//       this.#balance -=amount;
+//       console.log("withdrawn:",this.#balance);
+//     }else{
+//       console.log("invalid amount");
+//     }
+//   }
 
-  getBalance(){
-    console.log("balance:",this.#balance);
+//   getBalance(){
+//     console.log("balance:",this.#balance);
+//   }
+// }
+// let ac1=new BankAccount (1000);
+// acc1.deposit(500);
+// acc1.withDraw(300);
+// acc1.getBalance();
+
+// class fan{
+//   #isOn=false;
+
+//   turnOn(){
+//     this.#isOn=true;
+//     console.log("fan is on");
+//   }
+
+//   turnOff(){
+//     this.#isOn=false;
+//     console.log("fan is off");
+//   }
+// }
+// let f1=new fan();
+// f1.turnOn();
+// f1.turnOff();
+
+// class Switch{
+//   #status=false;
+
+//   turnon(){
+//     this.#status="on";
+//     console.log("light ON")
+//   }
+//   turnoff(){
+//     this.#status="off";
+//     console.log("light OFF")
+//   }
+// }
+// let l1=new Switch();
+// s1.turnon();
+// s1.turnoff();
+
+// class Phone{
+//   #network="connected";
+
+//   connect(){
+//     console.log("phone is connected to network");
+//   }
+//   endCall(){
+//     console.log("call ended");
+//   }
+// }
+// let p1=new Phone();
+// p1.connect();
+// p1.endCall();
+
+// class Login {
+//   #password = "1234";
+
+//   login(input) {
+//     if (input === this.#password) {
+//       console.log("Login successful");
+//     } else {
+//       console.log("Wrong password");
+//     }
+//   }
+// }
+
+// let user = new Login();
+// user.login("1234");
+
+
+// class Music{
+//   #song="playing";
+
+//   play(){
+//     console.log("music is playing");
+//   }
+//   pause(){
+//     console.log("music is paused");
+//   }
+// }
+// let mu1=new Music();  
+// mu1.play();
+// mu1.pause();
+
+class Door{
+  #isopen=false;
+  open (){
+    this.#isopen=true;
+    console.log("door is open");
+
+  }
+  close(){
+    this.#isopen=false;
+    console.log("door is closed");
   }
 }
-let ac1=new BankAccount (1000);
-acc1.deposit(500);
-acc1.withDraw(300);
-acc1.getBalance();
-
-class fan{
-  #isOn=false;
-
-  turnOn(){
-    this.#isOn=true;
-    console.log("fan is on");
-  }
-
-  turnOff(){
-    this.#isOn=false;
-    console.log("fan is off");
-  }
-}
-let f1=new fan();
-f1.turnOn();
-f1.turnOff();
-
-class Switch{
-  #status=false;
-
-  turnon(){
-    this.#status="on";
-    console.log("light ON")
-  }
-  turnoff(){
-    this.#status="off";
-    console.log("light OFF")
-  }
-}
-let l1=new Switch();
-s1.turnon();
-s1.turnoff();
-
-class Phone{
-  #network="connected";
-
-  connect(){
-    console.log("phone is connected to network");
-  }
-  endCall(){
-    console.log("call ended");
-  }
-}
-let p1=new Phone();
-p1.connect();
-p1.endCall();
-
-class Login {
-  #password = "1234";
-
-  login(input) {
-    if (input === this.#password) {
-      console.log("Login successful");
-    } else {
-      console.log("Wrong password");
-    }
-  }
-}
-
-let user = new Login();
-user.login("1234");
-
-
-class Music{
-  #song="playing";
-
-  play(){
-    console.log("music is playing");
-  }
-  pause(){
-    console.log("music is paused");
-  }
-}
-let mu1=new Music();  
-mu1.play();
-mu1.pause();
+let door=new Door();
+door.open()
+door.close()
