@@ -769,73 +769,91 @@
 // bottle.refill();
 // console.log(bottle.checklevel());
 
-class CoffeeMachine{
-  #level=1000;
+// class CoffeeMachine{
+//   #level=1000;
 
-  makeCoffee(amount){
-    if(amount> this.#level){
-      console.log("not enough coffee");
+//   makeCoffee(amount){
+//     if(amount> this.#level){
+//       console.log("not enough coffee");
+//     }
+//     else{
+//       this.#level-=amount;
+//       console.log("coffee made:",amount);
+//     }
+//   }
+// refill(){
+//   this.#level=1000;
+// }
+// checkLevel(){
+//   return this.#level;
+// }
+// }
+// let coffeeMachine=new CoffeeMachine();
+// coffeeMachine.makeCoffee(200);
+// coffeeMachine.refill();
+// console.log(coffeeMachine.checkLevel());
+
+// class AC {
+//   #temp = 24;
+
+//   increase() {
+//     this.#temp++;
+//   }
+
+//   decrease() {
+//     this.#temp--;
+//   }
+
+//   showTemp() {
+//     return this.#temp;
+//   }
+// }
+
+// let ac = new AC();
+// ac.increase();
+// ac.decrease();
+// console.log(ac.showTemp());
+
+
+// class Wallet {
+//   #money = 2000;
+
+//   spend(amount) {
+//     if (amount > 0 && amount <= this.#money) {
+//       this.#money -= amount;
+//     }
+//   }
+
+//   addMoney(amount) {
+//     if (amount > 0) {
+//       this.#money += amount;
+//     }
+//   }
+
+//   checkMoney() {
+//     return this.#money;
+//   }
+// }
+
+// let w1 = new Wallet();
+// w1.spend(500);
+// w1.addMoney(300);
+// console.log(w1.checkMoney());
+
+
+class PAYMENT{
+  #balance=10000;
+  pay(amount){
+    if(this.#balance>0){
+      this.#balance-=amount;
+    }else{
+      console.log("insufficient balance");
     }
-    else{
-      this.#level-=amount;
-      console.log("coffee made:",amount);
-    }
   }
-refill(){
-  this.#level=1000;
-}
-checkLevel(){
-  return this.#level;
-}
-}
-let coffeeMachine=new CoffeeMachine();
-coffeeMachine.makeCoffee(200);
-coffeeMachine.refill();
-console.log(coffeeMachine.checkLevel());
-
-class AC {
-  #temp = 24;
-
-  increase() {
-    this.#temp++;
-  }
-
-  decrease() {
-    this.#temp--;
-  }
-
-  showTemp() {
-    return this.#temp;
+  checkBalance(){
+    return this.#balance
   }
 }
-
-let ac = new AC();
-ac.increase();
-ac.decrease();
-console.log(ac.showTemp());
-
-
-class Wallet {
-  #money = 2000;
-
-  spend(amount) {
-    if (amount > 0 && amount <= this.#money) {
-      this.#money -= amount;
-    }
-  }
-
-  addMoney(amount) {
-    if (amount > 0) {
-      this.#money += amount;
-    }
-  }
-
-  checkMoney() {
-    return this.#money;
-  }
-}
-
-let w1 = new Wallet();
-w1.spend(500);
-w1.addMoney(300);
-console.log(w1.checkMoney());
+let p1=new PAYMENT();
+p1.pay(2000);
+console.log(p1.checkBalance());
