@@ -844,7 +844,7 @@
 class PAYMENT{
   #balance=10000;
   pay(amount){
-    if(this.#balance>0){
+    if(amount<=this.#balance){
       this.#balance-=amount;
     }else{
       console.log("insufficient balance");
@@ -863,7 +863,7 @@ class Smartlock{
   #lock=true;
 
   unlock(pin){
-    if (this.#pin=pin){
+    if (this.#pin===pin){
      this. #lock=false;
     }else{
       console.log("Enter right pin")
@@ -872,4 +872,77 @@ class Smartlock{
 
 }
 let s1=new Smartlock()
-s1.unlock()
+s1.unlock(333)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
