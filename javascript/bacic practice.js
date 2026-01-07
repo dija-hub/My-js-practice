@@ -857,3 +857,19 @@ class PAYMENT{
 let p1=new PAYMENT();
 p1.pay(2000);
 console.log(p1.checkBalance());
+
+class Smartlock{
+  #pin=333;
+  #lock=true;
+
+  unlock(pin){
+    if (this.#pin=pin){
+     this. #lock=false;
+    }else{
+      console.log("Enter right pin")
+    }
+  }
+
+}
+let s1=new Smartlock()
+s1.unlock()
