@@ -874,8 +874,26 @@ class Smartlock{
 let s1=new Smartlock()
 s1.unlock(333)
 
+class INternet{
+  #data;
+  constructor(data){
+    this.#data=data;
+  }
 
-
+  useData(du){
+    if(du <= this.#data){
+      this.#data -=du;
+    }else{
+      console.log("not enough data");
+    }
+  }
+  remainingDATA(){
+    return this.#data
+  }
+}
+let net =new INternet (5000);
+net.useData(2000);
+console.log( net.remainingDATA());
 
 
 
