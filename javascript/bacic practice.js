@@ -908,7 +908,17 @@ counterModule.increment();
 counterModule.increment();
 counterModule.increment();
 
+let messageModule=(function(){
+  let msg="hallo"
+  return{
+    show(){
+      console.log(msg)
+    }
+  }
 
+})()
+
+messageModule.show();
 
 
 
