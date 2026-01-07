@@ -895,8 +895,18 @@ let net =new INternet (5000);
 net.useData(2000);
 console.log( net.remainingDATA());
 
-
-
+let counterModule=(function() {
+  let count =0;
+  return{
+    increment(){
+      count++
+      console.log(count)
+    }
+  }
+})()
+counterModule.increment();
+counterModule.increment();
+counterModule.increment();
 
 
 
