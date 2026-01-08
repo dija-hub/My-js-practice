@@ -956,7 +956,30 @@ console.log(NameModule.getName());
 
 
 
+const StudentModule=(function(){
+  let students="khadija";
+  let marks=0;
+return{
+  setMarks(m){
+   let mark=marks+=m;
+  },
+  addMarks(extra){
+  mark+=extra
+  },
+  getMarks(){
+    return mark;
+  },
+  getResult(marks){
+  if(marks>=40){
+       console.log("pass")
+  }else{
+    console.log("fail")
+  }
+  }
+}
+})()
 
+let sm=new StudentModule()
 
 
 
