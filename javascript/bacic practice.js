@@ -960,14 +960,14 @@ const StudentModule=(function(){
   let students="khadija";
   let marks=0;
 return{
-  setMarks(m){
-   let mark=marks+=m;
+  setMarks(nm){
+    marks=nm;
   },
   addMarks(extra){
-  mark+=extra
+  marks+=extra
   },
   getMarks(){
-    return mark;
+    return marks;
   },
   getResult(marks){
   if(marks>=40){
@@ -979,7 +979,11 @@ return{
 }
 })()
 
-let sm=new StudentModule()
+StudentModule.setMarks(50);
+StudentModule.addMarks(10);
+
+console.log(StudentModule.getMarks());   
+console.log(StudentModule.getResult());  
 
 
 
