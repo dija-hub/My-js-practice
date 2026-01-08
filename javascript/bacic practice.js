@@ -937,6 +937,22 @@ balance +=amount;
   console.log(bankModule.checkBalance());
 
 
+const NameModule = (function () {
+  let name = "Ali"; 
+
+  return {
+    getName() {
+      return name;
+    },
+    setName(newName) {
+      name = newName;
+    }
+  };
+})();
+
+console.log(NameModule.getName()); 
+NameModule.setName("Ahmed");
+console.log(NameModule.getName());
 
 
 
