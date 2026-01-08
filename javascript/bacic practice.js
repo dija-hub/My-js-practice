@@ -921,9 +921,20 @@ let messageModule=(function(){
 messageModule.show();
 
 
+let bankModule=(function(){
+  let balance=1000;
+  return{
+   deposit(amount){
+balance +=amount;
+   },
+    checkBalance(){
+    return balance;
+  }
+  }
+})()
 
-
-
+  bankModule.deposit(500);
+  console.log(bankModule.checkBalance());
 
 
 
