@@ -1006,7 +1006,31 @@ passwordCheck.check(233)
 passwordCheck.setpassword(333)
 
 
-  
+  const lightSwitch=(function(){
+let isOn=false;
+return{
+  trunON(){
+    isOn=true;
+    
+  },
+  turnOFF(){
+    isOn=false;
+    
+  },
+
+  status(){
+    if(isOn==true){
+      console.log("light is ON");
+    }else{
+      console.log("light is OFF");
+    }
+  }
+}
+  })()
+  lightSwitch.trunON();
+  lightSwitch.status();
+  lightSwitch.turnOFF();
+  lightSwitch.status();
 
 
 
