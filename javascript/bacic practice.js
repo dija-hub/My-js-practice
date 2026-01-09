@@ -1033,9 +1033,25 @@ return{
   lightSwitch.status();
 
 
+const CartModule=(function(){
+  let items=[];
+  return{
+    addItems(item){
+      items.push(item)
+    },
+    remove(item){
+      items.slice(item)
+    },
+    
+    showitems(){
+      return items;
+    }
+  }
+})()
 
-
-
+CartModule.addItems("apple");
+CartModule.addItems("banana");
+console.log(CartModule.showitems());
 
 
 
