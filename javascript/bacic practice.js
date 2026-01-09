@@ -841,154 +841,172 @@
 // console.log(w1.checkMoney());
 
 
-class PAYMENT{
-  #balance=10000;
-  pay(amount){
-    if(amount<=this.#balance){
-      this.#balance-=amount;
-    }else{
-      console.log("insufficient balance");
-    }
-  }
-  checkBalance(){
-    return this.#balance
-  }
-}
-let p1=new PAYMENT();
-p1.pay(2000);
-console.log(p1.checkBalance());
+// class PAYMENT{
+//   #balance=10000;
+//   pay(amount){
+//     if(amount<=this.#balance){
+//       this.#balance-=amount;
+//     }else{
+//       console.log("insufficient balance");
+//     }
+//   }
+//   checkBalance(){
+//     return this.#balance
+//   }
+// }
+// let p1=new PAYMENT();
+// p1.pay(2000);
+// console.log(p1.checkBalance());
 
-class Smartlock{
-  #pin=333;
-  #lock=true;
+// class Smartlock{
+//   #pin=333;
+//   #lock=true;
 
-  unlock(pin){
-    if (this.#pin===pin){
-     this. #lock=false;
-    }else{
-      console.log("Enter right pin")
-    }
-  }
+//   unlock(pin){
+//     if (this.#pin===pin){
+//      this. #lock=false;
+//     }else{
+//       console.log("Enter right pin")
+//     }
+//   }
 
-}
-let s1=new Smartlock()
-s1.unlock(333)
+// }
+// let s1=new Smartlock()
+// s1.unlock(333)
 
-class INternet{
-  #data;
-  constructor(data){
-    this.#data=data;
-  }
+// class INternet{
+//   #data;
+//   constructor(data){
+//     this.#data=data;
+//   }
 
-  useData(du){
-    if(du <= this.#data){
-      this.#data -=du;
-    }else{
-      console.log("not enough data");
-    }
-  }
-  remainingDATA(){
-    return this.#data
-  }
-}
-let net =new INternet (5000);
-net.useData(2000);
-console.log( net.remainingDATA());
+//   useData(du){
+//     if(du <= this.#data){
+//       this.#data -=du;
+//     }else{
+//       console.log("not enough data");
+//     }
+//   }
+//   remainingDATA(){
+//     return this.#data
+//   }
+// }
+// let net =new INternet (5000);
+// net.useData(2000);
+// console.log( net.remainingDATA());
 
-let counterModule=(function() {
-  let count =0;
-  return{
-    increment(){
-      count++
-      console.log(count)
-    }
-  }
-})()
-counterModule.increment();
-counterModule.increment();
-counterModule.increment();
+// let counterModule=(function() {
+//   let count =0;
+//   return{
+//     increment(){
+//       count++
+//       console.log(count)
+//     }
+//   }
+// })()
+// counterModule.increment();
+// counterModule.increment();
+// counterModule.increment();
 
-let messageModule=(function(){
-  let msg="hallo"
-  return{
-    show(){
-      console.log(msg)
-    }
-  }
+// let messageModule=(function(){
+//   let msg="hallo"
+//   return{
+//     show(){
+//       console.log(msg)
+//     }
+//   }
 
-})()
+// })()
 
-messageModule.show();
-
-
-let bankModule=(function(){
-  let balance=1000;
-  return{
-   deposit(amount){
-balance +=amount;
-   },
-    checkBalance(){
-    return balance;
-  }
-  }
-})()
-
-  bankModule.deposit(500);
-  console.log(bankModule.checkBalance());
+// messageModule.show();
 
 
-const NameModule = (function () {
-  let name = "Ali"; 
+// let bankModule=(function(){
+//   let balance=1000;
+//   return{
+//    deposit(amount){
+// balance +=amount;
+//    },
+//     checkBalance(){
+//     return balance;
+//   }
+//   }
+// })()
 
-  return {
-    getName() {
-      return name;
-    },
-    setName(newName) {
-      name = newName;
-    }
-  };
-})();
-
-console.log(NameModule.getName()); 
-NameModule.setName("Ahmed");
-console.log(NameModule.getName());
+//   bankModule.deposit(500);
+//   console.log(bankModule.checkBalance());
 
 
+// const NameModule = (function () {
+//   let name = "Ali"; 
 
-const StudentModule=(function(){
-  let students="khadija";
-  let marks=0;
+//   return {
+//     getName() {
+//       return name;
+//     },
+//     setName(newName) {
+//       name = newName;
+//     }
+//   };
+// })();
+
+// console.log(NameModule.getName()); 
+// NameModule.setName("Ahmed");
+// console.log(NameModule.getName());
+
+
+
+// const StudentModule=(function(){
+//   let students="khadija";
+//   let marks=0;
+// return{
+//   setMarks(nm){
+//     marks=nm;
+//   },
+//   addMarks(extra){
+//   marks+=extra
+//   },
+//   getMarks(){
+//     return marks;
+//   },
+//   getResult(marks){
+//   if(marks>=40){
+//        console.log("pass")
+//   }else{
+//     console.log("fail")
+//   }
+//   }
+// }
+// })()
+
+// StudentModule.setMarks(50);
+// StudentModule.addMarks(10);
+
+// console.log(StudentModule.getMarks());   
+// console.log(StudentModule.getResult());  
+
+
+                    
+const passwordCheck=(function(){
+let password=2333;
 return{
-  setMarks(nm){
-    marks=nm;
+  check(inputPassword){
+    if(inputPassword===password){
+      console.log("access granted");
+    }else{
+      console.log("access denied");
+    }
   },
-  addMarks(extra){
-  marks+=extra
-  },
-  getMarks(){
-    return marks;
-  },
-  getResult(marks){
-  if(marks>=40){
-       console.log("pass")
-  }else{
-    console.log("fail")
-  }
+  setpassword(newpass){
+    password=newpass;
   }
 }
 })()
-
-StudentModule.setMarks(50);
-StudentModule.addMarks(10);
-
-console.log(StudentModule.getMarks());   
-console.log(StudentModule.getResult());  
+passwordCheck.check(233)
+passwordCheck.setpassword(333)
 
 
-
-
-
+  
 
 
 
