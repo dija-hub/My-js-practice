@@ -1093,6 +1093,31 @@ const nameModule = (function () {
 nameModule.getName();        
 nameModule.setName("Ali");   
 nameModule.getName();  
+
+const calculator = (function () {
+  return {
+    add(a, b) {
+      return a + b;
+    },
+    subtract(a, b) {
+      return a - b;
+    }
+  };
+})();
+
+console.log(calculator.add(5, 3));      
+console.log(calculator.subtract(10, 4));
+
+
+
+
+
+
+
+
+
+
+
 console.log("Start");
 
 setTimeout(() => {
