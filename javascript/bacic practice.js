@@ -1090,7 +1090,9 @@ const nameModule = (function () {
   };
 })();
 
-
+nameModule.getName();        
+nameModule.setName("Ali");   
+nameModule.getName();  
 console.log("Start");
 
 setTimeout(() => {
