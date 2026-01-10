@@ -987,71 +987,71 @@
 
 
                     
-// const passwordCheck=(function(){
-// let password=2333;
-// return{
-//   check(inputPassword){
-//     if(inputPassword===password){
-//       console.log("access granted");
-//     }else{
-//       console.log("access denied");
-//     }
-//   },
-//   setpassword(newpass){
-//     password=newpass;
-//   }
-// }
-// })()
-// passwordCheck.check(233)
-// passwordCheck.setpassword(333)
+const passwordCheck=(function(){
+let password=2333;
+return{
+  check(inputPassword){
+    if(inputPassword===password){
+      console.log("access granted");
+    }else{
+      console.log("access denied");
+    }
+  },
+  setpassword(newpass){
+    password=newpass;
+  }
+}
+})()
+passwordCheck.check(233)
+passwordCheck.setpassword(333)
 
 
-//   const lightSwitch=(function(){
-// let isOn=false;
-// return{
-//   trunON(){
-//     isOn=true;
+  const lightSwitch=(function(){
+let isOn=false;
+return{
+  trunON(){
+    isOn=true;
     
-//   },
-//   turnOFF(){
-//     isOn=false;
+  },
+  turnOFF(){
+    isOn=false;
     
-//   },
+  },
 
-//   status(){
-//     if(isOn==true){
-//       console.log("light is ON");
-//     }else{
-//       console.log("light is OFF");
-//     }
-//   }
-// }
-//   })()
-//   lightSwitch.trunON();
-//   lightSwitch.status();
-//   lightSwitch.turnOFF();
-//   lightSwitch.status();
+  status(){
+    if(isOn==true){
+      console.log("light is ON");
+    }else{
+      console.log("light is OFF");
+    }
+  }
+}
+  })()
+  lightSwitch.trunON();
+  lightSwitch.status();
+  lightSwitch.turnOFF();
+  lightSwitch.status();
 
 
-// const CartModule=(function(){
-//   let items=[];
-//   return{
-//     addItems(item){
-//       items.push(item)
-//     },
-//     remove(item){
-//       items.slice(item)
-//     },
+const CartModule=(function(){
+  let items=[];
+  return{
+    addItems(item){
+      items.push(item)
+    },
+    remove(item){
+      items=items.filter(item)
+    },
     
-//     showitems(){
-//       return items;
-//     }
-//   }
-// })()
+    showitems(){
+      return items;
+    }
+  }
+})()
 
-// CartModule.addItems("apple");
-// CartModule.addItems("banana");
-// console.log(CartModule.showitems());
+CartModule.addItems("apple");
+CartModule.addItems("banana");
+console.log(CartModule.showitems());
 
 const loginAttempt=(function(){
   let attempt=0;
@@ -1078,8 +1078,11 @@ console.log(loginAttempt.getAttempts());
 
 
 
-
-
+console.log("start")
+setTimeout=(()=>{
+  console.log("inside timeout")
+},1000)
+console.log("end")
 
 
 
