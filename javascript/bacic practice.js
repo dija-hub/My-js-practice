@@ -1135,21 +1135,33 @@
   // };
   // greet .apply(user,["karachi","pakistan"]);
 
-function greet(city){
-  console.log(this.name + " from " + city);
+// function greet(city){
+//   console.log(this.name + " from " + city);
+// }
+
+// const user = {
+//   name: "khadija"
+// };
+
+// const boundGreet = greet.bind(user);
+// boundGreet("karachi");
+
+
+function sayName() {
+  console.log(this.name);
 }
 
-const user = {
-  name: "khadija"
-};
+const user = { name: "Ali" };
 
-const boundGreet = greet.bind(user);
-boundGreet("karachi");
+sayName.call(user);
 
 
 
+function add(a, b) {
+  console.log(a + b);
+}
 
-
+add.apply(null, [2, 3]);
 
 
 
