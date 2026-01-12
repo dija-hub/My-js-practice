@@ -1118,18 +1118,22 @@
 
 
 
-function greet(city){
-  console.log(this.name + "from "+ city);
+// function greet(city){
+//   console.log(this.name + "from "+ city);
+// }
+// const user={
+//   name:"khadija "
+// };
+
+// greet.call(user,"karachi");
+
+function greet(city,country){
+  console.log(this.name +"from" +city +","+country);
 }
 const user={
-  name:"khadija "
+  name:"khadija"
 };
-
-greet.call(user,"karachi");
-
-
-
-
+greet .apply(user,["karachi","pakistan"]);
 
 
 
