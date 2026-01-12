@@ -1127,19 +1127,24 @@
 
 // greet.call(user,"karachi");
 
-function greet(city,country){
-  console.log(this.name +"from" +city +","+country);
+  // function greet(city,country){
+  //   console.log(this.name +"from" +city +","+country);
+  // }
+  // const user={
+  //   name:"khadija"
+  // };
+  // greet .apply(user,["karachi","pakistan"]);
+
+function greet(city){
+  console.log(this.name + " from " + city);
 }
-const user={
-  name:"khadija"
+
+const user = {
+  name: "khadija"
 };
-greet .apply(user,["karachi","pakistan"]);
 
-
-
-
-
-
+const boundGreet = greet.bind(user);
+boundGreet("karachi");
 
 
 
