@@ -1076,62 +1076,56 @@
 // loginAttempt.login("1444");
 // console.log(loginAttempt.getAttempts());
 
-const nameModule = (function () {
-  let name = "khadija"; 
+// const nameModule = (function () {
+//   let name = "khadija"; 
 
-  return {
-    setName(newName) {
-      name = newName;
-      console.log(`Name set to ${name}`);
-    },
-    getName() {
-      console.log(name);
-    }
-  };
-})();
+//   return {
+//     setName(newName) {
+//       name = newName;
+//       console.log(`Name set to ${name}`);
+//     },
+//     getName() {
+//       console.log(name);
+//     }
+//   };
+// })();
 
-nameModule.getName();        
-nameModule.setName("Ali");   
-nameModule.getName();  
+// nameModule.getName();        
+// nameModule.setName("Ali");   
+// nameModule.getName();  
 
-const calculator = (function () {
-  return {
-    add(a, b) {
-      return a + b;
-    },
-    subtract(a, b) {
-      return a - b;
-    }
-  };
-})();
+// const calculator = (function () {
+//   return {
+//     add(a, b) {
+//       return a + b;
+//     },
+//     subtract(a, b) {
+//       return a - b;
+//     }
+//   };
+// })();
 
-console.log(calculator.add(5, 3));      
-console.log(calculator.subtract(10, 4));
+// console.log(calculator.add(5, 3));      
+// console.log(calculator.subtract(10, 4))
 
+// console.log("Start");
 
+// setTimeout(() => {
+//   console.log("Timeout");
+// }, 1000);
 
-
-
-
-
-
-
-
-
-console.log("Start");
-
-setTimeout(() => {
-  console.log("Timeout");
-}, 1000);
-
-console.log("End");
+// console.log("End");
 
 
 
+function greet(city){
+  console.log(this.name + "from "+ city);
+}
+const user={
+  name:"khadija "
+};
 
-
-
-
+greet.call(user,"karachi");
 
 
 
