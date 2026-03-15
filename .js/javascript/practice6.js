@@ -1068,3 +1068,27 @@ let user1={
 }
 newfunction=sayhello9.bind(user1);
 newfunction()
+
+let car1={
+    brand:"toyota",
+    showbrand:function(){
+        console.log("brand "+ this.brand)
+    }
+}
+
+let car2={
+    brand:"honda"
+}
+car1.showbrand.call(car2);
+
+
+let teacher={
+    name:"mr khan",
+    teach:function(){
+        console.log("teaching by "+ this.name)
+    }
+}
+let student={
+    name :"khadija"
+}
+teacher.teach.call(student)
