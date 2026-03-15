@@ -1049,3 +1049,13 @@ function showinfo(){
 }
 showinfo.call(person1)
 showinfo.call(person2)
+
+let user={
+    name:"aiman",
+    age:18,
+    country:"Pakistan"
+}
+function introduce (age, country){
+    return this.name+ " is " +this.age+" from "+this.country;
+}
+console.log(introduce.apply(user,[user.age,user.country]))
