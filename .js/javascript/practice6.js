@@ -1101,3 +1101,16 @@ function showsalary(bonus){
     console.log(this.name +' total salary is '+ (bonus + this.salary))
 }
 showsalary.call (employee,10000)
+
+function findMax(a,b,c){
+    if(a>b&& a>c){
+        console.log("max is "+ a)
+    }
+    else if(b>a && b>c){
+        console.log("max is "+ b)
+    }
+    else{
+        console.log("max is "+ c)
+    }
+}
+findMax.apply(null,[10,30,40])
