@@ -1059,3 +1059,12 @@ function introduce (age, country){
     return this.name+ " is " +this.age+" from "+this.country;
 }
 console.log(introduce.apply(user,[user.age,user.country]))
+
+function sayhello9(){
+    console.log(" hello "+ this.name)
+}
+let user1={
+    name:"ahmed"
+}
+newfunction=sayhello9.bind(user1);
+newfunction()
