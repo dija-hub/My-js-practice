@@ -1092,3 +1092,12 @@ let student={
     name :"khadija"
 }
 teacher.teach.call(student)
+
+let employee={
+    name:"ali",
+    salary:50000,
+}
+function showsalary(bonus){
+    console.log(this.name +' total salary is '+ (bonus + this.salary))
+}
+showsalary.call (employee,10000)
