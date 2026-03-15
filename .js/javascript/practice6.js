@@ -1019,3 +1019,18 @@ console.log(participant2)
 
 participant1.chargeBatery.call(participant3)
 console.log(participant3)
+
+function person1(){
+name:"khadija"
+city:"karachi"
+
+function greet(){
+    console.log(this.name+"lives in "+this.city)
+}
+}
+function person2(){
+    name:"aiman"
+    city:"karachi"
+}
+
+person1.greet.call(person2);
