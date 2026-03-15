@@ -1036,81 +1036,92 @@
 // person1.greet.call(person2);
 
 
-let  person1={
-name:"salmon",
-city:"pindi"
-}
-let person2={
-    name:"sara",
-    city:"karachi"
-}
-function showinfo(){
-    console.log(this.name+" lives in "+this.city)
-}
-showinfo.call(person1)
-showinfo.call(person2)
+// let  person1={
+// name:"salmon",
+// city:"pindi"
+// }
+// let person2={
+//     name:"sara",
+//     city:"karachi"
+// }
+// function showinfo(){
+//     console.log(this.name+" lives in "+this.city)
+// }
+// showinfo.call(person1)
+// showinfo.call(person2)
 
+// let user={
+//     name:"aiman",
+//     age:18,
+//     country:"Pakistan"
+// }
+// function introduce (age, country){
+//     return this.name+ " is " +this.age+" from "+this.country;
+// }
+// console.log(introduce.apply(user,[user.age,user.country]))
+
+// function sayhello9(){
+//     console.log(" hello "+ this.name)
+// }
+// let user1={
+//     name:"ahmed"
+// }
+// newfunction=sayhello9.bind(user1);
+// newfunction()
+
+// let car1={
+//     brand:"toyota",
+//     showbrand:function(){
+//         console.log("brand "+ this.brand)
+//     }
+// }
+
+// let car2={
+//     brand:"honda"
+// }
+// car1.showbrand.call(car2);
+
+
+// let teacher={
+//     name:"mr khan",
+//     teach:function(){
+//         console.log("teaching by "+ this.name)
+//     }
+// }
+// let student={
+//     name :"khadija"
+// }
+// teacher.teach.call(student)
+
+// let employee={
+//     name:"ali",
+//     salary:50000,
+// }
+// function showsalary(bonus){
+//     console.log(this.name +' total salary is '+ (bonus + this.salary))
+// }
+// showsalary.call (employee,10000)
+
+// function findMax(a,b,c){
+//     if(a>b&& a>c){
+//         console.log("max is "+ a)
+//     }
+//     else if(b>a && b>c){
+//         console.log("max is "+ b)
+//     }
+//     else{
+//         console.log("max is "+ c)
+//     }
+// }
+// findMax.apply(null,[10,30,40]);
+
+function greet (time){
+  console.log("good"+ time + this.name)
+}
+    
 let user={
-    name:"aiman",
-    age:18,
-    country:"Pakistan"
+    name:"ahmed",
 }
-function introduce (age, country){
-    return this.name+ " is " +this.age+" from "+this.country;
-}
-console.log(introduce.apply(user,[user.age,user.country]))
+let time=" morning "
 
-function sayhello9(){
-    console.log(" hello "+ this.name)
-}
-let user1={
-    name:"ahmed"
-}
-newfunction=sayhello9.bind(user1);
-newfunction()
-
-let car1={
-    brand:"toyota",
-    showbrand:function(){
-        console.log("brand "+ this.brand)
-    }
-}
-
-let car2={
-    brand:"honda"
-}
-car1.showbrand.call(car2);
-
-
-let teacher={
-    name:"mr khan",
-    teach:function(){
-        console.log("teaching by "+ this.name)
-    }
-}
-let student={
-    name :"khadija"
-}
-teacher.teach.call(student)
-
-let employee={
-    name:"ali",
-    salary:50000,
-}
-function showsalary(bonus){
-    console.log(this.name +' total salary is '+ (bonus + this.salary))
-}
-showsalary.call (employee,10000)
-
-function findMax(a,b,c){
-    if(a>b&& a>c){
-        console.log("max is "+ a)
-    }
-    else if(b>a && b>c){
-        console.log("max is "+ b)
-    }
-    else{
-        console.log("max is "+ c)
-    }
-}
-findMax.apply(null,[10,30,40])
+greet.bind(user)(time)
