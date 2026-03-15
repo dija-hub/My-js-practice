@@ -989,48 +989,63 @@
 // shop.newitem("deodorant")
 
 
-function displayname(){
-console.log("khadija")
-}
-displayname.apply()
+// function displayname(){
+// console.log("khadija")
+// }
+// displayname.apply()
 
-let participant1={
-    name:"khadija",
-    battery:20,
-    chargeBatery:function(){
-        this.battery=100
-    }
-}
-let participant2={
-    name:"aiman",
-    battery:50
-}
+// let participant1={
+//     name:"khadija",
+//     battery:20,
+//     chargeBatery:function(){
+//         this.battery=100
+//     }
+// }
+// let participant2={
+//     name:"aiman",
+//     battery:50
+// }
 
-let participant3 ={
+// let participant3 ={
+//     name:"sara",
+//     battery:40,
+// }
+// let participant4={
+//     name:"hira",
+//     battery:30
+// }
+// participant1.chargeBatery.call(participant2)
+// console.log(participant2)
+
+// participant1.chargeBatery.call(participant3)
+// console.log(participant3)
+
+// let person1={
+// name:"khadija",
+// city:"karachi"
+// }
+// function greet(){
+//     console.log(this.name+"lives in "+this.city)
+// }
+
+// let person2={
+//     name:"aiman",
+//     city:"karachi"
+// }
+
+// person1.greet.call(person2);
+
+
+let  person1={
+name:"salmon",
+city:"pindi"
+}
+let person2={
     name:"sara",
-    battery:40,
-}
-let participant4={
-    name:"hira",
-    battery:30
-}
-participant1.chargeBatery.call(participant2)
-console.log(participant2)
-
-participant1.chargeBatery.call(participant3)
-console.log(participant3)
-
-function person1(){
-name:"khadija"
-city:"karachi"
-
-function greet(){
-    console.log(this.name+"lives in "+this.city)
-}
-}
-function person2(){
-    name:"aiman"
     city:"karachi"
 }
-
-person1.greet.call(person2);
+function showinfo(){
+    console.log(this.name+" lives in "+this.city)
+}
+showinfo.call(person1)
+showinfo.call(person2)
