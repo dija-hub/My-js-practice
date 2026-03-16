@@ -1138,3 +1138,20 @@ class bankbalance {
 let acc =new bankbalance()
 acc.deposit(500)
 acc.showBalance()
+
+class Person{
+  #age
+
+  setAge(age){
+    this.#age = age
+  }
+
+  getAge(){
+    console.log(this.#age)
+  }
+}
+
+let p = new Person()
+
+p.setAge(20)
+p.getAge()
