@@ -1155,3 +1155,21 @@ let p = new Person()
 
 p.setAge(20)
 p.getAge()
+
+class Counter{
+  #count = 0
+
+  increment(){
+    this.#count++
+  }
+
+  getCount(){
+    console.log(this.#count)
+  }
+}
+
+let c = new Counter()
+
+c.increment()
+c.increment()
+c.getCount()
