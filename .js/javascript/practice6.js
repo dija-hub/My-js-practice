@@ -1173,3 +1173,16 @@ let c = new Counter()
 c.increment()
 c.increment()
 c.getCount()
+
+class user{
+  #name
+  setname(name){
+    this.#name=name
+  }
+  getname(){
+    console.log(this.#name)
+  }
+}
+let u = new user()
+u.setname("khadija")
+u.getname()
