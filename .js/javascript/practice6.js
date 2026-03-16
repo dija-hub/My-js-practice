@@ -1125,3 +1125,16 @@ let user={
 let time=" morning "
 
 greet.bind(user)(time)
+
+class bankbalance {
+  #balance=2000;
+  deposit(amount){
+    this.#balance+=amount;
+  }
+  showBalance(){
+    console.log(this.#balance)
+  }
+}
+let acc =new bankbalance()
+acc.deposit(500)
+acc.showBalance()
