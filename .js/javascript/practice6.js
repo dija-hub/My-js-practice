@@ -1115,74 +1115,88 @@
 // }
 // findMax.apply(null,[10,30,40]);
 
-function greet (time){
-  console.log("good"+ time + this.name)
-}
+// function greet (time){
+//   console.log("good"+ time + this.name)
+// }
     
-let user={
-    name:"ahmed",
+// let user={
+//     name:"ahmed",
+// }
+// let time=" morning "
+
+// greet.bind(user)(time)
+
+// class bankbalance {
+//   #balance=2000;
+//   deposit(amount){
+//     this.#balance+=amount;
+//   }
+//   showBalance(){
+//     console.log(this.#balance)
+//   }
+// }
+// let acc =new bankbalance()
+// acc.deposit(500)
+// acc.showBalance()
+
+// class Person{
+//   #age
+
+//   setAge(age){
+//     this.#age = age
+//   }
+
+//   getAge(){
+//     console.log(this.#age)
+//   }
+// }
+
+// let p = new Person()
+
+// p.setAge(20)
+// p.getAge()
+
+// class Counter{
+//   #count = 0
+
+//   increment(){
+//     this.#count++
+//   }
+
+//   getCount(){
+//     console.log(this.#count)
+//   }
+// }
+
+// let c = new Counter()
+
+// c.increment()
+// c.increment()
+// c.getCount()
+
+// class user{
+//   #name
+//   setname(name){
+//     this.#name=name
+//   }
+//   getname(){
+//     console.log(this.#name)
+//   }
+// }
+// let u = new user()
+// u.setname("khadija")
+// u.getname()
+
+class Car {
+  #speed =0;
+  accelerate(){
+    this.#speed++
+  }
+  getSpeed(){
+    console.log(this.#speed)
+  }
 }
-let time=" morning "
-
-greet.bind(user)(time)
-
-class bankbalance {
-  #balance=2000;
-  deposit(amount){
-    this.#balance+=amount;
-  }
-  showBalance(){
-    console.log(this.#balance)
-  }
-}
-let acc =new bankbalance()
-acc.deposit(500)
-acc.showBalance()
-
-class Person{
-  #age
-
-  setAge(age){
-    this.#age = age
-  }
-
-  getAge(){
-    console.log(this.#age)
-  }
-}
-
-let p = new Person()
-
-p.setAge(20)
-p.getAge()
-
-class Counter{
-  #count = 0
-
-  increment(){
-    this.#count++
-  }
-
-  getCount(){
-    console.log(this.#count)
-  }
-}
-
-let c = new Counter()
-
-c.increment()
-c.increment()
-c.getCount()
-
-class user{
-  #name
-  setname(name){
-    this.#name=name
-  }
-  getname(){
-    console.log(this.#name)
-  }
-}
-let u = new user()
-u.setname("khadija")
-u.getname()
+let c = new Car()
+c.accelerate()
+c.accelerate()
+c.getSpeed()
