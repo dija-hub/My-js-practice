@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="fum.css">
+</head>
+<body>
+      <!-- <h1>heading</h1>
+<p>Lorem ipsum dolor, sit amet
+consectetur adipisicing elit. Ipsa 
+beatae earum tempore ut mollitia? Atque 
+magnam maiores impedit amet iure. Id, hic 
+eligendi aperiam doloribus reiciendis beatae 
+reprehenderit nobis numquam.</p><br>
+<button>click me</button><br>
+<img src="/img.png" alt="img"> -->
+<div class="img-cont">
+  <p class="shoe-name">Nike Air Max</p>
+  <div class="rating-price">
+    <span class="stars">★★★☆</span>
+    <span class="price">$120</span>
+  </div>
+  <button class="buy-btn">BUY NOW</button>
+</div>
+
+<style>
+.img-cont {
+  width: 220px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.shoe-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.rating-price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.buy-btn {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.buy-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.buy-btn:active {
+  transform: translateY(0);
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* .intro::first-letter {
+  font-size: 1.2em;
+  color: rgb(71, 5, 90);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+   Arial, sans-serif;
+}-->
+.intro::first-line {
+  font-size: 1.5em;
+  color: rgb(86, 86, 232);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+   Arial, sans-serif;
+} 
+.btn1:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+   Arial, sans-serif;
+}
+.btn2{
+  background-color: rgb(0, 0, 255);
+
+}
+.btn2:active {
+  background-color:rgb(63, 160, 110);
+ 
+}
+input:focus {
+  background-color: rgb(17, 10, 151);
+      color: white;
+}
+li:nth-child(2) {
+  color: red;
+}
+li:first-child {
+  color: rgb(39, 165, 39);
+}
+
+.container {
+  background-color: rgb(255, 255, 0);
+  border: 2px solid black;
+
+}
+table {
+ 
+  border-spacing:10px;
+
+}
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+th{
+      border: 1px solid black;
+      padding: 5px;
+      background-color: rgb(255, 0, 0);
+      color: white;
+}
+li{
+  list-style-type:square;
+}
+body {
+  background-color: rgb(175, 160, 231);
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+   Arial, sans-serif;
+} */
+/* div{
+  height:200px;
+  background: repeating-linear-gradient( magenta ,cyan ,yellow  )
+} */
