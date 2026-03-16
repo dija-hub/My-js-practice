@@ -1200,3 +1200,17 @@ let c = new Car()
 c.accelerate()
 c.accelerate()
 c.getSpeed()
+
+
+class Student {
+  #marks 
+  setMarks(marks){
+    this.#marks=marks
+  }
+  getMarks(){
+    console.log(this.#marks)
+  }
+}
+let s = new Student()
+s.setMarks(85)
+s.getMarks()
