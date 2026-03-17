@@ -1241,3 +1241,16 @@ let fan=new Fan()
 fan.incSpeed(5)
 fan.incSpeed(3)
 fan.showSpeed() 
+
+class User{
+  #username;
+  setname(name){
+   this.#username=name
+  }
+  showame(){
+    console.log(this.#username)
+  }
+}
+let u = new User()
+u.setname("khadija")
+u.showame()
