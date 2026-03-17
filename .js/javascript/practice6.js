@@ -1214,3 +1214,17 @@ class Student {
 let s = new Student()
 s.setMarks(85)
 s.getMarks()
+
+class Mobile {
+#brand;
+setbrand(b){
+this.#brand=b
+}
+getbrand(){
+  console.log(this.#brand)
+}
+}
+let m =new Mobile()
+m.setbrand("samsung")
+m.getbrand()
+
