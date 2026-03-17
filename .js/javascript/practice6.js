@@ -1228,3 +1228,16 @@ let m =new Mobile()
 m.setbrand("samsung")
 m.getbrand()
 
+class Fan {
+  #speed =0;
+  incSpeed(speed){
+    this.#speed += speed;
+  }
+  showSpeed(){
+    console.log(this.#speed)
+  }
+}
+let fan=new Fan()
+fan.incSpeed(5)
+fan.incSpeed(3)
+fan.showSpeed() 
