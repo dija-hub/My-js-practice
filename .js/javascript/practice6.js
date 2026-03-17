@@ -1254,3 +1254,20 @@ class User{
 let u = new User()
 u.setname("khadija")
 u.showame()
+
+class Door{
+  #isOpen=false;
+  open(){
+    this.#isOpen=true
+  }
+  check(){
+      if(this.#isOpen=true){
+         console.log("door is open")
+      }
+      else{        console.log("door is closed")
+      }
+    
+  }
+}
+let d = new Door()
+d.open()
