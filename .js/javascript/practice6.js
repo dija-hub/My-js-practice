@@ -1264,10 +1264,28 @@ class Door{
       if(this.#isOpen=true){
          console.log("door is open")
       }
-      else{        console.log("door is closed")
+      else{ console.log("door is closed")
       }
     
   }
 }
 let d = new Door()
 d.open()
+
+
+class Book{
+  #title
+
+  setTitle(t){
+    this.#title = t
+  }
+
+  getTitle(){
+    console.log(this.#title)
+  }
+}
+
+let b = new Book()
+
+b.setTitle("JS Basics")
+b.getTitle()
