@@ -1288,4 +1288,11 @@ class Book{
 let b = new Book()
 
 b.setTitle("JS Basics")
-b.getTitle()
+
+
+let  myArray = [1, 2, 3, 4, 5];
+let mySet  = new Set(myArray);
+mySet.add("6");
+mySet.add({a:1,b:2})
+mySet.delete(3)
+console.log(mySet);
