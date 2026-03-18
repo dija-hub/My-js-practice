@@ -1290,15 +1290,20 @@
 // b.setTitle("JS Basics")
 
 
-let  myArray = [1, 2, 3, 4, 5];
-let mySet  = new Set(myArray);
-mySet.add("6");
-mySet.add({a:1,b:2})
-mySet.delete(3)
-// mySet.clear()
+// let  myArray = [1, 2, 3, 4, 5];
+// let mySet  = new Set(myArray);
+// mySet.add("6");
+// mySet.add({a:1,b:2})
+// mySet.delete(3)
+// // mySet.clear()
 
-// console.log(mySet.size);
-mySet.forEach(function(val){
-console.log(val)
-})
+// // console.log(mySet.size);
+// mySet.forEach(function(val){
+// console.log(val)
+// })
+
+let myMap =new Map([["a1","hello"],["b2","goodbye"]]);
+myMap.set('c3',"welcome")
+myMap.delete("b2")
+console.log(myMap.size)
 
