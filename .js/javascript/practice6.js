@@ -1320,8 +1320,26 @@ let car2={
 }
 
 carweak.add(car1)
-carweak.add(car2)
+carweak.add
 
-carweak.delete(car1)
+let carweakmap=new WeakMap();
+let key1={
+  id:1
+}
+let car3={
+  make:"Toyota",
+  model:"Camry"
+}
+carweakmap.set(key1,car3)
 
-console.log(carweak)
+let key2={
+  id:2
+}
+let car4={
+  make:"honda",
+  model:"civic"
+}
+carweakmap.set(key2,car4)
+
+carweakmap.delete(key1)
+console.log(carweakmap)
