@@ -1302,8 +1302,26 @@
 // console.log(val)
 // })
 
-let myMap =new Map([["a1","hello"],["b2","goodbye"]]);
-myMap.set('c3',"welcome")
-myMap.delete("b2")
-console.log(myMap.size)
+// let myMap =new Map([["a1","hello"],["b2","goodbye"]]);
+// myMap.set('c3',"welcome")
+// myMap.delete("b2")
+// console.log(myMap.size)
 
+let carweak=new WeakSet();
+
+let car1={
+  make:"Toyota",
+  model:"Camry"
+}
+
+let car2={
+  make:"honda",
+  model:"civic"
+}
+
+carweak.add(car1)
+carweak.add(car2)
+
+carweak.delete(car1)
+
+console.log(carweak)
