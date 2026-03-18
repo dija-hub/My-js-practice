@@ -1343,3 +1343,16 @@ carweakmap.set(key2,car4)
 
 carweakmap.delete(key1)
 console.log(carweakmap)
+
+let nmap=new Map()
+
+
+let info ={
+name:"ali",
+age:30
+}
+console.log(obj.name)
+
+console.log("age" in obj)
+obj.city = "Lahore";
+console.log(obj);
