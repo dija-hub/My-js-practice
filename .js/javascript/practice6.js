@@ -1187,107 +1187,107 @@
 // u.setname("khadija")
 // u.getname()
 
-class Car {
-  #speed =0;
-  accelerate(){
-    this.#speed++
-  }
-  getSpeed(){
-    console.log(this.#speed)
-  }
-}
-let c = new Car()
-c.accelerate()
-c.accelerate()
-c.getSpeed()
+// class Car {
+//   #speed =0;
+//   accelerate(){
+//     this.#speed++
+//   }
+//   getSpeed(){
+//     console.log(this.#speed)
+//   }
+// }
+// let c = new Car()
+// c.accelerate()
+// c.accelerate()
+// c.getSpeed()
 
 
-class Student {
-  #marks 
-  setMarks(marks){
-    this.#marks=marks
-  }
-  getMarks(){
-    console.log(this.#marks)
-  }
-}
-let s = new Student()
-s.setMarks(85)
-s.getMarks()
+// class Student {
+//   #marks 
+//   setMarks(marks){
+//     this.#marks=marks
+//   }
+//   getMarks(){
+//     console.log(this.#marks)
+//   }
+// }
+// let s = new Student()
+// s.setMarks(85)
+// s.getMarks()
 
-class Mobile {
-#brand;
-setbrand(b){
-this.#brand=b
-}
-getbrand(){
-  console.log(this.#brand)
-}
-}
-let m =new Mobile()
-m.setbrand("samsung")
-m.getbrand()
+// class Mobile {
+// #brand;
+// setbrand(b){
+// this.#brand=b
+// }
+// getbrand(){
+//   console.log(this.#brand)
+// }
+// }
+// let m =new Mobile()
+// m.setbrand("samsung")
+// m.getbrand()
 
-class Fan {
-  #speed =0;
-  incSpeed(speed){
-    this.#speed += speed;
-  }
-  showSpeed(){
-    console.log(this.#speed)
-  }
-}
-let fan=new Fan()
-fan.incSpeed(5)
-fan.incSpeed(3)
-fan.showSpeed() 
+// class Fan {
+//   #speed =0;
+//   incSpeed(speed){
+//     this.#speed += speed;
+//   }
+//   showSpeed(){
+//     console.log(this.#speed)
+//   }
+// }
+// let fan=new Fan()
+// fan.incSpeed(5)
+// fan.incSpeed(3)
+// fan.showSpeed() 
 
-class User{
-  #username;
-  setname(name){
-   this.#username=name
-  }
-  showame(){
-    console.log(this.#username)
-  }
-}
-let u = new User()
-u.setname("khadija")
-u.showame()
+// class User{
+//   #username;
+//   setname(name){
+//    this.#username=name
+//   }
+//   showame(){
+//     console.log(this.#username)
+//   }
+// }
+// let u = new User()
+// u.setname("khadija")
+// u.showame()
 
-class Door{
-  #isOpen=false;
-  open(){
-    this.#isOpen=true
-  }
-  check(){
-      if(this.#isOpen=true){
-         console.log("door is open")
-      }
-      else{ console.log("door is closed")
-      }
+// class Door{
+//   #isOpen=false;
+//   open(){
+//     this.#isOpen=true
+//   }
+//   check(){
+//       if(this.#isOpen=true){
+//          console.log("door is open")
+//       }
+//       else{ console.log("door is closed")
+//       }
     
-  }
-}
-let d = new Door()
-d.open()
+//   }
+// }
+// let d = new Door()
+// d.open()
 
 
-class Book{
-  #title
+// class Book{
+//   #title
 
-  setTitle(t){
-    this.#title = t
-  }
+//   setTitle(t){
+//     this.#title = t
+//   }
 
-  getTitle(){
-    console.log(this.#title)
-  }
-}
+//   getTitle(){
+//     console.log(this.#title)
+//   }
+// }
 
-let b = new Book()
+// let b = new Book()
 
-b.setTitle("JS Basics")
+// b.setTitle("JS Basics")
 
 
 let  myArray = [1, 2, 3, 4, 5];
@@ -1295,4 +1295,10 @@ let mySet  = new Set(myArray);
 mySet.add("6");
 mySet.add({a:1,b:2})
 mySet.delete(3)
-console.log(mySet);
+// mySet.clear()
+
+// console.log(mySet.size);
+mySet.forEach(function(val){
+console.log(val)
+})
+
