@@ -1373,3 +1373,9 @@ console.log(map.has("age"))
 console.log(map.size)
 
 
+let fmap=new Map()
+
+fmap.set("fruit","apple")
+
+console.log(fmap.get("fruit"))
+console.log(fmap.has("color"))
