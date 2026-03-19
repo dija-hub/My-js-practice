@@ -1357,18 +1357,8 @@ console.log("age" in obj)
 obj.city = "Lahore";
 console.log(obj);
 
-let obj = {name: "Ali", age: 20};
-
-
-for (let key in obj) {
-  console.log(key, "→", obj[key]);
-}
-
-
-console.log(Object.entries(obj));
-
-
-let m = new Map();
-m.set(obj, "User Data");
-
-console.log(m.get(obj));
+let obj = {
+  name: "Ali"
+};
+obj.age = 20;
+console.log(obj.age); 
