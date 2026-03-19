@@ -1379,3 +1379,14 @@ fmap.set("fruit","apple")
 
 console.log(fmap.get("fruit"))
 console.log(fmap.has("color"))
+
+let arr=[1,1,2,2,3,3,4,4]
+let m=new Map()
+for(let num of arr){
+  if(m.has(num)){
+    m.set(num,m.get(num)+1)
+  } else {
+    m.set(num,1)
+  }
+}
+console.log(m)
