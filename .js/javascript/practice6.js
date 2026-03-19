@@ -1307,58 +1307,69 @@
 // myMap.delete("b2")
 // console.log(myMap.size)
 
-let carweak=new WeakSet();
+// let carweak=new WeakSet();
 
-let car1={
-  make:"Toyota",
-  model:"Camry"
-}
+// let car1={
+//   make:"Toyota",
+//   model:"Camry"
+// }
 
-let car2={
-  make:"honda",
-  model:"civic"
-}
+// let car2={
+//   make:"honda",
+//   model:"civic"
+// }
 
-carweak.add(car1)
-carweak.add
+// carweak.add(car1)
+// carweak.add
 
-let carweakmap=new WeakMap();
-let key1={
-  id:1
-}
-let car3={
-  make:"Toyota",
-  model:"Camry"
-}
-carweakmap.set(key1,car3)
+// let carweakmap=new WeakMap();
+// let key1={
+//   id:1
+// }
+// let car3={
+//   make:"Toyota",
+//   model:"Camry"
+// }
+// carweakmap.set(key1,car3)
 
-let key2={
-  id:2
-}
-let car4={
-  make:"honda",
-  model:"civic"
-}
-carweakmap.set(key2,car4)
+// let key2={
+//   id:2
+// }
+// let car4={
+//   make:"honda",
+//   model:"civic"
+// }
+// carweakmap.set(key2,car4)
 
-carweakmap.delete(key1)
-console.log(carweakmap)
+// carweakmap.delete(key1)
+// console.log(carweakmap)
 
-let nmap=new Map()
+// let nmap=new Map()
 
 
-let info ={
-name:"ali",
-age:30
-}
-console.log(obj.name)
+// let info ={
+// name:"ali",
+// age:30
+// }
+// console.log(obj.name)
 
-console.log("age" in obj)
-obj.city = "Lahore";
-console.log(obj);
+// console.log("age" in obj)
+// obj.city = "Lahore";
+// console.log(obj);
 
-let obj = {
-  name: "Ali"
-};
-obj.age = 20;
-console.log(obj.age); 
+// let obj = {
+//   name: "Ali"
+// };
+// obj.age = 20;
+// console.log(obj.age); 
+
+
+let map = new Map();
+map.set("name","ahmed")
+map.set("age",30)
+
+console.log(map.get("name"))
+console.log(map.has("age"))
+console.log(map.size)
+
+
