@@ -1364,29 +1364,53 @@
 // console.log(obj.age); 
 
 
-let map = new Map();
-map.set("name","ahmed")
-map.set("age",30)
+// let map = new Map();
+// map.set("name","ahmed")
+// map.set("age",30)
 
-console.log(map.get("name"))
-console.log(map.has("age"))
-console.log(map.size)
+// console.log(map.get("name"))
+// console.log(map.has("age"))
+// console.log(map.size)
 
 
-let fmap=new Map()
+// let fmap=new Map()
 
-fmap.set("fruit","apple")
+// fmap.set("fruit","apple")
 
-console.log(fmap.get("fruit"))
-console.log(fmap.has("color"))
+// console.log(fmap.get("fruit"))
+// console.log(fmap.has("color"))
 
-let arr=[1,1,2,2,3,3,4,4]
-let m=new Map()
-for(let num of arr){
-  if(m.has(num)){
-    m.set(num,m.get(num)+1)
-  } else {
-    m.set(num,1)
-  }
+// let arr=[1,1,2,2,3,3,4,4]
+// let m=new Map()
+// for(let num of arr){
+//   if(m.has(num)){
+//     m.set(num,m.get(num)+1)
+//   } else {
+//     m.set(num,1)
+//   }
+// }
+// console.log(m)
+
+
+let info =new Map();
+
+info.set("id","101")
+info.set("name","khadija")
+
+console.log(info.has("age"))
+console.log(info.get("name"))
+console.log(info)
+for (let[key,value] of info){
+  console.log(key,"->",value)
 }
-console.log(m)
+
+let set = new Set();
+set.add(1)
+set.add(2)
+set.add(2)
+set.add(3)  
+
+console.log(set.has(2))
+console.log(set.add(5))
+console.log(set.size)
+
