@@ -1424,3 +1424,11 @@ console.log(newMap.get("name"))
 let set=new Set([2,2,3,4,4])
 let uniquenum=[...new Set(set)]
 console.log(uniquenum)
+
+let map=new Map()
+
+map.set("id","1")
+map.set("name","ali")
+console.log(map.get("id"))
+console.log(map.get("name"))    
+
