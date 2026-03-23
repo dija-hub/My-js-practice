@@ -1414,21 +1414,28 @@
 // console.log(set.add(5))
 // console.log(set.size)
 
-let newSet=new Set([1,1,2,3]);
-console.log(newSet.size)
+// let newSet=new Set([1,1,2,3]);
+// console.log(newSet.size)
 
-let newMap=new Map()
-newMap.set("name","ali")
-console.log(newMap.get("name"))
+// let newMap=new Map()
+// newMap.set("name","ali")
+// console.log(newMap.get("name"))
 
-let set=new Set([2,2,3,4,4])
-let uniquenum=[...set]
-console.log(uniquenum)
+// let set=new Set([2,2,3,4,4])
+// let uniquenum=[...set]
+// console.log(uniquenum)
 
-let map=new Map()
+// let map=new Map()
 
-map.set("id",1)
-map.set("name","ali")
-console.log(map.get("id"))
-console.log(map.get("name"))    
+// map.set("id",1)
+// map.set("name","ali")
+// console.log(map.get("id"))
+// console.log(map.get("name"))    
+let numbers =[1,2,2,3]
+let map= new Map()
+for(const num of numbers){
+    const count = map.get(num) || 0
+    map.set(num,count+1)
+}
+console.log(Object.fromEntries(map))
 
