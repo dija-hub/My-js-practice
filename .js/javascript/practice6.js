@@ -1417,3 +1417,7 @@
 let newSet=new Set([1,1,2,3]);
 console.log(newSet.size)
 
+let newMap=new Map()
+newMap.set("name","ali")
+console.log(newMap.get("name"))
+
