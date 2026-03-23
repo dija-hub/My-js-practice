@@ -1431,6 +1431,7 @@
 // map.set("name","ali")
 // console.log(map.get("id"))
 // console.log(map.get("name"))    
+
 let numbers =[1,2,2,3]
 let map= new Map()
 for(const num of numbers){
@@ -1439,3 +1440,10 @@ for(const num of numbers){
 }
 console.log(Object.fromEntries(map))
 
+let arr = [5,5,5,2];
+let map2= new Map()
+for (let num of arr){
+    const count= map2.get(num)|| 0
+    map2.set(num,count+1) 
+}
+console.log(Object.fromEntries(map2))
