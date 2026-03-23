@@ -1448,4 +1448,12 @@ for (let num of arr){
 }
 console.log(Object.fromEntries(map2))
 
+let arr2 = [1,1,2]
+
+let map3 =new Map();
+for (let nums of arr2){
+const count = map3.get(arr2)||0
+map3.set(nums,count+1)
+}
+console.log(Object.fromEntries(map3))
 
