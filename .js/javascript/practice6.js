@@ -1388,29 +1388,32 @@
 //   } else {
 //     m.set(num,1)
 //   }
+// // }
+// // console.log(m)
+
+
+// let info =new Map();
+
+// info.set("id","101")
+// info.set("name","khadija")
+
+// console.log(info.has("age"))
+// console.log(info.get("name"))
+// console.log(info)
+// for (let[key,value] of info){
+//   console.log(key,"->",value)
 // }
-// console.log(m)
 
+// let set = new Set();
+// set.add(1)
+// set.add(2)
+// set.add(2)
+// set.add(3)  
 
-let info =new Map();
+// console.log(set.has(2))
+// console.log(set.add(5))
+// console.log(set.size)
 
-info.set("id","101")
-info.set("name","khadija")
-
-console.log(info.has("age"))
-console.log(info.get("name"))
-console.log(info)
-for (let[key,value] of info){
-  console.log(key,"->",value)
-}
-
-let set = new Set();
-set.add(1)
-set.add(2)
-set.add(2)
-set.add(3)  
-
-console.log(set.has(2))
-console.log(set.add(5))
-console.log(set.size)
+let newSet=new Set([1,1,2,3]);
+console.log(newSet.size)
 
