@@ -1421,3 +1421,6 @@ let newMap=new Map()
 newMap.set("name","ali")
 console.log(newMap.get("name"))
 
+let set=new Set([2,2,3,4,4])
+let uniquenum=[...new Set(set)]
+console.log(uniquenum)
