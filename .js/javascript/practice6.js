@@ -1447,3 +1447,5 @@ for (let num of arr){
     map2.set(num,count+1) 
 }
 console.log(Object.fromEntries(map2))
+
+
