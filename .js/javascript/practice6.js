@@ -1469,3 +1469,22 @@ class hiddenalance{
 let acc = new hiddenalance()
 acc.deposit(500)
 acc.getBalance()
+
+class password{
+    #password="2343"
+    checkPassword(input){
+     if(input===this.#password){
+          console.log("correct pass")
+     }else{
+        console.log("wrong password")
+     }
+    }
+    changePassword(newpass){
+        this.#password=newpass
+    }
+
+}
+let pass=new password()
+pass.checkPassword("2343")
+pass.changePassword(3333)
+console.log(pass)
