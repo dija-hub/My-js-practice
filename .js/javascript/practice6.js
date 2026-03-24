@@ -1508,3 +1508,27 @@ Count.increment()
 Count.decrement()
 Count.getcount();
 
+class Banksystem{
+    #balance=20000
+    #history=[]
+
+    deposit(amount){
+      this.#balance+=amount
+     this.#history.push("deposit"+amount)
+    }
+    withdraw(amo){
+        this.#balance-=amo
+        this.#history.push("withdraw"+ amo)
+    }
+     gethistory(){
+        return this.#history
+     }
+     getBalance() {
+        return this.#balance;
+    }
+}
+let acc= new Banksystem()
+acc.deposit(10000)
+acc.withdraw(20000)
+console.log(acc.getBalance());
+console.log(acc.gethistory());
