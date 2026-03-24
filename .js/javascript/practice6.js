@@ -1432,28 +1432,40 @@
 // console.log(map.get("id"))
 // console.log(map.get("name"))    
 
-let numbers =[1,2,2,3]
-let map= new Map()
-for(const num of numbers){
-    const count = map.get(num) || 0
-    map.set(num,count+1)
+// let numbers =[1,2,2,3]
+// let map= new Map()
+// for(const num of numbers){
+//     const count = map.get(num) || 0
+//     map.set(num,count+1)
+// }
+// console.log(Object.fromEntries(map))
+
+// let arr = [5,5,5,2];
+// let map2= new Map()
+// for (let num of arr){
+//     const count= map2.get(num)|| 0
+//     map2.set(num,count+1) 
+// }
+// console.log(Object.fromEntries(map2))
+
+// let arr2 = [1,1,2]
+
+// let map3 =new Map();
+// for (let nums of arr2){
+// const count = map3.get(arr2)||0
+// map3.set(nums,count+1)
+// }
+// console.log(Object.fromEntries(map3))
+
+class hiddenalance{
+    #balance=100
+    deposit(amount){
+       this.#balance+=amount
+    }
+    getBalance(){
+        console.log(this.#balance)
+    }
 }
-console.log(Object.fromEntries(map))
-
-let arr = [5,5,5,2];
-let map2= new Map()
-for (let num of arr){
-    const count= map2.get(num)|| 0
-    map2.set(num,count+1) 
-}
-console.log(Object.fromEntries(map2))
-
-let arr2 = [1,1,2]
-
-let map3 =new Map();
-for (let nums of arr2){
-const count = map3.get(arr2)||0
-map3.set(nums,count+1)
-}
-console.log(Object.fromEntries(map3))
-
+let acc = new hiddenalance()
+acc.deposit(500)
+acc.getBalance()
