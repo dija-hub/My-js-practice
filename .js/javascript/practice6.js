@@ -1457,34 +1457,54 @@
 // }
 // console.log(Object.fromEntries(map3))
 
-class hiddenalance{
-    #balance=100
-    deposit(amount){
-       this.#balance+=amount
-    }
-    getBalance(){
-        console.log(this.#balance)
-    }
-}
-let acc = new hiddenalance()
-acc.deposit(500)
-acc.getBalance()
+// class hiddenalance{
+//     #balance=100
+//     deposit(amount){
+//        this.#balance+=amount
+//     }
+//     getBalance(){
+//         console.log(this.#balance)
+//     }
+// }
+// let acc = new hiddenalance()
+// acc.deposit(500)
+// acc.getBalance()
 
-class password{
-    #password="2343"
-    checkPassword(input){
-     if(input===this.#password){
-          console.log("correct pass")
-     }else{
-        console.log("wrong password")
-     }
-    }
-    changePassword(newpass){
-        this.#password=newpass
-    }
+// class password{
+//     #password="2343"
+//     checkPassword(input){
+//      if(input===this.#password){
+//           console.log("correct pass")
+//      }else{
+//         console.log("wrong password")
+//      }
+//     }
+//     changePassword(newpass){
+//         this.#password=newpass
+//     }
 
+// }
+// let pass=new password()
+// pass.checkPassword("2343")
+// pass.changePassword(3333)
+// console.log(pass)
+
+class counter{
+#count=0
+increment(count){
+    this.#count++
 }
-let pass=new password()
-pass.checkPassword("2343")
-pass.changePassword(3333)
-console.log(pass)
+decrement(count){
+    this.#count--
+}
+getcount(){
+    console.log(this.#count)
+}
+}
+let Count=new counter()
+Count.increment()
+Count.increment()
+Count.increment()
+Count.decrement()
+Count.getcount();
+
