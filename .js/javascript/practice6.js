@@ -1532,3 +1532,14 @@ acc.deposit(10000)
 acc.withdraw(20000)
 console.log(acc.getBalance());
 console.log(acc.gethistory());
+
+class Secret {
+    #number = 10;
+
+    showNumber() {
+        console.log(this.#number);
+    }
+}
+
+let s = new Secret();
+s.showNumber();
