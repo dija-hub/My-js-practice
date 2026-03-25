@@ -1578,3 +1578,14 @@ board .increment()
 board .increment()
 board .increment()
 board .getscore()
+
+let msg ="hello"
+function smsg(){
+    let msg ="hello"
+    return function(){
+     console.log(msg)
+    }
+    
+}
+let m = smsg()
+m()
