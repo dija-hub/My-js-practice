@@ -1590,11 +1590,3 @@ function smsg(){
 let m = smsg()
 m()
 
-function adder(x){
-    
-   return function(y){
-    console.log(x+y)
-   }
-}
-let a = adder(3)
-a(3)
