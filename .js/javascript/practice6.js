@@ -1579,7 +1579,7 @@ board .increment()
 board .increment()
 board .getscore()
 
-let msg ="hello"
+
 function smsg(){
     let msg ="hello"
     return function(){
@@ -1589,3 +1589,12 @@ function smsg(){
 }
 let m = smsg()
 m()
+
+function adder(x){
+    
+   return function(y){
+    console.log(x+y)
+   }
+}
+let a = adder(3)
+a(3)
