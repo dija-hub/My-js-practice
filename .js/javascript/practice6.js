@@ -1572,3 +1572,11 @@ function creatScore(){
     }
 }
 
+function adder(x){
+    
+   return function(y){
+    console.log(x+y)
+   }
+}
+let a = adder(3)
+a(3)
