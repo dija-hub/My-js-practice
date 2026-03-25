@@ -1581,4 +1581,13 @@ function adder(x){
 let a = adder(3)
 a(3)
 
+let board = creatScore()
+
+ board .increment()
+board .increment()
+board .increment()
+board .increment()
+board .getscore()
+
+
 
