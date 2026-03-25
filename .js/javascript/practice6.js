@@ -1489,70 +1489,92 @@
 // pass.changePassword(3333)
 // console.log(pass)
 
-class counter{
-#count=0
-increment(count){
-    this.#count++
-}
-decrement(count){
-    this.#count--
-}
-getcount(){
-    console.log(this.#count)
-}
-}
-let Count=new counter()
-Count.increment()
-Count.increment()
-Count.increment()
-Count.decrement()
-Count.getcount();
+// class counter{
+// #count=0
+// increment(count){
+//     this.#count++
+// }
+// decrement(count){
+//     this.#count--
+// }
+// getcount(){
+//     console.log(this.#count)
+// }
+// }
+// let Count=new counter()
+// Count.increment()
+// Count.increment()
+// Count.increment()
+// Count.decrement()
+// Count.getcount();
 
-class Banksystem{
-    #balance=20000
-    #history=[]
+// class Banksystem{
+//     #balance=20000
+//     #history=[]
 
-    deposit(amount){
-      this.#balance+=amount
-     this.#history.push("deposit"+amount)
+//     deposit(amount){
+//       this.#balance+=amount
+//      this.#history.push("deposit"+amount)
+//     }
+//     withdraw(amo){
+//         this.#balance-=amo
+//         this.#history.push("withdraw"+ amo)
+//     }
+//      gethistory(){
+//         return this.#history
+//      }
+//      getBalance() {
+//         return this.#balance;
+//     }
+// }
+// let acc= new Banksystem()
+// acc.deposit(10000)
+// acc.withdraw(20000)
+// console.log(acc.getBalance());
+// console.log(acc.gethistory());
+
+// class Secret {
+//     #number = 10;
+
+//     showNumber() {
+//         console.log(this.#number);
+//     }
+// }
+
+// let s = new Secret();
+// s.showNumber();
+
+// function outer(){
+//     let count =0;
+
+//     return function inner(){
+//         count++;
+//         console.log(count)
+//     }
+// }
+// let fn = outer()
+// fn();
+// fn();
+// fn();
+
+function creatScore(){
+    let score=0
+
+    function increment(){
+        score++
     }
-    withdraw(amo){
-        this.#balance-=amo
-        this.#history.push("withdraw"+ amo)
+    function getscore(){
+        console.log("score is"+ score)
     }
-     gethistory(){
-        return this.#history
-     }
-     getBalance() {
-        return this.#balance;
+    return{
+        increment,
+        getscore
     }
 }
-let acc= new Banksystem()
-acc.deposit(10000)
-acc.withdraw(20000)
-console.log(acc.getBalance());
-console.log(acc.gethistory());
+let board = creatScore()
 
-class Secret {
-    #number = 10;
-
-    showNumber() {
-        console.log(this.#number);
-    }
-}
-
-let s = new Secret();
-s.showNumber();
-
-function outer(){
-    let count =0
-
-    function inner(){
-        count++;
-        console.log(count)
-    }
-}
-let fn=outer()
-fn()
-fn()
- fn()
+ board .increment()
+board .increment()
+board .increment()
+board .increment()
+board .getscore()
