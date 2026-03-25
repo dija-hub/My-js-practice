@@ -1543,3 +1543,16 @@ class Secret {
 
 let s = new Secret();
 s.showNumber();
+
+function outer(){
+    let count =0
+
+    function inner(){
+        count++;
+        console.log(count)
+    }
+}
+let fn=outer()
+fn()
+fn()
+ fn()
