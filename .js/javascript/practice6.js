@@ -1619,3 +1619,13 @@ function store(){
 }
 let s= store()
 s()
+
+function stepCounter(){
+    let step=1
+    return function(){
+        console.log(step++)
+    }
+}
+let step=new stepCounter()
+step()
+step()
