@@ -1639,3 +1639,14 @@ function secretmsg(){
 let m=new secretmsg()
 m()
 m()
+
+function counter(){
+ let num=10
+ return function(){
+    num-=2
+    console.log(num )
+ }
+}
+let c=new counter()
+c()
+c()
