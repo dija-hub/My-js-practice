@@ -1557,56 +1557,65 @@
 // fn();
 // fn();
 
-function creatScore(){
-    let score=0
+// function creatScore(){
+//     let score=0
 
-    function increment(){
-        score++
-    }
-    function getscore(){
-        console.log("score is"+ score)
-    }
-    return{
-        increment,
-        getscore
-    }
-}
+//     function increment(){
+//         score++
+//     }
+//     function getscore(){
+//         console.log("score is"+ score)
+//     }
+//     return{
+//         increment,
+//         getscore
+//     }
+// }
 
-function adder(x){
+// function adder(x){
     
-   return function(y){
-    console.log(x+y)
-   }
-}
-let a = adder(3)
-a(3)
+//    return function(y){
+//     console.log(x+y)
+//    }
+// }
+// let a = adder(3)
+// a(3)
 
-let board = creatScore()
+// let board = creatScore()
 
- board .increment()
-board .increment()
-board .increment()
-board .increment()
-board .getscore()
+//  board .increment()
+// board .increment()
+// board .increment()
+// board .increment()
+// board .getscore()
 
 
-function smsg(){
-    let msg ="hello"
+// function smsg(){
+//     let msg ="hello"
+//     return function(){
+//      console.log(msg)
+//     }
+    
+// }
+// let m = smsg()
+// m()
+
+// function keepNum() {
+//     let num = 5;
+
+//     return function () {
+//         console.log(num);
+//     };
+// }
+
+// let k = keepNum();
+// k();
+
+function store(){
+    let num=2
     return function(){
-     console.log(msg)
+      console.log(num* 2)
     }
-    
 }
-let m = smsg()
-m()
-
-function keepNum() {
-    let num = 5;
-
-    return function () {
-        console.log(num);
-    };
-}
-
-let k = keepNum();
-k();
+let s= store()
+s()
