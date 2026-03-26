@@ -1650,3 +1650,18 @@ function counter(){
 let c=new counter()
 c()
 c()
+
+function multiply() {
+    let n = 1;
+
+    return function () {
+        n *= 2;
+        console.log(n);
+    };
+}
+
+let mul = multiply();
+
+m(); 
+m(); 
+m(); 
