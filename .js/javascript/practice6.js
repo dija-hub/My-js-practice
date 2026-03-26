@@ -1600,3 +1600,13 @@ function smsg(){
 let m = smsg()
 m()
 
+function keepNum() {
+    let num = 5;
+
+    return function () {
+        console.log(num);
+    };
+}
+
+let k = keepNum();
+k();
