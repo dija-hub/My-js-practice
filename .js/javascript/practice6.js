@@ -1629,3 +1629,13 @@ function stepCounter(){
 let step=new stepCounter()
 step()
 step()
+
+function secretmsg(){
+    let msg="js"
+    return function(){
+       console.log("i love"+msg)
+}
+}
+let m=new secretmsg()
+m()
+m()
