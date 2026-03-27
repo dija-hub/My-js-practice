@@ -1611,57 +1611,61 @@
 // let k = keepNum();
 // k();
 
-function store(){
-    let num=2
-    return function(){
-      console.log(num* 2)
-    }
+// function store(){
+//     let num=2
+//     return function(){
+//       console.log(num* 2)
+//     }
+// }
+// let s= store()
+// s()
+
+// function stepCounter(){
+//     let step=1
+//     return function(){
+//         console.log(step++)
+//     }
+// }
+// let step=new stepCounter()
+// step()
+// step()
+
+// function secretmsg(){
+//     let msg="js"
+//     return function(){
+//        console.log("i love"+msg)
+// }
+// }
+// let m=new secretmsg()
+// m()
+// m()
+
+// function counter(){
+//  let num=10
+//  return function(){
+//     num-=2
+//     console.log(num )
+//  }
+// }
+// let c=new counter()
+// c()
+// c()
+
+// function multiply() {
+//     let n = 1;
+
+//     return function () {
+//         n *= 2;
+//         console.log(n);
+//     };
+// }
+
+// let mul = multiply();
+
+// m(); 
+// m(); 
+// m(); 
+
+for (let i= 1; i<= 10 ; i++){
+    console.log(i)
 }
-let s= store()
-s()
-
-function stepCounter(){
-    let step=1
-    return function(){
-        console.log(step++)
-    }
-}
-let step=new stepCounter()
-step()
-step()
-
-function secretmsg(){
-    let msg="js"
-    return function(){
-       console.log("i love"+msg)
-}
-}
-let m=new secretmsg()
-m()
-m()
-
-function counter(){
- let num=10
- return function(){
-    num-=2
-    console.log(num )
- }
-}
-let c=new counter()
-c()
-c()
-
-function multiply() {
-    let n = 1;
-
-    return function () {
-        n *= 2;
-        console.log(n);
-    };
-}
-
-let mul = multiply();
-
-m(); 
-m(); 
-m(); 
