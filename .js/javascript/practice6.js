@@ -1692,8 +1692,13 @@
 // console.log(i)
 // }
 
-for (let o=2;o<=20;o++){
-    if(o % 2===0){
-        console.log(o)
+// for (let o=2;o<=20;o++){
+//     if(o % 2===0){
+//         console.log(o)
+//     }
+// }
+for (let i=1;i<=15;i++){
+    if(i %3==0){
+        console.log(i)
     }
 }
