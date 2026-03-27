@@ -1709,3 +1709,8 @@ while(num<=5){
     console.log(num)
     num++
 }
+let n=5
+while(n>=1){
+    console.log(n)
+    n--
+}
