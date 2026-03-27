@@ -1697,8 +1697,15 @@
 //         console.log(o)
 //     }
 // }
-for (let i=1;i<=15;i++){
-    if(i % 2 !==0){
-        console.log(i)
-    }
+// for (let i=1;i<=15;i++){
+//     if(i % 2 !==0){
+//         console.log(i)
+//     }
+// }
+
+
+let num=1
+while(num<=5){
+    console.log(num)
+    num++
 }
