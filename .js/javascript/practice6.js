@@ -1688,6 +1688,12 @@
 //     i++
 // }while(i<=5)
 
-for (let i=10;i>=1;i--){
-console.log(i)
+// for (let i=10;i>=1;i--){
+// console.log(i)
+// }
+
+for (let o=2;o<=20;o++){
+    if(o % 2===0){
+        console.log(o)
+    }
 }
