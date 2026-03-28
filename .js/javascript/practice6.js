@@ -1740,3 +1740,11 @@ for (let i=1;i<=5;i++){
     let num = i*i
     console.log(num)
 }
+
+for(let j=1;j<=20;j++){
+    if(j% 2!==0){
+        console.log("fizz")
+    }else{
+        console.log(j)
+    }
+}
