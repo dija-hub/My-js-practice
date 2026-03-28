@@ -1715,7 +1715,13 @@
 //     n--
 // }
 
-for (let i=1;i<=10;i++){
-    let num=i*5
-    console.log(num)
+// for (let i=1;i<=10;i++){
+//     let num=i*5
+//     console.log(num)
+// }
+
+for (let j=1; j<=50;j++){
+    if(j %5 !== 0 ){
+console.log(j)
+    }
 }
