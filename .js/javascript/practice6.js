@@ -1728,3 +1728,11 @@ console.log(j)
 for(let i=1;i<=100;i++){
     console.log("count"+i)
 }
+
+for(let h=1;h<=10;h++){
+    if(h%2==0){
+        console.log("num "+ h + " is even")
+    }else{
+        console.log("num "+ h +" is odd")
+    }
+}
