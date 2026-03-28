@@ -1725,3 +1725,6 @@ for (let j=1; j<=50;j++){
 console.log(j)
     }
 }
+for(let i=1;i<=100;i++){
+    console.log("count"+i)
+}
