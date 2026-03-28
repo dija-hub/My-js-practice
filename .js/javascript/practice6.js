@@ -1725,9 +1725,11 @@
 // console.log(j)
 //     }
 // }
-// for(let i=1;i<=100;i++){
-//     console.log("count"+i)
-// }
+for(let i=1;i<=100;i++){
+    let count=0
+    console.log(i)
+    count++
+}
 
 // for(let h=1;h<=10;h++){
 //     if(h%2==0){
@@ -1742,7 +1744,7 @@ for (let i=1;i<=5;i++){
 }
 
 for(let j=1;j<=20;j++){
-    if(j% 2!==0){
+    if(j% 3==0){
         console.log("fizz")
     }else{
         console.log(j)
