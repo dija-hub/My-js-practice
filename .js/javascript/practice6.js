@@ -1704,13 +1704,18 @@
 // }
 
 
-let num=1
-while(num<=5){
+// let num=1
+// while(num<=5){
+//     console.log(num)
+//     num++
+// }
+// let n=5
+// while(n>=1){
+//     console.log(n)
+//     n--
+// }
+
+for (let i=1;i<=10;i++){
+    let num=i*5
     console.log(num)
-    num++
-}
-let n=5
-while(n>=1){
-    console.log(n)
-    n--
 }
