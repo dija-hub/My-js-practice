@@ -1725,12 +1725,12 @@
 // console.log(j)
 //     }
 // }
- let count=0
-for(let i=1;i<=100;i++){
+//  let count=0
+// for(let i=1;i<=100;i++){
    
-    console.log(i)
-    count++
-}
+//     console.log(i)
+//     count++
+// }
 
 // for(let h=1;h<=10;h++){
 //     if(h%2==0){
@@ -1739,15 +1739,16 @@ for(let i=1;i<=100;i++){
 //         console.log("num "+ h +" is odd")
 //     }
 // }
-for (let i=1;i<=5;i++){
-    let num = i*i
-    console.log(num)
-}
+// for (let i=1;i<=5;i++){
+//     let num = i*i
+//     console.log(num)
+// }
 
-for(let j=1;j<=20;j++){
-    if(j% 3==0){
-        console.log("fizz")
-    }else{
-        console.log(j)
-    }
-}
+// for(let j=1;j<=20;j++){
+//     if(j% 3==0){
+//         console.log("fizz")
+//     }else{
+//         console.log(j)
+//     }
+// }
+
