@@ -1763,8 +1763,13 @@
 //     num2--
 // }
 
-let num =2
-while(num<=20){
-    console.log(num)
-    num+=2
+// let num =2
+// while(num<=20){
+//     console.log(num)
+//     num+=2
+// }
+let num2=1
+while(num2<=15){
+    console.log(num2)
+    num2+=2
 }
