@@ -1783,14 +1783,20 @@
 
 // console.log(sum)
 
-let i=1
+// let i=1
+// do{
+//   console.log(i)
+//   i++
+// }while(i<=5)
+
+// let o=5
+// do{
+//   console.log(o)
+//   o--
+// }while(o>=1)
+
+let i=2;
 do{
   console.log(i)
-  i++
-}while(i<=5)
-
-let o=5
-do{
-  console.log(o)
-  o--
-}while(o>=1)
+  i+=2
+}while(i<=10)
