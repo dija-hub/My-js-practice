@@ -1788,3 +1788,9 @@ do{
   console.log(i)
   i++
 }while(i<=5)
+
+let o=5
+do{
+  console.log(o)
+  o--
+}while(o>=1)
