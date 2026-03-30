@@ -1768,17 +1768,23 @@
 //     console.log(num)
 //     num+=2
 // }
-let num2=1
-while(num2<=15){
-    console.log(num2)
-    num2+=2
-}
-let sum = 0
-let i = 1
+// let num2=1
+// while(num2<=15){
+//     console.log(num2)
+//     num2+=2
+// }
+// let sum = 0
+// let i = 1
 
-while (i <= 5) {
-  sum = sum + i
+// while (i <= 5) {
+//   sum = sum + i
+//   i++
+// }
+
+// console.log(sum)
+
+let i=1
+do{
+  console.log(i)
   i++
-}
-
-console.log(sum)
+}while(i<=5)
