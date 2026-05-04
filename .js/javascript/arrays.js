@@ -71,3 +71,48 @@
 // companies.splice(1,1,"ola");
 // companies.push("amazon");
 
+// for (let i=1;i<=5;i++){
+//     console.log(i)
+// }
+
+// for (let i=5 ;i>=1;i--){
+//     console.log(i)
+// }
+
+// for (let i = 2; i <= 20; i += 2) {
+//   console.log(i);
+// }
+ 
+// let boxx= document.getElementById("box");
+// let btnn= document.getElementById("btn");
+// let output= document.getElementById("out")
+
+// btnn.addEventListener("click",function(){
+//   let p= document.createElement("p")
+//   p.innerText = `hello ${boxx.value}`
+//   output.appendChild(p)
+// })
+
+// let input=document.getElementById("in")
+// let div = document.getElementById("output")
+// input.addEventListener("input",function(){
+//  div.innerText = "characters : "+input.value.length
+// })
+
+let input= document.getElementById("in")
+let output= document.getElementById("out")
+
+input.addEventListener("input",function(){
+
+  if(input.value.length ===0){
+  output.innerText ="enter pass"
+}
+else if(input.value.length<6){
+  output.innerText="too short"
+}
+else {
+  output.innerText ="strong"
+}
+})
+
+let 
