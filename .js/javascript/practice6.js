@@ -1801,20 +1801,27 @@
 //   i+=2
 // }while(i<=10)
 
-  let o=1
-  let sum=0
+//   let o=1
+//   let sum=0
 
-  do{
-    let old = sum
-    sum=sum+o
-     console.log(`${old} + ${o} = ${sum}`)
-    o++
-  }while(o<=5)
-console.log(sum)
+//   do{
+//     let old = sum
+//     sum=sum+o
+//      console.log(`${old} + ${o} = ${sum}`)
+//     o++
+//   }while(o<=5)
+// console.log(sum)
 
-let i = 1
-do {
-  console.log(i)
-  i++
-} while (i <= 7)
+// let i = 1
+// do {
+//   console.log(i)
+//   i++
+// } while (i <= 7)
   
+
+let box = document.getElementById("box");
+
+let para = document.createElement("p");
+para.textContent = "Hello World";
+
+box.appendChild(para);
