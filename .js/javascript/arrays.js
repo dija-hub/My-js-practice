@@ -115,4 +115,13 @@ else {
 }
 })
 
-let 
+let input = document.getElementById("in")
+let button = document .getElementById("btn")
+let buttonable=true;
+addEventListener("input",function(){
+    if(input.value === 0){
+       buttonable=false
+    }else{
+        buttonable=true
+    }
+})
